@@ -1,0 +1,2 @@
+export const USER_FILE_CATEGORY = 'USER_FILES';
+export const USER_AVATAR_CATEGORY = 'USER_AVATAR';

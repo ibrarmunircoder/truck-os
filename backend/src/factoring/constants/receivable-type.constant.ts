@@ -1,0 +1,1 @@
+export const RECEIVABLE_TYPE = 'SINGLE_INVOICE';

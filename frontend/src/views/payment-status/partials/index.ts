@@ -1,0 +1,1 @@
+export { StatusViewPartial } from 'views/payment-status/partials/status-view/status-view.partial';

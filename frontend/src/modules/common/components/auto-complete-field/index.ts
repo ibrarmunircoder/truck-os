@@ -1,0 +1,1 @@
+export { AutoCompleteField } from 'modules/common/components/auto-complete-field/auto-complete-field.component';

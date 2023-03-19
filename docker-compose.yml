@@ -1,0 +1,22 @@
+# Only using it for local development - hence should only be used to launch local "infra" to be able to "play" around.
+# Current Infra:
+# * Database (postGres)
+
+version: "3"
+services:
+  db:
+    image:  postgres:13.1-alpine
+    restart: always
+    volumes:
+      - ./backend/create-dev-db.sh:/docker-entrypoint-initdb.d/create-dev-db.sh
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_MULTIPLE_DATABASES: roqone_dev,roqone_test
+      POSTGRES_USER: roqone
+      POSTGRES_PASSWORD: roqone
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready"]
+      interval: 5s
+      timeout: 10s
+      retries: 50

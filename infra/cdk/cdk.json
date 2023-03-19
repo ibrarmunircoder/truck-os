@@ -1,0 +1,11 @@
+{
+  "app": "",
+  "context": {
+  },
+  "plugin": [],
+  "profile": "007696334690",
+  "versionReporting": false,
+  "watch": {
+    "include": ["lib/**", "bin/**"]
+  }
+}

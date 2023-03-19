@@ -1,0 +1,1 @@
+export { InvoiceCreationView } from 'views/invoice-creation/invoice-creation.view'

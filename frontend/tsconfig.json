@@ -1,0 +1,21 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "module": "esnext",
+    "noEmit": true,
+    "target": "es5",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "moduleResolution": "Node",
+    "paths": {
+      "routes": ["../routes/index"],
+      "routes/*": ["../routes/*"]
+    },
+    "incremental": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "types/**/*.d.ts"],
+  "exclude": ["node_modules", "cypress"]
+}

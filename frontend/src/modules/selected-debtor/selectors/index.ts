@@ -1,0 +1,1 @@
+export { selectedDebtorSelector } from 'modules/selected-debtor/selectors/selected-debtor.selector';

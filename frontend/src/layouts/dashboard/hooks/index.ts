@@ -1,0 +1,1 @@
+export { useMatchMediaQuery } from 'layouts/dashboard/hooks/use-match-media-query.hook'

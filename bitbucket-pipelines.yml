@@ -1,0 +1,148 @@
+image:
+  name: eu.gcr.io/roq-infrastructure/roq-cicd-node:16-alpine3.11
+  username: _json_key
+  password: $GCR_READ_ONLY
+clone:
+  depth: full
+options:
+  max-time: 45
+  docker: true
+  size: 2x
+definitions:
+  services:
+    docker:
+      memory: 4096
+    postgres:
+      image: postgres:13.1-alpine
+      memory: 512
+      variables:
+        POSTGRES_DB: "test"
+        POSTGRES_USER: "test"
+        POSTGRES_PASSWORD: "test"
+  caches:
+    backend-node-modules: backend/node_modules
+    frontend-node-modules: frontend/node_modules
+    sonar: ~/.sonar/cache
+  steps:
+    - step: &backend-e2e-test
+        name: "Backend: E2E test"
+        caches:
+          - backend-node-modules
+        script:
+          - cd backend
+          - npm install
+          - npm run run:jest
+        services:
+          - postgres
+    - step: &backend-build
+        name: "Backend: build"
+        caches:
+          - backend-node-modules
+        script:
+          - cd backend
+          - npm install
+          - npm run build
+    - step: &docker-lint
+        name: "Dockerfile lint"
+        image: hadolint/hadolint:v2.10.0-alpine
+        condition:
+          changesets:
+            includePaths:
+              - "frontend/Dockerfile"
+              - "backend/Dockerfile"
+              - "container/single-container/Dockerfile"
+        script:
+          - hadolint */Dockerfile
+    - step: &frontend-test
+        name: "Frontend: test"
+        caches:
+          - frontend-node-modules
+        script:
+          - cd frontend
+          - npm install
+          - npm run test
+        services:
+          - postgres
+    - step: &frontend-build
+        size: 2x
+        name: "Frontend: build"
+        caches:
+          - frontend-node-modules
+        script:
+          - cd frontend
+          - npm install
+          - NODE_OPTIONS=--max_old_space_size=2560 npm run bb:build
+    - step: &sonarcloud-analyze
+        name: "Test and analyze on SonarCloud"
+        caches:
+          - sonar
+          - backend-node-modules
+          - frontend-node-modules
+        services:
+          - postgres
+        script:
+          - cd backend
+          - npm install
+          - npm run sniff || { backend_lint_status=$? && [ "$backend_lint_status" -eq 1 ] || exit 2; }
+          - npm run run:jest
+          - cd ../frontend
+          - npm install
+          - npm run sniff || { frontend_lint_status=$? && [ "$frontend_lint_status" -eq 1 ] || exit 2; }
+          - npm run test
+          - cd ..
+          - pipe: sonarsource/sonarcloud-scan:1.2.0
+            variables:
+              EXTRA_ARGS: -Dsonar.eslint.reportPaths=\"backend-lint-report.json,frontend-lint-report.json\"
+          - if [[ -z ${frontend_lint_status+x} ]] && [[ -z ${backend_lint_status+y} ]]; then echo "All good" ; else echo "Lint errors exists. Fix is needed."; exit 1; fi
+    - step: &check-quality-gate-sonarcloud
+        name: "Check the Quality Gate on SonarCloud"
+        script:
+          - pipe: sonarsource/sonarcloud-quality-gate:0.1.6
+pipelines:
+  pull-requests:
+    "**":
+      - step: *sonarcloud-analyze
+      - step: *check-quality-gate-sonarcloud
+      - step: *docker-lint
+      - parallel:
+          - step: *backend-build
+          - step: *frontend-build
+  custom:
+    deploy:
+      - variables:
+          - name: TRIGGER_NAME
+            default: "roq-core-qa01-one"
+          - name: REGION
+            default: "europe-west1"
+          - name: GCP_PROJECT
+            default: "roq-internal"
+          - name: FORCE_BUILD
+            default: "false"
+          - name: WIPE_DATABASE
+            default: "false"
+      - step:
+          name: "Deploy"
+          image:
+            name: alpine
+          script:
+            - echo "$GOOGLE_CREDENTIALS" | docker login -u _json_key --password-stdin https://eu.gcr.io
+            - pipe: docker://eu.gcr.io/roq-infrastructure/deploy-pipe:latest
+              variables:
+                FORCE_BUILD: ${FORCE_BUILD:-0}
+                GCP_PROJECT: ${GCP_PROJECT:-NOT_GIVEN}
+                GOOGLE_CREDENTIALS: $GOOGLE_CREDENTIALS
+                REGION: ${REGION:-europe-west1}
+                TRIGGER_NAME: ${TRIGGER_NAME:-NOT_GIVEN}
+                WIPE_DATABASE: ${WIPE_DATABASE:-false}
+    github-repository-sync:
+      - variables:
+          - name: GIT_CLONE_SYNC_TARGET
+            default: https://roqtech-bot:<<insert-pat-here>>@github.com/roqtech/roq-one.git
+          - name: TARGET_BRANCH
+            default: 'main'
+          - name: COMMIT_MESSAGE
+            default: 'Release X.Y.Z'
+      - step:
+          name: Syncing Github Repository
+          script:
+            - /bin/bash ./github-repo-sync.sh

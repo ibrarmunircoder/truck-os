@@ -1,0 +1,10 @@
+export type { DebtorInterface } from 'src/factoring/providers/interfaces/debtor.interface';
+export type { DebtorInfoInterface } from 'src/factoring/providers/interfaces/debtor-info.interface';
+export type { DebtorAddressInterface } from 'src/factoring/providers/interfaces/debtor-address.interface';
+export type { DebtorRelationInterface } from 'src/factoring/providers/interfaces/debtor-relation.interface';
+export type { DebtorRelationContactsInterface } from 'src/factoring/providers/interfaces/debtor-relation-contacts.interface';
+export type { ReceivableSellingPriceInterface } from 'src/factoring/providers/interfaces/receivable-selling-price.interface';
+export type { PaymentProcessorInterface } from 'src/factoring/providers/interfaces/payment-processor-provider.interface';
+export type { DebtorStatusPriceInterface } from 'src/factoring/providers/interfaces/debtor-status.interface';
+export type { DebtorListInterface } from 'src/factoring/providers/interfaces/debtor-list.interface';
+export type { PaymentDetailsInterface } from 'src/factoring/providers/interfaces/payment-details.interface';

@@ -1,0 +1,1 @@
+export { Aside } from 'layouts/auth/partials/aside/aside.partial';

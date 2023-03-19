@@ -1,0 +1,8 @@
+export const OWNER_ACCOUNT_USER_TYPE_FIELD = 4;
+export const OWNER_BIRTH_PLACE_FIELD = 5;
+export const OWNER_NATIONALITY_FIELD = 6;
+export const OWNER_STREET_AND_NUMBER_FIELD = 7;
+export const OWNER_POSTAL_CODE_FIELD = 8;
+export const OWNER_CITY_FIELD = 9;
+export const OWNER_COUNTRY_FIELD = 10;
+export const OWNER_HOUSE_NUMBER_FIELD = 11;

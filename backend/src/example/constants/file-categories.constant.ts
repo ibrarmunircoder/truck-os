@@ -1,0 +1,1 @@
+export const BOOK_FILE_CATEGORY = 'BOOK_FILES';

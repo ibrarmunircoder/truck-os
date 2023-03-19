@@ -1,0 +1,9 @@
+export { RegisterDto } from 'src/auth/dtos/register.dto';
+export { LoginDto } from 'src/auth/dtos/login.dto';
+export { AccountActivateDto } from 'src/auth/dtos/account-activate.dto';
+export { ChangePasswordDto } from 'src/auth/dtos/change-password.dto';
+export { ForgotPasswordDto } from 'src/auth/dtos/forgot-password.dto';
+export { RestorePasswordDto } from 'src/auth/dtos/restore-password.dto';
+export { ProviderLoginDto } from 'src/auth/dtos/provider-login.dto';
+export { ProviderDisconnectDto } from 'src/auth/dtos/provider-disconnect.dto';
+export { ResendEmailDto } from 'src/auth/dtos/resend-email.dto';

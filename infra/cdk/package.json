@@ -1,0 +1,47 @@
+{
+  "name": "@truckos/cdk",
+  "version": "0.1.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "sync:environments": "ts-node ./scripts/sync-environments.ts",
+    "gitlab:bootstrap:runners:dev": "printf \"Please enter Gitlab Token: \" ; read GITLAB_TOKEN ; aws ssm --profile 696448812249 put-parameter --name /GITLAB_TOKEN --value ${GITLAB_TOKEN} --type String",
+    "aws:cdk:bootstrap:root": "cdk bootstrap --profile 007696334690 aws://007696334690/eu-west-1",
+    "aws:cdk:bootstrap:dev": "cdk bootstrap --profile 696448812249 --trust 007696334690 --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess aws://696448812249/eu-west-1",
+    "aws:cdk:bootstrap:prod": "cdk bootstrap --profile 717435102727 --trust 007696334690 --cloudformation-execution-policies arn:aws:iam::aws:policy/AdministratorAccess aws://717435102727/eu-west-1",
+    "root:all:deploy": "cdk deploy --require-approval never --all --app \"ts-node bin/root/all.ts\" --path-metadata false",
+    "dev:bootstrap:deploy": "cdk deploy --require-approval never --all --app \"ts-node bin/dev/bootstrap.ts\" --path-metadata false",
+    "dev:all:deploy": "cdk deploy --require-approval never --all --app \"ts-node bin/dev/all.ts\" --path-metadata false",
+    "prod:bootstrap:deploy": "cdk deploy --require-approval never --all --app \"ts-node bin/prod/bootstrap.ts\" --path-metadata false",
+    "prod:all:deploy": "cdk deploy --require-approval never --all --app \"ts-node bin/prod/all.ts\" --path-metadata false",
+    "connect-db:dev": "./scripts/connect-db.bash dev",
+    "connect-backend:dev": "./scripts/connect-backend.bash dev"
+  },
+  "author": "truckOS GmbH",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "aws-cdk": "2.50.0",
+    "aws-cdk-lib": "2.50.0",
+    "aws-sdk": "2.1233.0",
+    "cdk-gitlab-runner": "^2.1.5",
+    "constructs": "10.1.131",
+    "envfile": "^6.18.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.40.0",
+    "@typescript-eslint/parser": "5.40.0",
+    "eslint": "8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "4.8.4"
+  },
+  "engines": {
+    "node": ">=v16.14.0"
+  }
+}

@@ -1,0 +1,1 @@
+export { ExitPaymentModal } from 'modules/common/components/exit-payment-modal/exit-payment-modal.component';

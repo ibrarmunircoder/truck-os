@@ -1,0 +1,4 @@
+export enum OrderFileUploadKeysEnum {
+  ORDER_FILE_INVOICE_CATEGORY = 'INVOICE',
+  ORDER_FILE_POD_CATEGORY = 'PROOF_OF_DELIVERY',
+}

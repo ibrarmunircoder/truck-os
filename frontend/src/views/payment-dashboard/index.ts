@@ -1,0 +1,1 @@
+export { PaymentDashboardView } from 'views/payment-dashboard/payment-dashboard.view';

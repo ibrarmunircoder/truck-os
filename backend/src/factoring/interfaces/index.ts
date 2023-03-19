@@ -1,0 +1,15 @@
+export type { AccountFindQueryInterface } from 'src/factoring/interfaces/account-find-query.interface';
+export type { AccountUserFindQueryInterface } from 'src/factoring/interfaces/account-user-find-query.interface';
+export type { OrderFindQueryInterface } from 'src/factoring/interfaces/order-find-query.interface';
+export type { DebtorFindQueryInterface } from 'src/factoring/interfaces/debtor-find-query.interface';
+export type { DebtorRepresentativeFindQueryInterface } from 'src/factoring/interfaces/debtor-representative-find-query.interface';
+export type { AccountFileFindQueryInterface } from 'src/factoring/interfaces/account-file-find-query.interface';
+export type { OrderFileFindQueryInterface } from 'src/factoring/interfaces/order-file-find-query.interface';
+export type { WalbingDocumentUploadInteface } from 'src/factoring/interfaces/walbing-document-upload.interface';
+export type { WalbingCreateReceivableBody } from 'src/factoring/interfaces/walbing-create-receivable-body.interface';
+export type { WalbingDebtorInterface } from 'src/factoring/interfaces/walbing-debtor.interface';
+export type { ReceivableInfoInterface, Receivable } from 'src/factoring/interfaces/receivable-info.interface';
+export type { AccountLegalStructure } from 'src/factoring/interfaces/account-legal-structure.interface';
+export type { AccountRegisterCourtInterface } from 'src/factoring/interfaces/account-register-courts.interface';
+export type { AccountFilesFindQueryInterface } from 'src/factoring/interfaces/account-files-find-query.interface';
+export type { OrderFilesFindQueryInterface } from 'src/factoring/interfaces/order-files-find-query.interface';

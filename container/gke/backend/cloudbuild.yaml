@@ -1,0 +1,176 @@
+options:
+  pool:
+    name: 'projects/$PROJECT_ID/locations/${_REGION}/workerPools/${_WORKER_POOL}'
+
+steps:
+  - name: gcr.io/cloud-builders/gcloud
+    id: check-if-image-exists
+    waitFor: ['-']
+    entrypoint: bash
+    env:
+      - 'CONTAINER_REGISTRY=$_CONTAINER_REGISTRY'
+      - 'SHORT_SHA=$SHORT_SHA'
+    args: 
+      - -c
+      - |
+        if [ $$(./container/gke/utils/check-image-exists.sh) = "true" ]; then
+            touch /workspace/image-exist;
+        fi;
+
+  - name: gcr.io/cloud-builders/docker
+    id: docker-latest-stage-pull
+    waitFor: ['check-if-image-exists']
+    entrypoint: bash
+    args: 
+      - -c
+      - |
+        if [ -f /workspace/image-exist ]; then exit 0; fi
+        docker pull ${_CONTAINER_REGISTRY}:latest || exit 0
+
+  - name: gcr.io/cloud-builders/docker
+    id: docker-compile-stage-pull
+    waitFor: ['check-if-image-exists']
+    entrypoint: bash
+    args: 
+      - -c
+      - |
+        if [ -f /workspace/image-exist ]; then exit 0; fi
+        docker pull ${_CONTAINER_REGISTRY}:compile-stage || exit 0
+
+  - name: gcr.io/cloud-builders/docker
+    id: docker-compile-stage-build
+    waitFor: ['docker-compile-stage-pull']
+    entrypoint: bash
+    env:
+      - 'DOCKER_BUILDKIT=1'
+    args: 
+      - -c
+      - |
+        if [ -f /workspace/image-exist ]; then exit 0; fi
+        docker build --target compile-stage --cache-from=${_CONTAINER_REGISTRY}:compile-stage -t ${_CONTAINER_REGISTRY}:compile-stage -f backend/Dockerfile .
+
+  - name: gcr.io/cloud-builders/docker
+    id: docker-runtime-image-build
+    waitFor: ['docker-latest-stage-pull', 'docker-compile-stage-build']
+    entrypoint: bash
+    env:
+      - 'DOCKER_BUILDKIT=1'
+    args: 
+      - -c
+      - |
+        if [ -f /workspace/image-exist ]; then exit 0; fi
+        docker build --target runtime-image --cache-from=${_CONTAINER_REGISTRY}:compile-stage --cache-from=${_CONTAINER_REGISTRY}:latest -t ${_CONTAINER_REGISTRY}:$SHORT_SHA -t ${_CONTAINER_REGISTRY}:latest -f backend/Dockerfile .
+
+  - name: gcr.io/cloud-builders/docker
+    id: docker-push-images
+    waitFor: ['docker-runtime-image-build']
+    entrypoint: bash
+    args: 
+      - -c
+      - |
+        if [ -f /workspace/image-exist ]; then exit 0; fi
+        docker push -a ${_CONTAINER_REGISTRY}
+
+  - name: '${_CONTAINER_REGISTRY}:latest'
+    secretEnv: ['SECRET_ONE']
+    env:
+      - 'WIPE_DATABASE=$_WIPE_DATABASE'
+    id: database-wipe
+    waitFor: ['docker-runtime-image-build']
+    entrypoint: /bin/ash
+    args:
+      - '-c'
+      - >-
+        export BACKEND_DATABASE_URL=$(eval $(echo "$$SECRET_ONE"); echo "$$DATABASE_URL");
+        ./container/scripts/db-wipe.sh
+
+  - name: '${_CONTAINER_REGISTRY}:$SHORT_SHA'
+    secretEnv: ['SECRET_ONE']
+    dir: '/app'
+    env:
+      - 'TYPEORM_MIGRATIONS=dist/src/migration/*.js'
+    args:
+      - '-c'
+      - >-
+        export TYPEORM_URL=$(eval $(echo "$$SECRET_ONE"); echo "$$DATABASE_URL");
+        TYPEORM_URL="${TYPEORM_URL/postgresql/postgres}"
+        set -e -o pipefail;
+        ./node_modules/.bin/typeorm query 'CREATE EXTENSION IF NOT EXISTS "uuid-ossp";';
+        ./node_modules/.bin/typeorm migration:run;
+    id: migrations
+    waitFor: ['database-wipe']
+    entrypoint: sh
+    timeout: 1200s
+
+  - name: '${_CONTAINER_REGISTRY}:$SHORT_SHA'
+    id: seed
+    dir: '/app'
+    env:
+      - 'IMPORT_DATA_CONFIG=$_IMPORT_DATA_CONFIG'
+      - 'ROQ_PLATFORM_URL=$_ROQ_PLATFORM_URL'
+    secretEnv: ['SECRET_ONE']
+    args:
+      - '-c'
+      - >-
+        export DATABASE_URL=$(eval $(echo "$$SECRET_ONE"); echo "$$DATABASE_URL");
+        export API_KEY=$(eval $(echo "$$SECRET_ONE"); echo "$$API_KEY");
+        export TENANT_ID=$(eval $(echo "$$SECRET_ONE"); echo "$$TENANT_ID");
+        export QUEUE_CONNECTION=$(eval $(echo "$$SECRET_ONE"); echo "$$AMQP_URL");
+        set -e -o pipefail;
+        node dist/src/library/utilities/console.js import-entities;
+    entrypoint: sh
+    waitFor: ['migrations']
+
+  - name: "gcr.io/cloud-builders/gke-deploy"
+    id: deployment
+    waitFor: ['seed']
+    entrypoint: bash
+    args: 
+      - -c
+      - |
+        cat <<EOF > deployment.yml
+        apiVersion: apps/v1
+        kind: Deployment
+        metadata:
+          name: ${_APP}-${_ENVIRONMENT}-${_SERVICE}
+          namespace: ${_CUSTOMER}
+        spec:
+          selector:
+            matchLabels:
+              app: ${_APP}
+              environment: ${_ENVIRONMENT}
+              service: ${_SERVICE}
+          template:
+            metadata:
+              labels:
+                app: ${_APP}
+                environment: ${_ENVIRONMENT}
+                service: ${_SERVICE}
+            spec:
+              containers:
+              - image: ${_CONTAINER_REGISTRY}:$SHORT_SHA
+                name: ${_APP}-${_ENVIRONMENT}-${_SERVICE}
+        EOF
+        gke-deploy run --cluster=${_CLUSTER_NAME} --location=${_CLUSTER_LOCATION} --filename=deployment.yml
+
+  - name: gcr.io/cloud-builders/curl
+    id: announcement
+    waitFor: ['deployment']
+    args:
+      [
+        '--silent',
+        '-X',
+        'POST',
+        '-H',
+        "'Content-type: application/json'",
+        '--data',
+        '{"attachments": [{"color": "#008000", "fallback": "Deployment Completed", "text":"Deployment Completed", "fields": [{"title": "Repo", "value": "$REPO_NAME", "short": "false"}, {"title": "Branch", "value":"$BRANCH_NAME", "short": "false"}, {"title": "Commit", "value": "$SHORT_SHA", "short": "false"}, {"title": "Type", "value": "${_SERVICE}", "short": "true"}, {"title":"Environment", "value":"${_ENVIRONMENT}", "short": "false"}, {"title":"Trigger", "value":"${TRIGGER_NAME}", "short": "false"}]}]}',
+        'https://hooks.slack.com/services/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',
+      ]
+
+
+availableSecrets:
+  secretManager:
+    - versionName: projects/$PROJECT_NUMBER/secrets/${_CUSTOMER}-${_APP}-${_ENVIRONMENT}-one/versions/latest
+      env: 'SECRET_ONE'
+timeout: 1200s

@@ -1,0 +1,1 @@
+export const ALLOWED_TRADE_DOCUMENTS = ['DE0001', 'DE0002'];

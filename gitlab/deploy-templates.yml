@@ -1,0 +1,23 @@
+
+.deploy:
+  stage: deploy
+  image:
+    name: amazon/aws-cli
+    entrypoint: [""]
+  tags:
+    - awscdk
+  interruptible: false
+  before_script:
+    - aws --version
+    - yum install jq -y
+  script:
+    - env
+    - source ${ENV_FILE}
+    - echo "  => AWS_REGION=$AWS_REGION"
+    - echo "  => AWS_ECS_CLUSTER_NAME=$AWS_ECS_CLUSTER_NAME"
+    - echo "  => AWS_ECS_BACKEND_SERVICE_NAME=$AWS_ECS_BACKEND_SERVICE_NAME"
+    - echo "  => AWS_ECS_FRONTEND_SERVICE_NAME=$AWS_ECS_FRONTEND_SERVICE_NAME"
+    - echo "  => FRONTEND_IMAGE_REPO_URI=$FRONTEND_IMAGE_REPO_URI"
+    - echo "  => BACKEND_IMAGE_REPO_URI=$BACKEND_IMAGE_REPO_URI"
+    - ./infra/cdk/scripts/ecs-deploy.bash -c $AWS_ECS_CLUSTER_NAME -n $AWS_ECS_BACKEND_SERVICE_NAME -i $BACKEND_IMAGE_REPO_URI:$CI_COMMIT_SHA | while IFS= read -r line; do printf '[%s] %s\n' "$(date '+%Y-%m-%d %H:%M:%S')" "$line"; done
+    - ./infra/cdk/scripts/ecs-deploy.bash -c $AWS_ECS_CLUSTER_NAME -n $AWS_ECS_FRONTEND_SERVICE_NAME -i $FRONTEND_IMAGE_REPO_URI:$CI_COMMIT_SHA | while IFS= read -r line; do printf '[%s] %s\n' "$(date '+%Y-%m-%d %H:%M:%S')" "$line"; done

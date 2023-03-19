@@ -1,0 +1,1 @@
+export { PageHeader } from 'modules/common/components/page-header/page-header.component';

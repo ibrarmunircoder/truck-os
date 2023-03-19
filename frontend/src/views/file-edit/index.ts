@@ -1,0 +1,1 @@
+export { FileView } from 'views/file-edit/file.view';

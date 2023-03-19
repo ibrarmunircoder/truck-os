@@ -1,0 +1,1 @@
+export { InnerPageHeader } from 'modules/common/components/inner-page-header/inner-page-header.component';

@@ -1,0 +1,1 @@
+export { PoweredBy } from 'layouts/auth/partials/powered-by/powered-by.partial';

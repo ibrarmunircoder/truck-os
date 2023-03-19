@@ -1,0 +1,1 @@
+export { Footer } from 'layouts/auth/partials/footer/footer.partial';

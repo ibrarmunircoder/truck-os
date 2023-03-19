@@ -1,0 +1,4 @@
+name,key,maxSize,isPublicByDefault,fileCategoryContentTypes@key
+Files for users,USER_FILES,20000000,false,[application/1d_interleaved_parityfec-application]
+Avatar,USER_AVATAR,5000000,true,[image/g3fax-image]
+Book Files,BOOK_FILES,50000000,true,[application/1d_interleaved_parityfec-application]

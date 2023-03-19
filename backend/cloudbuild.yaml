@@ -1,0 +1,165 @@
+options:
+  pool:
+    name: 'projects/$PROJECT_ID/locations/${_REGION}/workerPools/${_WORKER_POOL}'
+  
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args: ['-c', 'docker pull ${_REPO_NAME}:latest || exit 0']
+    entrypoint: bash
+    id: docker-cache-latest
+    waitFor: ['-']
+
+  - name: gcr.io/cloud-builders/docker
+    args: ['-c', 'docker pull ${_REPO_NAME}:compile-stage || exit 0']
+    entrypoint: bash
+    id: docker-cache-compile
+    waitFor: ['-']
+
+  - name: gcr.io/cloud-builders/docker
+    env:
+      - 'DOCKER_BUILDKIT=1'
+    args:
+      [
+        'build',
+        '--target',
+        'compile-stage',
+        '--cache-from=${_REPO_NAME}:compile-stage',
+        '-t',
+        '${_REPO_NAME}:compile-stage',
+        '-f',
+        'backend/Dockerfile',
+        '.',
+      ]
+    id: docker-build-compile
+    waitFor: ['docker-cache-compile']
+
+  - name: gcr.io/cloud-builders/docker
+    env:
+      - 'DOCKER_BUILDKIT=1'
+    args:
+      [
+        'build',
+        '--target',
+        'runtime-image',
+        '--cache-from=${_REPO_NAME}:compile-stage',
+        '--cache-from=${_REPO_NAME}:latest',
+        '-t',
+        '${_REPO_NAME}:$SHORT_SHA',
+        '-t',
+        '${_REPO_NAME}:latest',
+        '-f',
+        'backend/Dockerfile',
+        '.',
+      ]
+    id: docker-runtime-compile
+    waitFor: ['docker-build-compile', 'docker-cache-latest']
+
+  - name: gcr.io/cloud-builders/docker
+    args: ['push', '${_REPO_NAME}']
+    id: docker-push-images
+    waitFor: ['docker-runtime-compile']
+
+  - name: '${_REPO_NAME}:latest'
+    secretEnv: ['TYPEORM_URL']
+    env:
+      - 'WIPE_DATABASE=$_WIPE_DATABASE'
+    id: database-wipe
+    waitFor: ['docker-runtime-compile']
+    entrypoint: /bin/ash
+    args:
+      - '-c'
+      - >-
+        export BACKEND_DATABASE_URL=$$TYPEORM_URL;
+        ./container/scripts/db-wipe.sh
+
+  - name: '${_REPO_NAME}:$SHORT_SHA'
+    secretEnv: ['TYPEORM_URL']
+    dir: '/app'
+    env:
+      - 'TYPEORM_MIGRATIONS=dist/src/migration/*.js'
+    args:
+      - '-c'
+      - >-
+        set -e -o pipefail;
+        ./node_modules/.bin/typeorm query 'CREATE EXTENSION IF NOT EXISTS "uuid-ossp";';
+        ./node_modules/.bin/typeorm migration:run;
+    id: migrations
+    waitFor: ['database-wipe']
+    entrypoint: sh
+    timeout: 1200s
+
+  - name: '${_REPO_NAME}:$SHORT_SHA'
+    id: seed
+    dir: '/app'
+    env:
+      - 'IMPORT_DATA_CONFIG=$_IMPORT_DATA_CONFIG'
+      - 'ROQ_PLATFORM_HOST=$_ROQ_PLATFORM_HOST'
+      - 'ROQ_PLATFORM_API_URI=$_ROQ_PLATFORM_API_URI'
+    secretEnv: ['API_KEY', 'TENANT_ID', 'TYPEORM_URL']
+    args:
+      - '-c'
+      - >-
+        set -e -o pipefail;
+        export DATABASE_URL=$$TYPEORM_URL;
+        node dist/src/console.js import-entities;
+    entrypoint: sh
+    waitFor: ['migrations']
+
+  - name: gcr.io/cloud-builders/gcloud
+    args:
+      [
+        'beta',
+        'run',
+        'services',
+        'update',
+        '${_DEPLOY_NAME}',
+        '--image',
+        '${_REPO_NAME}:$SHORT_SHA',
+        '--region',
+        '${_REGION}',
+        '--set-secrets=DATABASE_URL=projects/$PROJECT_NUMBER/secrets/${_ENVIRONMENT}_BACKEND_DATABASE_URL/versions/latest',
+        '--set-secrets=JWT_REFRESH_SECRET=projects/$PROJECT_NUMBER/secrets/${_ENVIRONMENT}_BACKEND_JWT_REFRESH_SECRET/versions/latest',
+        '--set-secrets=JWT_SECRET=projects/$PROJECT_NUMBER/secrets/${_ENVIRONMENT}_BACKEND_JWT_SECRET/versions/latest',
+        '--set-secrets=NEW_RELIC_LICENSE_KEY=projects/$PROJECT_NUMBER/secrets/${_ENVIRONMENT}_NEW_RELIC_LICENSE_KEY/versions/latest',
+        '--set-secrets=API_KEY=projects/$PROJECT_NUMBER/secrets/${_ENVIRONMENT}_API_KEY/versions/latest',
+        '--set-secrets=TENANT_ID=projects/$PROJECT_NUMBER/secrets/${_ENVIRONMENT}_TENANT_ID/versions/latest',
+        '--set-env-vars=APP_ENVIRONMENT=${_APP_ENVIRONMENT}',
+        '--set-env-vars=CLOUD_LOGS_ENABLED=${_CLOUD_LOGS_ENABLED}',
+        '--set-env-vars=CLOUD_LOGS_NAME=${_CLOUD_LOGS_NAME}',
+        '--set-env-vars=CLOUD_RUN_PROJECT_HASH=${_CLOUD_RUN_PROJECT_HASH}',
+        '--set-env-vars=ENABLE_DOCS=${_ENABLE_DOCS}',
+        '--set-env-vars=FRONTEND_URL=${_FRONTEND_URL}',
+        '--set-env-vars=NEW_RELIC_APP_NAME=${_NEW_RELIC_APP_NAME}',
+        '--set-env-vars=NEW_RELIC_ENABLE=${_NEW_RELIC_ENABLE}',
+        '--set-env-vars=NO_COLOR=true',
+        '--set-env-vars=ROQ_PLATFORM_HOST=${_ROQ_PLATFORM_HOST}',
+        '--set-env-vars=ROQ_PLATFORM_API_URI=${_ROQ_PLATFORM_API_URI}',
+        '--set-env-vars=DEFAULT_FILE_MAX_SIZE_BYTES=${_DEFAULT_FILE_MAX_SIZE_BYTES}',
+      ]
+    id: cloud-run-deploy
+    waitFor: ['seed', 'docker-push-images']
+
+  - name: gcr.io/cloud-builders/curl
+    waitFor: ['cloud-run-deploy']
+    args:
+      [
+        '--silent',
+        '-X',
+        'POST',
+        '-H',
+        "'Content-type: application/json'",
+        '--data',
+        '{"attachments": [{"color": "#008000", "fallback": "Deployment Completed", "text":"Deployment Completed", "fields": [{"title": "Repo", "value": "$REPO_NAME", "short": "false"}, {"title": "Branch", "value":"$BRANCH_NAME", "short": "false"}, {"title": "Commit", "value": "$SHORT_SHA", "short": "false"}, {"title": "Type", "value": "Backend", "short": "true"}, {"title":"Environment", "value":"${_ENVIRONMENT}", "short": "false"}, {"title":"Trigger", "value":"${TRIGGER_NAME}", "short": "false"}]}]}',
+        'https://hooks.slack.com/services/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',
+      ]
+
+availableSecrets:
+  secretManager:
+    - versionName: projects/$PROJECT_NUMBER/secrets/${_ENVIRONMENT}_API_KEY/versions/latest
+      env: 'API_KEY'
+    - versionName: projects/$PROJECT_NUMBER/secrets/${_ENVIRONMENT}_TENANT_ID/versions/latest
+      env: 'TENANT_ID'
+    - versionName: projects/$PROJECT_NUMBER/secrets/${_ENVIRONMENT}_BACKEND_DATABASE_URL/versions/latest
+      env: 'TYPEORM_URL'
+
+timeout: 1200s

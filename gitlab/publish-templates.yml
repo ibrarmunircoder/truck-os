@@ -1,0 +1,79 @@
+
+.publish-frontend:
+  stage: publish
+  tags:
+    - awscdk
+  image:
+    name: amazon/aws-cli
+    entrypoint: [""]
+  interruptible: true
+  services:
+    - docker:dind
+  before_script:
+    - amazon-linux-extras install docker
+    - aws --version
+    - docker --version
+  script:
+    - env
+    - source $ENV_FILE
+    - echo "  => AWS_ACCOUNT_ID=$AWS_ACCOUNT_ID"
+    - echo "  => AWS_REGION=$AWS_REGION"
+    - echo "  => FRONTEND_IMAGE_REPO_URI=$FRONTEND_IMAGE_REPO_URI"
+    - aws sts get-caller-identity
+    - aws ecr get-login-password --region "$AWS_REGION" | docker login --username AWS --password-stdin "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com"
+    - docker build --memory=8192m
+      --target compile-stage
+      --build-arg "NODE_OPTIONS=--max-old-space-size=8192"
+      --cache-from "$FRONTEND_IMAGE_REPO_URI:compile-stage"
+      --build-arg "API_KEY=${API_KEY}"
+      --build-arg "COMMIT_SHA=$CI_COMMIT_SHA"
+      --build-arg "NEXT_PUBLIC_BACKEND_URL=${NEXT_PUBLIC_BACKEND_URL}"
+      --build-arg "NEXT_PUBLIC_PLATFORM_URL=${NEXT_PUBLIC_PLATFORM_URL}"
+      --build-arg "NEXTAUTH_URL=${NEXTAUTH_URL}"
+      --build-arg "TENANT_ID=${TENANT_ID}"
+      -t $FRONTEND_IMAGE_REPO_URI:compile-stage
+      -f frontend/Dockerfile .
+    - docker build --memory=8192m
+      --target runtime-image
+      --build-arg "NODE_OPTIONS=--max-old-space-size=8192"
+      --cache-from "$FRONTEND_IMAGE_REPO_URI:latest"
+      --build-arg "API_KEY=${API_KEY}"
+      --build-arg "COMMIT_SHA=$CI_COMMIT_SHA"
+      --build-arg "NEXT_PUBLIC_BACKEND_URL=${NEXT_PUBLIC_BACKEND_URL}"
+      --build-arg "NEXT_PUBLIC_PLATFORM_URL=${NEXT_PUBLIC_PLATFORM_URL}"
+      --build-arg "NEXTAUTH_URL=${NEXTAUTH_URL}"
+      --build-arg "TENANT_ID=${TENANT_ID}"
+      -t "$FRONTEND_IMAGE_REPO_URI:$CI_COMMIT_SHA"
+      -f frontend/Dockerfile .
+    - docker image tag "$FRONTEND_IMAGE_REPO_URI:$CI_COMMIT_SHA" "$FRONTEND_IMAGE_REPO_URI:latest"
+    - docker image tag "$FRONTEND_IMAGE_REPO_URI:$CI_COMMIT_SHA" "$FRONTEND_IMAGE_REPO_URI:$CI_COMMIT_SHORT_SHA"
+    - docker image tag "$FRONTEND_IMAGE_REPO_URI:$CI_COMMIT_SHA" "$FRONTEND_IMAGE_REPO_URI:$CI_COMMIT_REF_SLUG"
+    - docker image push --all-tags "$FRONTEND_IMAGE_REPO_URI"
+
+.publish-backend:
+  stage: publish
+  image:
+    name: amazon/aws-cli
+    entrypoint: [""]
+  tags:
+    - awscdk
+  interruptible: true
+  services:
+    - docker:dind
+  before_script:
+    - amazon-linux-extras install docker
+    - aws --version
+    - docker --version
+  script:
+    - env
+    - source $ENV_FILE
+    - echo "  => AWS_ACCOUNT_ID=$AWS_ACCOUNT_ID"
+    - echo "  => AWS_REGION=$AWS_REGION"
+    - echo "  => BACKEND_IMAGE_REPO_URI=$BACKEND_IMAGE_REPO_URI"
+    - aws sts get-caller-identity
+    - aws ecr get-login-password --region "$AWS_REGION" | docker login --username AWS --password-stdin "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com"
+    - docker build --memory=4096m --build-arg NODE_OPTIONS=--max-old-space-size=4096 "--cache-from=$BACKEND_IMAGE_REPO_URI:latest" -t "$BACKEND_IMAGE_REPO_URI:$CI_COMMIT_SHA" -f backend/Dockerfile .
+    - docker image tag "$BACKEND_IMAGE_REPO_URI:$CI_COMMIT_SHA" "$BACKEND_IMAGE_REPO_URI:latest"
+    - docker image tag "$BACKEND_IMAGE_REPO_URI:$CI_COMMIT_SHA" "$BACKEND_IMAGE_REPO_URI:$CI_COMMIT_SHORT_SHA"
+    - docker image tag "$BACKEND_IMAGE_REPO_URI:$CI_COMMIT_SHA" "$BACKEND_IMAGE_REPO_URI:$CI_COMMIT_REF_SLUG"
+    - docker image push --all-tags "$BACKEND_IMAGE_REPO_URI"

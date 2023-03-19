@@ -1,0 +1,16 @@
+export { AuthorSearchArgType } from 'src/example/dtos/author-search.arg.type';
+export { AuthorFilterArgType } from 'src/example/dtos/author-filter.arg.type';
+export { AuthorOrderArgType } from 'src/example/dtos/author-order.arg.type';
+export { AuthorArgType } from 'src/example/dtos/author.arg.type';
+export { AuthorBulkArgType } from 'src/example/dtos/author-bulk.arg.type';
+export { AuthorUpdateDto } from 'src/example/dtos/author-update.dto';
+export { AuthorCreateDto } from 'src/example/dtos/author-create.dto';
+export { BookSearchArgType } from 'src/example/dtos/book-search.arg.type';
+export { BookFilterArgType } from 'src/example/dtos/book-filter.arg.type';
+export { BookOrderArgType } from 'src/example/dtos/book-order.arg.type';
+export { BookArgType } from 'src/example/dtos/book.arg.type';
+export { BookBulkArgType } from 'src/example/dtos/book-bulk.arg.type';
+export { BookUpdateDto } from 'src/example/dtos/book-update.dto';
+export { BookCreateDto } from 'src/example/dtos/book-create.dto';
+export { BookFileCreateDto } from 'src/example/dtos/book-file-create.dto';
+export { BookFileAssociationOptionsDto } from 'src/example/dtos/book-file-association-options.dto';

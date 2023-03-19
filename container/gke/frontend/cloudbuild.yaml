@@ -1,0 +1,128 @@
+options:
+  pool:
+    name: 'projects/$PROJECT_ID/locations/${_REGION}/workerPools/${_WORKER_POOL}'
+
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args: ['-c', 'docker pull ${_CONTAINER_REGISTRY}:latest || exit 0']
+    entrypoint: bash
+    id: docker-cache-latest
+    waitFor: ['-']
+
+  - name: gcr.io/cloud-builders/docker
+    args: ['-c', 'if [[ $$FORCE_BUILD != "true" ]]; then docker pull ${_CONTAINER_REGISTRY}:compile-stage || exit 0; else exit 0; fi']
+    env:
+      - 'FORCE_BUILD=$_FORCE_BUILD'
+    entrypoint: bash
+    id: docker-cache-compile
+    waitFor: ['-']
+
+  - name: gcr.io/cloud-builders/docker
+    env:
+      - 'DOCKER_BUILDKIT=1'
+    args:
+      - -c
+      - |
+        export API_KEY=$(eval $(echo "$$SECRET_ONE"); echo "$$API_KEY");
+        export TENANT_ID=$(eval $(echo "$$SECRET_ONE"); echo "$$TENANT_ID");
+        docker build \
+          --target compile-stage \
+          --cache-from=${_CONTAINER_REGISTRY}:compile-stage \
+          --build-arg API_KEY \
+          --build-arg BRANCH_NAME=$BRANCH_NAME \
+          --build-arg COMMIT_SHA=$COMMIT_SHA \
+          --build-arg NEXT_PUBLIC_BACKEND_URL=${_NEXT_PUBLIC_BACKEND_URL} \
+          --build-arg NEXT_PUBLIC_PLATFORM_URL=${_NEXT_PUBLIC_PLATFORM_URL} \
+          --build-arg NEXTAUTH_URL=${_NEXTAUTH_URL} \
+          --build-arg TENANT_ID \
+          -t ${_CONTAINER_REGISTRY}:compile-stage \
+          -f frontend/Dockerfile .
+    entrypoint: bash
+    id: docker-build-compile
+    secretEnv: ['SECRET_ONE']
+    waitFor: ['docker-cache-compile']
+
+  - name: gcr.io/cloud-builders/docker
+    env:
+      - 'DOCKER_BUILDKIT=1'
+    args:
+      - -c
+      - |
+        export API_KEY=$(eval $(echo "$$SECRET_ONE"); echo "$$API_KEY");
+        export TENANT_ID=$(eval $(echo "$$SECRET_ONE"); echo "$$TENANT_ID");
+        docker build \
+          --target runtime-image \
+          --cache-from=${_CONTAINER_REGISTRY}:compile-stage \
+          --cache-from=${_CONTAINER_REGISTRY}:latest \
+          --build-arg API_KEY \
+          --build-arg BRANCH_NAME=$BRANCH_NAME \
+          --build-arg COMMIT_SHA=$COMMIT_SHA \
+          --build-arg NEXT_PUBLIC_BACKEND_URL=${_NEXT_PUBLIC_BACKEND_URL} \
+          --build-arg NEXT_PUBLIC_PLATFORM_URL=${_NEXT_PUBLIC_PLATFORM_URL} \
+          --build-arg NEXTAUTH_URL=${_NEXTAUTH_URL} \
+          --build-arg TENANT_ID \
+          -t ${_CONTAINER_REGISTRY}:$SHORT_SHA \
+          -t ${_CONTAINER_REGISTRY}:latest \
+          -f frontend/Dockerfile .
+    entrypoint: bash
+    id: docker-runtime-compile
+    secretEnv: ['SECRET_ONE']
+    waitFor: ['docker-build-compile', 'docker-cache-latest']
+
+  - name: gcr.io/cloud-builders/docker
+    args: ['push', '-a', '${_CONTAINER_REGISTRY}']
+    id: docker-push-images
+    waitFor: ['docker-runtime-compile']
+
+  - name: "gcr.io/cloud-builders/gke-deploy"
+    id: deployment
+    waitFor: ['docker-push-images']
+    entrypoint: bash
+    args: 
+      - -c
+      - |
+        cat <<EOF > deployment.yml
+        apiVersion: apps/v1
+        kind: Deployment
+        metadata:
+          name: ${_APP}-${_ENVIRONMENT}-${_SERVICE}
+          namespace: ${_CUSTOMER}
+        spec:
+          selector:
+            matchLabels:
+              app: ${_APP}
+              environment: ${_ENVIRONMENT}
+              service: ${_SERVICE}
+          template:
+            metadata:
+              labels:
+                app: ${_APP}
+                environment: ${_ENVIRONMENT}
+                service: ${_SERVICE}
+            spec:
+              containers:
+              - image: ${_CONTAINER_REGISTRY}:$SHORT_SHA
+                name: ${_APP}-${_ENVIRONMENT}-${_SERVICE}
+        EOF
+        gke-deploy run --cluster=${_CLUSTER_NAME} --location=${_CLUSTER_LOCATION} --filename=deployment.yml
+
+  - name: gcr.io/cloud-builders/curl
+    id: announcement
+    waitFor: ['deployment']
+    args:
+      [
+        '--silent',
+        '-X',
+        'POST',
+        '-H',
+        "'Content-type: application/json'",
+        '--data',
+        '{"attachments": [{"color": "#008000", "fallback": "Deployment Completed", "text":"Deployment Completed", "fields": [{"title": "Repo", "value": "$REPO_NAME", "short": "false"}, {"title": "Branch", "value":"$BRANCH_NAME", "short": "false"}, {"title": "Commit", "value": "$SHORT_SHA", "short": "false"}, {"title": "Type", "value": "${_SERVICE}", "short": "true"}, {"title":"Environment", "value":"${_ENVIRONMENT}", "short": "false"}, {"title":"Trigger", "value":"${TRIGGER_NAME}", "short": "false"}]}]}',
+        'https://hooks.slack.com/services/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',
+      ]
+
+availableSecrets:
+  secretManager:
+    - versionName: projects/$PROJECT_NUMBER/secrets/${_CUSTOMER}-${_APP}-${_ENVIRONMENT}-one/versions/latest
+      env: 'SECRET_ONE'
+timeout: 1500s

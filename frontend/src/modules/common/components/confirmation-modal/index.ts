@@ -1,0 +1,1 @@
+export { ConfirmationModal } from 'modules/common/components/confirmation-modal/confirmation-modal.component'

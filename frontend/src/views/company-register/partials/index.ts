@@ -1,0 +1,11 @@
+export { CompanyBasicInfo } from 'views/company-register/partials/company-basic-info/company-basic-info.partial';
+export { CompanyDocumentUpload } from 'views/company-register/partials/company-document-upload/company-document-upload.partial';
+export { CompanyBankInfo } from 'views/company-register/partials/company-bank-info/company-bank-info.partial';
+export { CompanyLegalRepresentative } from 'views/company-register/partials/company-legal-representative/company-legal-representative.partial';
+export { CompanyAddRepresentative } from 'views/company-register/partials/company-add-representative/company-add-representative.partial';
+export { CompanyAddOwner } from 'views/company-register/partials/company-add-owner/company-add-owner.partial';
+export { CompanyVerificationInfo } from 'views/company-register/partials/company-verification-info/company-verification-info.partial';
+export { CompanyVerificationComplete } from 'views/company-register/partials/company-verification-complete/company-verification-complete.partial';
+export { CompanyEditPerson } from 'views/company-register/partials/company-edit-person/company-edit-person.partial';
+export { DeleteModalPartial } from 'views/company-register/partials/delete-modal/delete-modal.partial';
+export { CompanyAccountUserDialog } from 'views/company-register/partials/company-account-user-dialog/company-account-user-dialog.partial';

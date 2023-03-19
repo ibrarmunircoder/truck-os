@@ -1,0 +1,59 @@
+
+.build-frontend:
+  stage: build
+  tags:
+    - awscdk
+  image:
+    name: amazon/aws-cli
+    entrypoint: [""]
+  interruptible: true
+  services:
+    - docker:dind
+  before_script:
+    - amazon-linux-extras install docker
+    - aws --version
+    - docker --version
+  script:
+    - env
+    - source $ENV_FILE
+    - docker build --memory=8192m
+      --target compile-stage
+      --build-arg NODE_OPTIONS="--max-old-space-size=8192"
+      --build-arg "API_KEY=${API_KEY}"
+      --build-arg "COMMIT_SHA=$CI_COMMIT_SHA"
+      --build-arg "NEXT_PUBLIC_BACKEND_URL=${NEXT_PUBLIC_BACKEND_URL}"
+      --build-arg "NEXT_PUBLIC_PLATFORM_URL=${NEXT_PUBLIC_PLATFORM_URL}"
+      --build-arg "NEXTAUTH_URL=${NEXTAUTH_URL}"
+      --build-arg "TENANT_ID=${TENANT_ID}"
+      -f frontend/Dockerfile .
+    - docker build --memory=8192m
+      --target runtime-image
+      --build-arg NODE_OPTIONS="--max-old-space-size=8192"
+      --build-arg "API_KEY=${API_KEY}"
+      --build-arg "COMMIT_SHA=$CI_COMMIT_SHA"
+      --build-arg "NEXT_PUBLIC_BACKEND_URL=${NEXT_PUBLIC_BACKEND_URL}"
+      --build-arg "NEXT_PUBLIC_PLATFORM_URL=${NEXT_PUBLIC_PLATFORM_URL}"
+      --build-arg "NEXTAUTH_URL=${NEXTAUTH_URL}"
+      --build-arg "TENANT_ID=${TENANT_ID}"
+      -f frontend/Dockerfile .
+
+.build-backend:
+  stage: build
+  image:
+    name: amazon/aws-cli
+    entrypoint: [""]
+  tags:
+    - awscdk
+  interruptible: true
+  services:
+    - docker:dind
+  before_script:
+    - amazon-linux-extras install docker
+    - aws --version
+    - docker --version
+  script:
+    - env
+    - source $ENV_FILE
+    - docker build --memory=4096m 
+      --build-arg NODE_OPTIONS=--max-old-space-size=4096
+      -f backend/Dockerfile .

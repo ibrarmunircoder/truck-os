@@ -1,0 +1,1423 @@
+{
+  "array-contain": "{{each}} {{property}} must contain {{constraints.0}} values",
+  "array-max-size": "{{each}} {{property}} must contain not more than {{constraints.0}}",
+  "array-min-size": "{{each}} {{property}} must contain at least {{constraints.0}}",
+  "array-not-contains": "{{each}} {{property}} should not contain {{constraints.0}} values",
+  "array-not-empty": "{{each}} {{property}} should not be empty",
+  "array-unique": "{{each}} All {{property}}'s elements must be unique",
+  "should-allow": "{{property}} allowed {{value}}",
+  "equals": "{{each}} {{property}} should not be equal to {{constraints.0}}",
+  "is-defined": "{{each}} {{property}} should not be null or undefined",
+  "is-empty": "{{each}} {{property}} must be empty",
+  "is-in": "{{each}} {{property}} must be one of the following values: {{constraints.0}}",
+  "is-not-empty": "{{each}} {{property}} should not be empty",
+  "is-not-in": "{{each}} {{property}} should not be one of the following values: {{constraints.0}}",
+  "is-optional": "{{property}} is optional",
+  "not-equals": "{{each}} {{property}} should not be equal to {{constraints.0}}",
+  "validate": "{{property}} Resolve promise before validation",
+  "validate-by": "{{property}} is not validated  {{options}}",
+  "validate-if": "{{property}} is ignored",
+  "validate-nested": "{{each}} {{property}} must be either object or array",
+  "validate-promise": "{{property}} Resolve promise before validation",
+  "max-date": "maximal allowed date for {{each}} {{property}} is {{constraints.0}}",
+  "min-date": "minimal allowed date for {{each}} {{property}} is {{constraints.0}}",
+  "is-divisible-by": "{{each}} {{property}} must be divisible by {{constraints.0}}",
+  "is-negative": "{{each}} {{property}} must be a negative number",
+  "is-positive": "{{each}} {{property}} must be a positive number",
+  "max": "{{each}} {{property}} must not be greater than {{constraints.0}}",
+  "min": "{{each}} {{property}} must not be less than {{constraints.0}}",
+  "is-instance": "{{property}} is not instance of the specified object",
+  "is-not-empty-object": "{{property}} should not be an empty object",
+  "contains": "{{each}} {{property}} must contain a {{constraints.0}} string",
+  "is-alpha": "{{each}} {{property}} must contain only letters (a-zA-Z)",
+  "is-alpha-numeric": "{{each}} {{property}} must contain only letters and numbers",
+  "is-ascii": "{{each}} {{property}} must contain only ASCII characters",
+  "is-base-32": "{{each}} {{property}} must be base32 encoded",
+  "is-base-64": "{{each}} {{property}} must be base64 encoded",
+  "is-bic": "{{each}} {{property}} must be a BIC or SWIFT code",
+  "is-boolean-string": "{{each}} {{property}} must be a boolean string",
+  "is-btc-address": "{{each}} {{property}} must be a BTC address",
+  "is-byte-length": "{{each}} {{property}} byte length must fall into ({{constraints.0}} - {{constraints.1}}) range",
+  "is-credit-card": "{{each}} {{property}} must be a credit card",
+  "is-data-uri": "{{each}} {{property}} must be a data uri format",
+  "is-currency": "{{each}} {{property}} must be a currency",
+  "is-date-string": "{{each}} {{property}} must be a valid ISO 8601 date string",
+  "is-decimal": "{{each}} {{property}} is not a valid decimal number.",
+  "is-ean": "{{each}} {{property}} must be an EAN (European Article Number)",
+  "is-email": "{{each}} {{property}} must be an email",
+  "is-firebase-push-id": "{{each}} {{property}} must be a Firebase Push Id",
+  "is-fqdn": "{{each}} {{property}} must be a valid domain name",
+  "is-full-width": "{{each}} {{property}} must contain a full-width characters",
+  "is-half-width": "{{each}} {{property}} must contain a half-width characters",
+  "is-hash": "{{each}} {{property}} must be a hash of type {{constraints.0}}",
+  "is-hexa-decimal": "{{each}} {{property}} must be a hexadecimal number",
+  "is-hex-color": "{{each}} {{property}} must be a hexadecimal color",
+  "is-hsl": "{{each}} {{property}} must be a HSL color",
+  "is-iban": "{{each}} {{property}} must be an IBAN",
+  "is-ip": "{{each}} {{property}} must be an ip address",
+  "is-isbn": "{{each}} {{property}} must be an ISBN",
+  "is-isin": "{{each}} {{property}} must be an ISIN",
+  "is-json": "{{each}} {{property}} must be a json string",
+  "is-jwt": "{{each}} {{property}} must be a JWT string",
+  "is-locale": "{{each}} {{property}} must be a locale",
+  "is-lower-case": "{{each}} {{property}} must be a lower case string",
+  "is-magnet-uri": "{{each}} {{property}} must be magnet uri format",
+  "is-military-time": "{{each}} {{property}} must be a valid representation of military time in the format HH:MM",
+  "is-mime-type": "{{each}} {{property}} must be  MIME type format",
+  "is-mongo-id": "{{each}} {{property}} must be a mongodb id",
+  "is-mobile-phone": "{{each}} {{property}} must be a phone number",
+  "is-multi-byte": "{{each}} {{property}} must contain one or more multibyte chars",
+  "is-number-string": "{{each}} {{property}} must be a number string",
+  "is-octal": "{{each}} {{property}} must be valid octal number",
+  "is-passport-number": "{{each}} {{property}} must be valid passport number",
+  "is-phone-number": "{{each}} {{property}} must be a valid phone number",
+  "is-port": "{{each}} {{property}} must be a port",
+  "is-postal-code": "{{each}} {{property}} must be a postal code",
+  "is-rfc-3339": "{{each}} {{property}} must be RFC 3339 date",
+  "is-rgb-color": "{{each}} {{property}} must be a rgb color",
+  "is-sem-ver": "{{each}} {{property}} must be a Semantic Versioning Specification",
+  "is-surrogate-pair": "{{each}} {{property}} must contain any surrogate pairs chars",
+  "is-upper-case": "{{each}} {{property}} must contain an uppercase string",
+  "is-url": "{{each}} {{property}} must be an URL",
+  "is-uuid": "{{each}} {{property}} must be a UUID",
+  "is-variable-width": "{{each}} {{property}} must contain a full-width and half-width characters",
+  "length": "{{each}} {{property}} doesn't length falls in a range ({{min}} - {{max}})",
+  "matches": "{{each}} {{property}} must match {{constraints.0}} regular expression",
+  "max-length": "{{each}} {{property}} must be shorter than or equal to {{constraints.0}} characters",
+  "min-length": "{{each}} {{property}} must be higher than or equal to {{constraints.0}} characters",
+  "not-contains": "{{each}} {{property}} must contain a {{constraints.0}} string",
+  "is-ethereum-address": "{{each}} {{property}} must be an Ethereum address",
+  "is-array": "{{each}} {{property}} must be an array",
+  "is-boolean": "{{each}} {{property}} must be a boolean value",
+  "is-date": "{{each}} {{property}} must be a Date instance",
+  "is-enum": "{{each}} {{property}} must be a valid enum value",
+  "is-int": "{{each}} {{property}} must be an integer number",
+  "is-number": "{{each}} {{property}} must be a number conforming to the specified constraints",
+  "is-object": "{{each}} {{property}} must be an object",
+  "is-string": "{{each}} {{property}} must be a string",
+  "event-type-not-found": "EventType with id {{id}} not found",
+  "event-subscriber-not-found": "EventSubscriber with id {{id}} not found",
+  "deployment-info-not-found": "There is no deployment info",
+  "conversation-user-not-found": "ConversationUser with id {{id}} not found",
+  "ws-auth-failure": "Auth Failed",
+  "conversation-not-found": "Conversation with id {{id}} not found",
+  "message-status-not-found": "MessageStatus with id {{id}} not found",
+  "message-not-found": "Message with id {{id}} not found",
+  "ws-validation-failed": "Validation Failed",
+  "translation-key-not-found": "translation-key-not-found",
+  "translation-not-found": "translation-not-found",
+  "translation-key-with-key-already-exists": "translation-key-with-key-already-exists",
+  "translation-already-exists": "translation-already-exists",
+  "event-example-data-not-found": "EventExampleData with id {{id}} not found",
+  "event-record-not-found": "EventRecord with id {{id}} not found",
+  "invalid-credentials": "Credentials are wrong",
+  "invalid-token": "Token provided is wrong",
+  "missing-auth": "Authorization header is not passed",
+  "invalid-auth-header": "Authorization header type is not supported",
+  "disallowed-domain": "{{domain}} is not allowed",
+  "invalid-mail-type": "Invalid mailType provided",
+  "invalid-recipient": "Recipient does not exist",
+  "mail-type-not-found": "MailType with id {{id}} not found",
+  "notification-type-channel-user-not-found": "NotificationTypeChannelUser with id {{id}} not found",
+  "notification-type-channel-not-found": "NotificationTypeChannel with id {{id}} not found",
+  "notification-type-not-found": "NotificationType with id {{id}} not found",
+  "notification-user-not-found": "NotificationUser with id {{id}} not found",
+  "notification-not-found": "Notification with id {{id}} not found",
+  "user-not-authenticated": "Action could not be complete without authenticated userId",
+  "notification-and-user-not-found": "Notification with id {{id}} and notificationUserId {{notificationUserId}} not found",
+  "user-invitation-not-found": "UserInvite with id {{id}} not found",
+  "user-provider-not-found": "UserProvider with id {{id}} not found",
+  "user-token-not-found": "UserToken with id {{id}} not found",
+  "user-token-not-found-in-db": "There is no such token in db",
+  "user-not-found": "User with id {{id}} not found",
+  "invalid-user-token": "User with id {{id}} not found",
+  "expired-user-token": "Token has been expired",
+  "user-invite-acceptance-failed": "Unable to accept because invite is already {{userInviteStatus}}",
+  "bulk-user-invite-limit-exceeded": "Only {{maxAllowed}} can be invited at once",
+  "user-invite-resending-failed": "Unable to resend because invite is already {{userInviteStatus}}",
+  "user-invite-cancellation-failed": "Unable to cancel user invite because invite is already {{userInviteStatus}}",
+  "user-already-exists": "The user with the email address {{email}} already exists",
+  "user-already-invited": "{{email}} has already been invited",
+  "user-invite-already-accepted": "Invitation has already been accepted",
+  "user-invite-already-sent": "Invite has already been sent",
+  "file-status-update-failed": "Can't set the status '{{status}}' for already uploaded file",
+  "file-not-found": "File with id {{id}} not found",
+  "file-not-completely-uploaded-status-update-failed": "Can't set the status {{status}} for file that is not completely uploaded",
+  "token": "token",
+  "password": "password",
+  "new-password": "newPassword",
+  "email": "Email address",
+  "provider-id": "providerId",
+  "provider-user-id": "providerUserId",
+  "first-name": "First Name",
+  "last-name": "Last Name",
+  "avatar": "avatar",
+  "timezone": "Timezone",
+  "locale": "Locale",
+  "event-type": "eventType",
+  "consumer": "consumer",
+  "parameters": "parameters",
+  "order": "order",
+  "sort": "sort",
+  "key": "key",
+  "value": "value",
+  "search": "search",
+  "filter": "filter",
+  "api": "api",
+  "id": "id",
+  "file-name": "File Name",
+  "file-size": "fileSize",
+  "file-type": "fileType",
+  "custom-meta-data": "customMetaData",
+  "path": "path",
+  "user-login-history-id": "userLoginHistoryId",
+  "avatar-image-identifier": "avatarImageIdentifier",
+  "phone": "phone",
+  "roq-identifier": "roqIdentifier",
+  "opted-in": "optedIn",
+  "sync": "sync",
+  "user-id": "User ID",
+  "ip": "ip",
+  "host": "host",
+  "timestamp": "timestamp",
+  "subscribe-to-mail": "subscribeToMail",
+  "data": "data",
+  "ids": "ids",
+  "message-id": "messageId",
+  "conversation-user-id": "conversationUserId",
+  "title": "title",
+  "is-group": "isGroup",
+  "archived": "archived",
+  "owner-id": "ownerId",
+  "owner-ids": "ownerIds",
+  "member-ids": "memberIds",
+  "conversation-id": "conversationId",
+  "message-status-id": "messageStatusId",
+  "body": "body",
+  "author-id": "authorId",
+  "read": "read",
+  "notified": "notified",
+  "user-ids": "userIds",
+  "time-range": "timeRange",
+  "first-message": "firstMessage",
+  "find-or-create": "findOrCreate",
+  "conversation": "conversation",
+  "include-archived": "includeArchived",
+  "limit": "limit",
+  "offset": "offset",
+  "full-name": "fullName",
+  "initials": "initials",
+  "members": "members",
+  "total-count": "totalCount",
+  "owner": "Owner",
+  "users": "Users",
+  "created-at": "Created At",
+  "updated-at": "updatedAt",
+  "unread-count": "unreadCount",
+  "last-message": "lastMessage",
+  "last-message-timestamp": "lastMessageTimestamp",
+  "mentioned-ids": "mentionedIds",
+  "read-by": "readBy",
+  "last-timestamp": "lastTimestamp",
+  "message-ids": "messageIds",
+  "member-id": "memberId",
+  "is-online": "isOnline",
+  "translation-key-id": "translation-key-id",
+  "locales": "locales",
+  "translation-id": "translation-id",
+  "content": "content",
+  "entity-uuid": "entityUUID",
+  "entity-type": "entityType",
+  "meta-obj": "metaObj",
+  "name": "Name",
+  "object": "object",
+  "start-date": "startDate",
+  "end-date": "endDate",
+  "count": "count",
+  "api-key": "apiKey",
+  "api-secret": "apiSecret",
+  "access-token": "accessToken",
+  "to": "to",
+  "subject": "subject",
+  "mail-type": "mailType",
+  "entity-id": "entityId",
+  "directly-injected-variables": "directlyInjectedVariables",
+  "description": "description",
+  "template-id": "templateId",
+  "payload": "payload",
+  "notification-type-id": "notificationTypeId",
+  "notification-user-id": "notificationUserId",
+  "notifying-users": "notifyingUsers",
+  "meta": "meta",
+  "link": "link",
+  "notification-type-channel-id": "notificationTypeChannelId",
+  "type": "Type",
+  "sub-type": "subType",
+  "default-enabled": "defaultEnabled",
+  "enabled": "enabled",
+  "icon": "icon",
+  "default-active": "defaultActive",
+  "active": "active",
+  "document-owner-id": "documentOwnerId",
+  "status": {
+    "active": "Active",
+    "inactive": "Inactive"
+  },
+  "size": "Size",
+  "content-type": "contentType",
+  "expires-at": "expiresAt",
+  "file-max-size": "fileMaxSize",
+  "action": "Action",
+  "session-id": "sessionId",
+  "config": "config",
+  "user-provider-id": "userProviderId",
+  "user-invite-id": "userInviteId",
+  "user-token-id": "userTokenId",
+  "provider-identifier": "providerIdentifier",
+  "provider-user-identifier": "providerUserIdentifier",
+  "keepLoggedIn": "keepLoggedIn",
+  "valid-till": "validTill",
+  "user-email-already-exists": "The user with current email exists",
+  "user-incorrect-email-password": "The email/password you entered are not correct",
+  "user-invalid-token": "Token is not valid",
+  "invalid-user-password": "Invalid password",
+  "user-not-confirmed": "User is not confirmed",
+  "user-email-not-provided": "No email provided",
+  "user-invalid-current-password": "Invalid current password",
+  "invalid-api-key": "Invalid api key",
+  "default-locale-undefined": "Default locale {{defaultLocale}} undefined",
+  "user-login-history-not-found": "UserLoginHistory with id {{id}} not found",
+  "user-max-allowed": "Only {{maxAllowed}} can be invited at once",
+  "unauthorized-exception": "{{message}}",
+  "json-type-exception": "json-type-exception",
+  "internal-server-error": "Internal server error",
+  "generic-user-creation-failed": "ROQ Platform Gateway is currently unavailable. Action: Create User",
+  "generic-user-invite-acceptance-failed": "ROQ Platform  is currently unavailable. Action: Accept User Invite",
+  "generic-user-invite-creation-failed": "ROQ Platform Gateway is currently unavailable. Action: Create User Invite",
+  "generic-user-providers-deletion-failed": "ROQ Platform Gateway is currently unavailable. Action: Delete User Providers",
+  "generic-user-providers-fetching-failed": "ROQ Platform Gateway is currently unavailable. Action: Get User Providers",
+  "generic-user-refresh-token-creation-failed": "Response from ROQ Platform Gateway is currently unavailable. Action: Create User Refresh Token",
+  "generic-user-refresh-token-rotation-failed": "ROQ Platform Gateway is currently unavailable. Action: Rotate Refresh Token",
+  "generic-user-refresh-token-verification-failed": "ROQ Platform Gateway is currently unavailable. Action: Verify User Refresh Token",
+  "generic-user-reset-password-token-fetching-failed": "ROQ Platform Gateway is currently unavailable. Action: Reset Password Token",
+  "generic-user-token-deletion-failed": "ROQ Platform Gateway is currently unavailable. Action: Delete User Token",
+  "generic-user-validate-email-token-creation-failed": "ROQ Platform Gateway is currently unavailable. Action: Create User Validate Email Token",
+  "generic-user-invite-cancellation-failed": "ROQ Platform Gateway is currently unavailable. Action: Cancel User Invite",
+  "generic-valid-user-token-fetching-failed": "ROQ Platform Gateway is currently unavailable. Action: Get Valid User Token",
+  "generic-user-invite-fetching-failed": "ROQ Platform Gateway is currently unavailable. Action: Get User Invite",
+  "generic-user-invite-refresh-failed": "ROQ Platform Gateway is currently unavailable. Action: Refresh User Invite",
+  "graphql-validation-failed": "Invalid Input",
+  "invalid-uuid": "Provided argument should have been a valid uuid",
+  "generic-file-creation-failed": "ROQ Platform Gateway is currently unavailable. Action: Create File",
+  "generic-file-fetching-failed": "ROQ Platform Gateway is currently unavailable. Action: Get File",
+  "generic-file-updation-failed": "ROQ Platform Gateway is currently unavailable. Action: Update File Status",
+  "generic-health-check-failed": "ROQ Platform Gateway is currently unavailable. Action: {{service}} Health Check",
+  "generic-platform-creation-failed": "ROQ Platform Gateway is currently unavailable. Action: Create Platform Token",
+  "unauthorized": "Unauthorized",
+  "unique-constraint-violated": "This request is invalid as it violates an unique constraint",
+  "notification-mail-history-not-found": "NotificationMailHistory with id {{id}} not found",
+  "notification-sms-history-not-found": "NotificationSmsHistory with id {{id}} not found",
+  "notification-type-category-not-found": "NotificationTypeCategory with id {{id}} not found",
+  "notification-type-channel-mail-not-found": "NotificationTypeChannelMail with id {{id}} not found",
+  "notification-type-channel-sms-localized-not-found": "NotificationTypeChannelSmsLocalized with id {{id}} not found",
+  "notification-type-channel-sms-not-found": "NotificationTypeChannelSms with id {{id}} not found",
+  "notification-type-channel-web-localized-not-found": "NotificationTypeChannelWebLocalized with id {{id}} not found",
+  "notification-type-channel-web-not-found": "NotificationTypeChannelWeb with id {{id}} not found",
+  "notification-type-user-preference-not-found": "NotificationTypeUserPreference with id {{id}} not found",
+  "notification-type-with-given-key-not-found": "Notification Type with key {{key}} not found.",
+  "notification-in-app-not-found": "notification-in-app-not-found",
+  "file-association-not-found": "FileAssociation with id {{id}} not found",
+  "file-category-with-given-key-not-found": "FileCategory with key {{fileCategory}} not found",
+  "file-category-not-found": "FileCategory with id {{id}} not found",
+  "file-category-content-type-not-found": "FileCategoryContentType with id {{id}} not found",
+  "invalid-content-type-for-file-category": "File type {{extension}} is not a valid file type for {{fileCategoryName}}",
+  "file": {
+    "public": "Public",
+    "private": "Private",
+    "edit": {
+      "validations": {
+        "name": {
+          "required": "File name is required",
+          "max-length-exceeded": "File name cannot be more than {{characters}} characters long",
+          "invalid-name": "File name is not valid"
+        }
+      },
+      "success": "File updated successfully",
+      "title": "Editing file",
+      "name-field-label": "File name"
+    },
+    "make-file-public-title": "Make file public",
+    "make-file-private-title": "Make file private",
+    "make-file-public-message": "Are you sure you want to make public the following file: {{fileName}}",
+    "make-file-private-message": "Are you sure you want to make private the following file: {{fileName}}",
+    "make-file-public": "Make public",
+    "make-file-private": "Make private",
+    "made-private-successfully": "{{fileName}} is made private",
+    "made-public-successfully": "{{fileName}} is public now. URL is copied to your clipboard",
+    "copy-url-link": "File url has been copied to clipboard",
+    "edit-subtitle": "Provide below requested information",
+    "extension": "Extension",
+    "copy-file-public-link": "Copy URL"
+  },
+  "message-center": {
+    "new-conversation": {
+      "groupChat": "Group chat",
+      "chat": "Chat",
+      "cancelBtnTitle": "Cancel"
+    }
+  },
+  "generic-network-offline": "Please check your internet connection first",
+  "forbidden": "You don't have permissions to do this. Please make sure that you have these permission(s): {{resourceId}}",
+  "powered-by": "Powered By",
+  "payment-dashboard": {
+    "layout": {
+      "payment": "Payment",
+      "account": "Account"
+    },
+    "payment-pending": "Payment pending",
+    "debtor-verification": "Debtor in verification",
+    "debtor-denied": "Debtor could not be verified - Contact support",
+    "payment-complete-request": "Complete payment request now",
+    "payment-denied": "Payment denied - Contact support",
+    "bank-account": "Please check your bank account.",
+    "debtor-verified": "Debtor verified - Request payment now",
+    "empty-record": {
+      "title": " No payment requests",
+      "sub-title": "To see something here, request your first direct payment through truckOS pay."
+    },
+    "open": {
+      "name": "open"
+    },
+    "status-alert": "The debtor could not be verified. Please",
+    "status-alert-contact": "contact support.",
+    "search-label": "Customer name",
+    "payment-btn-text": "Request new payment",
+    "received": {
+      "name": "Received"
+    },
+    "delivered": "Delivered on",
+    "contact-modal": {
+      "title": "Please check your bank account for an accidental double payment",
+      "title-v2": "Something went wrong. Please contact us for assistance",
+      "description": "The truckOS carrier hotline is available for you 24/7."
+    },
+    "title": "Payment Dashboard"
+  },
+  "toggle-theme": "Light/Dark mode",
+  "messages": "Messages",
+  "notification": "Notifications",
+  "account": "Account",
+  "profile": "Profile",
+  "settings": "Settings",
+  "log-out": "Log out",
+  "title_home": "ROQ One Dashboard",
+  "title_files": "Files",
+  "title_users": "Users",
+  "title_settings": "Settings",
+  "title_example": "Example",
+  "copyright-footer": "ROQ TECHNOLOGY 2022",
+  "submit": "submit",
+  "cancel": "Cancel",
+  "action-overlay": {
+    "close-confirmation-modal": {
+      "title": "action-overlay.close-confirmation-modal.title",
+      "message": "action-overlay.close-confirmation-modal.message",
+      "cancel": "action-overlay.close-confirmation-modal.cancel",
+      "confirm": "action-overlay.close-confirmation-modal.confirm"
+    }
+  },
+  "social-login": {
+    "google": "sign in with Google",
+    "linkedin": "sign in with LinkedIn",
+    "apple": "sign in with Apple"
+  },
+  "input": {
+    "password": {
+      "placeholder": "Password",
+      "validation": {
+        "required": "Password is a required field",
+        "char-limit": "Have between 8 and 64 characters",
+        "upper-char-required": "Contain at least 1 upper-case letter",
+        "number-required": "Contain at least 1 number",
+        "special-char-required": "Contain at least 1 special character"
+      }
+    },
+    "confirm-new-password": {
+      "validation": {
+        "required": "Confirm password is a required field",
+        "mismatch": "Passwords do not match"
+      },
+      "placeholder": "Repeat new password"
+    },
+    "message": {
+      "placeholder": "Insert your message here"
+    },
+    "group-title": {
+      "placeholder": "Group name"
+    },
+    "conversation-name": {
+      "validation": {
+        "required": "title is a required field"
+      }
+    },
+    "set-password": {
+      "placeholder": "New password"
+    },
+    "confirm-password": {
+      "placeholder": "Repeat new password"
+    },
+    "new-password": {
+      "placeholder": "New password"
+    },
+    "city": {
+      "name": "City"
+    },
+    "country": {
+      "name": "Country"
+    },
+    "email": {
+      "validation": {
+        "type": "Please enter a valid E-mail",
+        "required": "E-Mail is a required field",
+        "unique": "Email should be unique"
+      },
+      "name": "Email",
+      "placeholder": "Email"
+    },
+    "keepMeLoggedIn": "Keep me logged in",
+    "first-name": {
+      "validation": {
+        "required": "first name is a required field"
+      },
+      "name": "First Name",
+      "placeholder": "Enter first name"
+    },
+    "last-name": {
+      "validation": {
+        "required": "last name is a required field"
+      },
+      "name": "Last Name",
+      "placeholder": "Enter last name"
+    },
+    "phone": {
+      "name": "Phone"
+    },
+    "company": {
+      "name": "Company"
+    },
+    "position": {
+      "name": "Position"
+    },
+    "street_address": {
+      "name": "Street Address"
+    },
+    "zip_code": {
+      "name": "Zip Code"
+    },
+    "house_number": {
+      "name": "House Number"
+    },
+    "current-password": {
+      "placeholder": "Enter current password"
+    },
+    "locale": {
+      "validation": {
+        "required": "Locale is required"
+      }
+    }
+  },
+  "password-validation-base-text": "Your password must:",
+  "already-registered": "Already have an account?",
+  "not-registered-yet": "Don't have an account yet?",
+  "go-to-login": "back to sign in",
+  "go-to-registration": "create account",
+  "title_message-center": "Message center",
+  "title_profile": "User profile",
+  "title_invites": "Invites",
+  "confirmation-modal": {
+    "message": {
+      "default": "confirmation-modal.message.default"
+    },
+    "buttons": {
+      "cancel": {
+        "text": "confirmation-modal.buttons.cancel.text"
+      },
+      "confirm": {
+        "text": "confirmation-modal.buttons.confirm.text"
+      }
+    }
+  },
+  "invoice-creation": {
+    "exist-payment-modal": {
+      "title": "Exit payment request?",
+      "confirmation-message": "Are you sure you want to exit this payment request?",
+      "confirm-btn-text": "Yes",
+      "cancel-btn-text": "No"
+    },
+    "validation": {
+      "company-name-error": {
+        "required": "Company Name is required"
+      },
+      "vat-number-error": {
+        "required": "VAT Number is required"
+      },
+      "commercial-register-number-error": {
+        "required": "Commercial Register Number is required"
+      },
+      "commercial-register-error": {
+        "type": "This should be in the form of RA000123",
+        "required": "Registration Authority is required"
+      },
+      "legalform-error": {
+        "required": "Legal Form is required"
+      },
+      "validated-error": {
+        "required": "Validated is required"
+      },
+      "city-error": {
+        "required": "City is required"
+      },
+      "postalcode-error": {
+        "type": "Please enter a valid Postal code",
+        "required": "Postal Code is required"
+      },
+      "street-number-error": {
+        "required": "Street, Number is required"
+      },
+      "country-error": {
+        "required": "Country Name is required"
+      },
+      "contact-name-error": {
+        "required": "Contact Name is required"
+      },
+      "number-not-allowed-error": "Numbers are not allowed",
+      "phone-number-error": {
+        "type": "Please enter a valid telephone number",
+        "required": "Telephone Number is required"
+      },
+      "contact-email-error": {
+        "type": "Please enter a valid email address",
+        "required": "Contact Email is required"
+      },
+      "invoice-number-error": {
+        "minimum": "Invoice number must be at least 8 characters",
+        "type": "Invoice number must be in format of R1234567",
+        "required": "Invoice number is required"
+      },
+      "delivery-date-error": {
+        "maximum": "Delivery date cannot be in the future",
+        "type": "Invalid date",
+        "required": "Delivery date is required"
+      },
+      "invoice-date-error": {
+        "maximum": "Invoice date cannot be greater than current date",
+        "type": "Invalid date",
+        "required": "Invoice date is required"
+      },
+      "applicable-law-error": {
+        "required": "Applicable law is required"
+      },
+      "payment-term-error": {
+        "minimum": "Payment term should be more than 11 days",
+        "type": "Payment term must be a number",
+        "required": "Payment term is required"
+      },
+      "invoice-amount-error": {
+        "positive": "Negative or Zero invoice amount should not be accepted",
+        "type": "Invoice amount must be a number",
+        "required": "Invoice amount is required"
+      }
+    },
+    "stepper1": {
+      "title": "Type in customer information",
+      "steptitle": "Customer information"
+    },
+    "stepper2": {
+      "title": "Type in payment details",
+      "steptitle": "Payment details"
+    },
+    "stepper3": {
+      "title-v1": "Upload your invoice and POD",
+      "title-v2": "Last Check",
+      "steptitle": "Upload documents"
+    },
+    "customer-name": "Customer Company Name",
+    "legal-form": "Legal Form",
+    "commercial-register": {
+      "label": "Registration Authority",
+      "validation-text": "This Commercial Register number already exists. Please choose an existing debtor in Customer Name"
+    },
+    "commercial-register-number": "Commercial Register Number",
+    "commercial-register-number-error-text1": "This should be in the form of HRA162344 or HRB162344 or GnR162344 or PR162344 and VR162344.",
+    "vat-id": "VAT ID",
+    "vat-number-error-msg1": "VAT Number must be in format: DE123456789",
+    "street-and-number": "Street, Number",
+    "address-addon": "Address Addon",
+    "postal-code": "Postcode",
+    "postal-code-error-text1": "Please enter valid postal code",
+    "representative-name": "Contact Name (Bookkeeping)",
+    "representative-email": "Contact Email (Bookkeeping)",
+    "representative-phone-number": "Telephone (Bookkeeping)",
+    "debtor-model": {
+      "title": "Create new debtor",
+      "confirmation-message": "Are you sure you want to create a new Debtor? Please check our existing debtor database first",
+      "confirm-btn-text": "Confirm",
+      "cancel-btn-text": "Cancel"
+    },
+    "not-proceed-modal": {
+      "title": "Virtual IBAN is required.",
+      "message1": "We cannot proceed with your payment if your invoice doesn't include your personal virtual IBAN.",
+      "message2": "To find your personal virtual IBAN go to Account -> Account & company details -> Invoice information",
+      "confirm-btn-text": "Close",
+      "cancel-btn-text": "No"
+    },
+    "invoice-number": "Invoice number",
+    "invoice-number-exist": "This Invoice number already exists.",
+    "delivery-date": "Delivery date",
+    "invoice-date": "Invoice date",
+    "applicable-law": "Applicable law",
+    "applicablelaw": {
+      "validation-msg1": "Country name and applicable law must be the same"
+    },
+    "payment-term": {
+      "input-suffix": " Days",
+      "label": "Payment term",
+      "placeholder": "Number days",
+      "validation-text1": "The payment due date should be at least 11 days from now. Based on your invoice date, and payment terms,",
+      "validation-text2": "it is less than current date",
+      "validation-text3": "it is",
+      "validation-text4": "days"
+    },
+    "invoice-amount": "Invoice amount",
+    "title": "TruckOS Pay",
+    "update-invoice-modal": {
+      "title": "Update Invoice",
+      "message1": "In order to proceed with your payment your invoice must include your personal virtual IBAN.",
+      "message2": "Do you have your invoice with your personal virtual IBAN?",
+      "confirm-btn-text": "Yes",
+      "cancel-btn-text": "No"
+    },
+    "invoice-document-title": "Invoice",
+    "invoice-document-subtitle-success": "Successfully Uploaded",
+    "invoice-document-subtitle": "Upload existing invoice (PDF)",
+    "upload-document-tooltip-text1": "During the Signup process, you received a virtual IBAN from our partner Walbing that needs to be included on your invoice. Your customer needs to pay the invoice amount to this virtual IBAN so Walbing can easily assign the payment to your account.",
+    "upload-document": {
+      "iban-title": "Your invoice needs to include the following statement:",
+      "iban-description": "Payments with debt-discharging effect can only be made to the following bank account:",
+      "recipient-name": "Recipient",
+      "virtualiban": "IBAN",
+      "virtualbic": "BIC"
+    },
+    "pod-document-title": "Proof of delivery",
+    "pod-document-subtitle-success": "Successfully Uploaded",
+    "pod-document-subtitle": "Upload POD (PDF)",
+    "order-btn-text2": "Upload Invoice to proceed",
+    "order-btn-text3": "Upload POD to proceed",
+    "notice-reminder-title": "Notice of assignment",
+    "kyc-modal": {
+      "title": "Proceed to KYC",
+      "confirmation-message": "To use truckOS pay, please complete an initial verification - you will only have to do this once",
+      "confirm-btn-text": "Proceed",
+      "cancel-btn-text": "Cancel"
+    }
+  },
+  "link-text": {
+    "imprint": "Imprint",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Notice",
+    "data-preference": "Data Preferences",
+    "change-avatar": "Change Avatar",
+    "save-avatar": "Save Avatar"
+  },
+  "no-records-to-display": "No records to display",
+  "pagination": {
+    "first": "First Page",
+    "previous": "Previous Page",
+    "next": "Next Page",
+    "last": "Last Page",
+    "displayed-rows-range": "{from}-{to} of {count}",
+    "rows-per-page": "Rows per page:"
+  },
+  "rows": "Rows",
+  "i18nKey": "i18nKey",
+  "each": "each",
+  "author": {
+    "title-plural": "Authors",
+    "add": "Add Author",
+    "id": "Author ID",
+    "name": "Name",
+    "surname": "Surname",
+    "age": "Age",
+    "birthDate": "Birth Date",
+    "email": "Email",
+    "address": "Address",
+    "gender": "Gender",
+    "actions": "Actions"
+  },
+  "book": {
+    "title-plural": "Books",
+    "add": "Add Book",
+    "id": "Book Id",
+    "title": "Title",
+    "description": "Description",
+    "price": "Price ($)",
+    "author": "Author",
+    "publishingDate": "Publishing Date",
+    "published": "Published?",
+    "outOfStock": "Out of Stock?",
+    "actions": "Actions"
+  },
+  "file-uploader": {
+    "errors": {
+      "file-invalid-type": "File type not supported!",
+      "too-many-files": "Files limit exceeded!",
+      "file-too-large": "File size is too large!"
+    }
+  },
+  "drop-uploads-cta": "Drop your files here",
+  "password_unmask": "Show Password",
+  "password_mask": "Hide Password",
+  "languages": {
+    "full_en-US": "English (USA)",
+    "full_de-DE": "German",
+    "full": "languages.full",
+    "short_en-US": "EN (US)",
+    "short_de-DE": "DE",
+    "short": "languages.short"
+  },
+  "remove-members-screen-title": "Remove users from the group",
+  "add-members-screen-title": "Add users to the group",
+  "remove": "Remove",
+  "add": "Add",
+  "select-one-warning": "You can’t remove all users from the conversation. Please select at least 1 user.",
+  "conversation-menu": {
+    "rename-group": "Rename group",
+    "archive-group": "Archive group",
+    "leave-group": "Leave group",
+    "add-user": "Add user",
+    "remove-user": "Remove user"
+  },
+  "no-conversation-selected-message": "Break the ice and start a conversation",
+  "choose-recipient-title": "With whom would you like to start a conversation?",
+  "message-menu": {
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+  "chat-title": "Messages",
+  "create-new": "New message",
+  "new": "New",
+  "message": {
+    "deleted": "This message was removed by sender",
+    "edited": "This message was edited"
+  },
+  "conversation-beginning-message": "Break the ice and start a conversation",
+  "notification-type-category": "notification-type-category",
+  "notification-type_user-info": "Newly joined users",
+  "notification-type_files-new": "Newly uploaded files",
+  "notification-type_chat-new": "New chat message",
+  "notification-type-category_onboarding": "Onboarding",
+  "notification-type-category_files": "Files",
+  "notification-type-category_chat": "Chat",
+  "notification-preferences-title": "Notifications",
+  "notification-type": "notification-type",
+  "roq-notification-text": "ROQ One",
+  "email-notification-text": "E-mail",
+  "settings-update-success": "Settings successfully updated",
+  "notification_mark-as-unread": "Mark as unread",
+  "notification_mark-as-read": "Mark as read",
+  "notification-headline_recent": "Recent",
+  "notification-headline_older": "Older",
+  "notification-toggle-all": "All",
+  "notification-toggle-unread": "Unread",
+  "notification_mark-all-as-read": "Mark all as read",
+  "notification-headline_groupName": "notification-headline_groupName",
+  "no-new-notifications": "There are no notifications at the moment.",
+  "notification-show-more": "Show more",
+  "invitation-status_pending": "Pending",
+  "invitation-status_accepted": "Accepted",
+  "invitation-status_expired": "Expired",
+  "invitation-status_canceled": "Cancelled",
+  "inactive": "inactive",
+  "invited": "invited",
+  "roq-accept-invite": "ROQ Accept Invite",
+  "accept-invite-heading": "You’re invited to join a team!",
+  "accept-invite-subheading": "You are invited to join ROQ One Portal. Please set a password.",
+  "invalid-link-text": "Invitation is no longer valid",
+  "expired-invitation-text": "Your invitation has expired. Please contact your point of contact",
+  "invite-accepted-text": "Invite accepted successfully",
+  "accept-invite-cta": "Join",
+  "roq-account-activate-provider-link": "ROQ - Account Activate Provider Link",
+  "confirm-account-provider-link": "Confirm provider link to account",
+  "provider-linked-account-verified": "Provider link to account verified",
+  "sign-in": "Login",
+  "activate-roq-account": "ROQ - Account activate",
+  "confirm-account": "Confirm Account",
+  "email-confirmation-error": "Your email confirmation link is invalid or already expired",
+  "account-verified": "Account verified",
+  "company-register": {
+    "step8": {
+      "title": "Verification pending...",
+      "description3": "Please wait while our team is processing your information.",
+      "description1": "Your information has been submitted successfully!",
+      "description4": "We will notify you once your account has been verified for truckOS pay.",
+      "description2": "Please check your e-mail and complete the ID verification process to finish your truckOS pay setup."
+    },
+    "stepper1": {
+      "subtitle": "Type in business data information",
+      "title": "Business data"
+    },
+    "stepper2": {
+      "subtitle": "Type in Legal representatives details",
+      "title": "Legal representatives"
+    },
+    "stepper3": {
+      "subtitle": "Type in Beneficial owners details",
+      "title": "Beneficial owners"
+    },
+    "stepper4": {
+      "subtitle": "Verification step",
+      "title": "Verification"
+    },
+    "back-btn": "Back",
+    "submit": {
+      "next": "Next",
+      "payment-proceed": "Proceed to payment data",
+      "finish-payment": "Finish payment data",
+      "text": "Submit"
+    },
+    "file-type-error": "Please upload your document as a pdf.",
+    "step2": {
+      "document-uploader-sub-title-success": "Successfully Uploaded",
+      "title": "Upload your business license so we can quickly check it",
+      "document-uploader-title": "Business license (PDF)",
+      "document-uploader-sub-title": "Upload document (PDF)"
+    },
+    "account-user-limit-modal": {
+      "title": "Representative Minimum",
+      "text": "Add at least two representatives as your company has joint representation",
+      "btn-text": "Confirm"
+    },
+    "step7": {
+      "description1": "Click ‘submit’ to send your information to our factoring partner Walbing.",
+      "description2": "We will check the documents right away and let you know when we’re done.",
+      "description3": "In the meantime, please check your email. We sent you an email with a link for a quick ID verification.",
+      "title2": "Verification",
+      "title": "Submit your information",
+      "paragraph1": "Dear",
+      "paragraph2": "Thank you for entering your company data.",
+      "paragraph3": "What are the next steps?",
+      "paragraph4": "1. You will receive an email from our partner Walbing with a link to our video identification. For this you will need:",
+      "paragraph5": "A computer, a tablet or smartphone with camera and microphone as well as a current browser",
+      "paragraph6": "Your valid identity card or passport",
+      "paragraph7": "The verification doesn’t take longer than 5 minutes and can be done anytime and anywhere",
+      "paragraph8": "2. We will then fully verify and set up your account. This takes less than 2 hours normally, we will let you know as soon as it is done.",
+      "paragraph9": "3. After your account is fully set up, you will get an email from our partner Walbing explaining the text snippet you need to put on your invoices to use our services.",
+      "paragraph10": "For any questions, please do not hesitate to contact us."
+    },
+    "step6": {
+      "account-user": {
+        "title": "Beneficial owner {{index}}",
+        "btn-text": "Confirm information",
+        "add-btn-text": "Add Beneficial Owner"
+      },
+      "title": "Beneficial owners",
+      "description1": "The benefical owners of your company include any natural person who",
+      "description2": "(1) directly or indirectly holds more than 25% of the capital shares directly or indirectly controls more than 25% of the voting rights at any inital level of participation, or",
+      "description3": "(2) indirectly exercises control over more than 25% of the capital or voting rights from a higher level of ownership (Section 3 GwG). Indirect control is to be understood in particular in terms of controlling influence in accordance with Section 290 HGB (including majority of voting rights)"
+    },
+    "step5": {
+      "delete-modal-title": "Delete Representative",
+      "delete-modal-description": "Are you sure you want to delete this representative? All entered information will be lost.",
+      "account-user": {
+        "title": "Representative {{index}}",
+        "btn-text": "Confirm information",
+        "add-btn-text": "Add Representative"
+      },
+      "title": "Legal representatives",
+      "subtitle": " Please name one representative if they have sole power of representation or list up to three more if they are only authorized to act together with other legal representatives.",
+      "tooltip-text-v2": "You cannot have more than one representative if your company has sole power of representation. Go back to change to joint power, if applicable.",
+      "tooltip-text": "A fifth representative cannot be added",
+      "delete-modal-confirm-text": "Delete",
+      "delete-modal-cancel-text": "Back"
+    },
+    "account-user": {
+      "birthplace": "Place of Birth",
+      "nationality": "Nationality",
+      "street": "Street",
+      "house-number": "House number",
+      "postcode": "Postcode",
+      "city": "City",
+      "country": "Country",
+      "language": "Language",
+      "first-name": "First Name",
+      "last-name": "Last Name",
+      "email": "E-Mail",
+      "birthday": "Date of birth (DD/MM/YYYY)",
+      "birthday1": "Date of birth",
+      "gender": "Gender",
+      "male": "Male",
+      "female": "Female"
+    },
+    "step3": {
+      "checkbox-label-1": "By placing a tick mark, you allow direct debit authorization for fees",
+      "checkbox-label-3": "You declare that you have read the Privacy Policy and the Cookie Policy and agree to these as authorized representative.",
+      "checkbox-label-4": "You declare that, as an authorized representative of your company, you agree that Walbing may collect data from credit reporting agencies for the purpose of fulfilling its obligations under anti-money-laundering law and share this data, as well as the relevant information provided by your company on a later stage, with the marketplace participants.",
+      "title": "We need your bank account details in order to pay you faster",
+      "iban": "IBAN",
+      "bic": "BIC"
+    },
+    "step1": {
+      "title": "We need your business data in order to provide our services",
+      "company-name": "Company Name",
+      "postal-code": "Postcode",
+      "street-and-number": "Street, Number",
+      "address-addon": "Address Addon",
+      "legal-form": "Legal Form",
+      "registration-authority": "Registration Authority",
+      "registration-number": "Commercial Register Number",
+      "vat-id": "VAT ID"
+    },
+    "step4": {
+      "title": "Legal representatives",
+      "subtitle": "Using Walbing requires the consent of a legal representative of your company. You as well as all other named representatives will have to do a video confirmation.",
+      "question1": {
+        "title": "Are you a legal representative?*",
+        "description": "*Are you a legal representative of your company, as stated in the company’s article of association? You do not have to be in order to complete this registration.",
+        "option1": "Yes",
+        "option2": "No"
+      },
+      "question2": {
+        "title": "Do you have sole power of representation?*",
+        "description": "*Does your company have sole power of representation or do legal representatives only act together with other legal representatives?",
+        "option1": "Sole power",
+        "option2": "Joint power"
+      }
+    }
+  },
+  "account-pending": {
+    "description-one": "Please wait while we verify your information. This should not take longer than a few hours.",
+    "description-two": "Make sure that you check your email and completed the ID verification.Once verified, we will notify you that you are ready for truckOS pay!",
+    "question": "Questions? Give us a call.",
+    "back-btn": "Back"
+  },
+  "account-settings": {
+    "section1": {
+      "label": "Account & company details"
+    },
+    "section2": {
+      "label": "Language"
+    },
+    "company-details": {
+      "company-name": "Company Name",
+      "legal-form": "Legal Form",
+      "address": "Address",
+      "registration-authority": "Registration Authority",
+      "registration-number": "Commercial Register Number",
+      "iban": "IBAN",
+      "bic": "BIC",
+      "recipient": "Recipient",
+      "virtualiban": "IBAN",
+      "virtualbic": "BIC",
+      "verification-status": "Verification Status",
+      "name": "Name",
+      "email": "E-Mail",
+      "birth-date": "Birth date",
+      "accordian6": {
+        "title": "Invoice information"
+      },
+      "invoice-description1": "Please include the following statement to your invoices:",
+      "invoice-description2": "Payments with debt-discharging effect can only be made to the following bank account:",
+      "invoice-description3": "This is your vitual IBAN and BIC",
+      "accordian2": {
+        "title": "Bank account information"
+      },
+      "iban-description": "Please include your virtual IBAN in your invoices, which you can find below in “Invoice information”.",
+      "iban-description1": "To change your bank info, please contact truckOS support",
+      "iban-contact-link": "contact truckOS support",
+      "please": "Please",
+      "please-kyc-process": "complete the KYC",
+      "iban-number-instruction": "process in order to get your personal Virtual IBAN. To change your bank info, please",
+      "title": "Account & company details",
+      "description1": "To change your business data, please contact truckOS support.",
+      "accordian1": {
+        "title": "Business Information"
+      },
+      "accordian3": {
+        "title": "Verification status (Required for truckOS pay)"
+      },
+      "accordian4": {
+        "title": "Legal representatives",
+        "sub-title": "Sole legal representation",
+        "sub-title1": "Joint representation"
+      },
+      "accordian5": {
+        "title": "Beneficial owners",
+        "sub-title": "Beneficial owner"
+      }
+    },
+    "not-available": "Not available",
+    "contact-modal": {
+      "title": "Something went wrong. Please contact us for assistance",
+      "description": "The truckOS carrier hotline is available for you 24/7."
+    },
+    "title": "Your account",
+    "section3": {
+      "label": "Contact TruckOS"
+    },
+    "section4": {
+      "label": "Log out"
+    },
+    "account-verified": {
+      "text1": "Account verified for truckOS pay",
+      "text2": "Account not verified",
+      "text3": "Complete KYC"
+    },
+    "terms-condition-message": "To change your business data, please contact truckOS support.",
+    "language": "Language",
+    "choose-language": " Choose language"
+  },
+  "terms-conditions": "Terms and Conditions",
+  "phone-number": "Phone Number",
+  "virtual-iban": {
+    "name": "Virtual IBAN",
+    "question": "Did you make sure to include the following statement with your personal virtual IBAN on your invoice?"
+  },
+  "author-create": {
+    "errors": {
+      "name": "Name is required",
+      "maxChar": "Maximum 50 characters allowed",
+      "ages": "author-create.errors.ages",
+      "birthDate": "Invalid Date",
+      "email": "Invalid Email Address",
+      "zipCode": "ZipCode must be of 5 digits",
+      "age": "Age can not be less than 0"
+    },
+    "gender": {
+      "male": "Male",
+      "female": "Female",
+      "other": "Others",
+      "label": "Gender"
+    },
+    "title": "Create Author",
+    "created-successfully-alert": "Author has been created successfully",
+    "name": "Name",
+    "surname": "Surname",
+    "age": "Age",
+    "birthDate": "Birth Date",
+    "email": "Email",
+    "address": {
+      "label": "Address",
+      "street": "Street Address",
+      "houseNumber": "House Number",
+      "zipCode": "Zip Code",
+      "city": "City",
+      "country": "Country"
+    },
+    "saveButton": "Save",
+    "cancelButton": "Cancel",
+    "update-title": "Update Author",
+    "updated-successfully-alert": "Author has been updated successfully"
+  },
+  "book-create": {
+    "errors": {
+      "title": "Title is required",
+      "maxChar": "Maximum 50 characters allowed",
+      "price": "Price must be greater than 0",
+      "publishingDate": "Invalid Date",
+      "authorId": "Author is required",
+      "files": {
+        "min": "Atleast one file is required",
+        "max": "No more than 3 files are allowed"
+      }
+    },
+    "header": "Create Book",
+    "created-successfully-alert": "Book has been created successfully",
+    "title": "Title",
+    "authorId": "Author Id",
+    "description": "Description",
+    "price": "Price",
+    "publishingDate": "Publishing Date",
+    "published": {
+      "label": "Published",
+      "yes": "Yes"
+    },
+    "outOfStock": {
+      "label": "Out of Stock",
+      "yes": "Yes"
+    },
+    "fileUpload": "File Upload (pdf, png, and jpeg, Max 3)",
+    "saveButton": "Save",
+    "cancelButton": "Cancel",
+    "update-header": "Update Book",
+    "updated-successfully-alert": "Book has been updated successfully"
+  },
+  "confirm-transaction": {
+    "page-main-title": "Confirm Transaction",
+    "page-title": "TruckOS Pay",
+    "page-sub-title": "Please confirm the transaction",
+    "customer-data-question": "Is the customer data correct?",
+    "payment-term-title": "Payment terms",
+    "payment-term-received-date-heading": "You will receive your money latest on",
+    "payment-term-fee-heading": "All-Inclusive fee",
+    "tooltip1-description": "The debtor entered earlier is not yet known in our database, therefore we can only show the minimum amount you will receive. The all inclusive fee is calculated based on payment days and credit rating of your debtor.",
+    "tooltip2-description": "The all inclusive fee is calculated based on payment days and credit rating of your debtor",
+    "payment-term-received-heading": "You will receive",
+    "payment-term-btn-text": "Get Payment"
+  },
+  "please-wait": "Please wait...",
+  "upload-failure_upload-url-missing": "Missing required upload URL for cloud upload",
+  "upload-failure_upload-url-expired": "Signed URL expired already",
+  "upload-failure_missing-max-file-size": "Missing required maxFileSize for cloud upload",
+  "upload-failure_file-size-exceeds-max-file-size": "File upload failed. Maximum files size is {{maxFileSize}}MB. Please try a smaller file.",
+  "upload-failure_content-type-mismatch": "The content type does not match",
+  "upload-failure": "Upload Failed",
+  "files": {
+    "uploaded-successfully": "{{count}} file uploaded successfully",
+    "uploaded-successfully_plural": "{{count}} files uploaded successfully",
+    "retry-upload": "Retry Upload",
+    "cancel": "Cancel",
+    "delete-file-title": "Delete a file?",
+    "confirm_bulk_deletion": "Are you sure you want to delete {{length}} files?",
+    "confirm_deletion": "Are you sure you want to delete the following file: {{fileName}}",
+    "delete": "Delete",
+    "delete-file": "Delete",
+    "download-file": "Download",
+    "deleted_successfully_bulk": "Files deleted successfully",
+    "deleted_successfully": "{{fileName}} is deleted successfully"
+  },
+  "upload": {
+    "in-progress": "Uploading",
+    "success": {
+      "files": "Uploaded"
+    },
+    "failure": {
+      "avatar": "Avatar upload failed. Please select the file to upload first."
+    }
+  },
+  "save": "Save",
+  "title_edit-user-file": "Edit File {{id}}",
+  "no-files-to-display": "Drag files here or use the 'Upload File' button",
+  "upload-file-cta": "Upload File",
+  "reset-password": "Reset Password",
+  "reset-password-subheading": "In order to reset your password, please provide registered email address and follow instructions.",
+  "reset-requested": "Reset requested",
+  "reset-password-mail-sent-text": "If  <strong>{{email}}</strong> is registered, we've sent you an email to reset your password. Please follow the instructions in the email. ",
+  "resend-email-cta": "Resend Email",
+  "reset-password-mail-sent-failed": "Email wasn’t resent",
+  "reset-password-mail-sent-success": "Email was resent",
+  "send-instructions": "Send Instructions",
+  "user-authorization": {
+    "title": "User Authorization",
+    "summary": "Fast and secure user authorization and authentication for your application.",
+    "sub-feature_one": {
+      "description": "Registration, including double-opt-in and password reset."
+    },
+    "sub-feature_two": {
+      "description": "Registration with Single-sign-on (SSO) via Google, LinkedIn or Apple."
+    },
+    "sub-feature_three": {
+      "description": "User login and logout with or without Single-sign-on (SSO)."
+    }
+  },
+  "user-management": {
+    "title": "User Management",
+    "summary": "Manage your users and let them manage their profiles and settings complying with GDPR rules.",
+    "sub-feature_one": {
+      "description": "Invite and deactivate users."
+    },
+    "sub-feature_two": {
+      "description": "Explore user profile management, including Avatar upload and & Set New Password feature."
+    },
+    "sub-feature_three": {
+      "description": "Upload Avatar"
+    },
+    "sub-feature_four": {
+      "description": "Set new password"
+    }
+  },
+  "localization": {
+    "title": "Localization",
+    "summary": "Offer your users 1 or more languages in your application.",
+    "sub-feature_one": {
+      "description": "We support full translation of whole page content including errors with single click of the button. Click on the language switch between 🇺🇸 and 🇩🇪 in User Settings page."
+    },
+    "sub-feature_two": {
+      "description": "Date and time formats are also changing according to the selected locale."
+    }
+  },
+  "notifications": {
+    "title": "Notifications",
+    "summary": "Your users receive important notifications in-app or via email.",
+    "sub-feature_one": {
+      "description": "Explore in-app notifications about new files or registered users by clicking on bell 🔔 in the header."
+    },
+    "sub-feature_two": {
+      "description": "Explore email notifications about files or user activity by getting an email sent from the ROQ application."
+    },
+    "sub-feature_three": {
+      "description": "Fine-tune your notification preferences. Users can control which notifications they want to receive and via which channel (in-app or email) in the User Settings."
+    }
+  },
+  "file-management": {
+    "title": "File Management",
+    "summary": "Upload, download, delete any kind of file in your application including pdf, jpeg, txt.",
+    "sub-feature_one": {
+      "description": "Upload, download or delete single or multiple files via ROQ One. You might want to define allowed file types and upload size limits."
+    },
+    "sub-feature_two": {
+      "description": "Edit your file names, keep your files private or make them public."
+    },
+    "sub-feature_three": {
+      "description": "You files are safe and secure. We are using Google Cloud Storage to make it work!"
+    }
+  },
+  "chat": {
+    "title": "Chat",
+    "summary": "Start a conversation with a ROQ One user or a group.",
+    "sub-feature_one": {
+      "description": "Start a 1:1 conversation with any user of your ROQ One application."
+    },
+    "sub-feature_two": {
+      "description": "Start group conversation."
+    },
+    "sub-feature_three": {
+      "description": "Manage group conversations by renaming, archiving, adding, or removing users"
+    },
+    "sub-feature_four": {
+      "description": "Message Center"
+    }
+  },
+  "mail": {
+    "title": "Mail",
+    "summary": "Customers need to use their own SendGrid account.",
+    "sub-feature_one": {
+      "description": "User-related emails (registration, password reset, notification, uploaded files) are sent via 3rd party provider SendGrid."
+    },
+    "sub-feature_two": {
+      "description": "Customers need to use their own SendGrid account."
+    }
+  },
+  "user-interface": {
+    "title": "User Interface",
+    "summary": "Modern and fast UI based on world’s most used UI Library - Material UI.",
+    "sub-feature_one": {
+      "description": "Fully customize look and feel of your application according to your brand identity. You can start with fonts, colors and different MUI components."
+    },
+    "sub-feature_two": {
+      "description": "Explore MUI Documentation"
+    }
+  },
+  "dashboard": {
+    "welcome-user-text": "Hi {{fullName}}, welcome to ROQ one!",
+    "exploreBtn": "Explore"
+  },
+  "next": "Next",
+  "yes": "Yes",
+  "no-text": "No",
+  "invoice-details": {
+    "payment-pending-description": "We received your payment request and it’s currently being processed. This usually won’t take longer than a day.",
+    "payment-completed-status": "Payment Completed",
+    "payment-completed-description": "The transfer has been issued. Please check your account if you received your payment. If you didn’t receive any payment within 24 hours, please contact truckOS service.",
+    "debtor-verification-description": "Your customer is not known to our database. We will get back to you after a quick backup check.",
+    "debtor-denied-description": "It seems like your customer does not qualify for truckOS Pay. Please contact truckOS service for more information."
+  },
+  "login": "Sign in",
+  "login-subheading": "Sign in to your account with your email and password.",
+  "login-error-msg1": "The email you entered is not correct",
+  "forgot-password-cta": "Forgot password?",
+  "load-more-btn-text": "Load More",
+  "payments": "Payments",
+  "payment-status": {
+    "back-to-dashboard-btn": "Back to dashboard",
+    "contact-service-link": "Contact service",
+    "page-title": "Payment Status",
+    "page-subtitle": "Your payment is pending",
+    "status-title": "Payment pending",
+    "debtor-description": "The debtor entered is not known in our database yet. We will quickly verify the data and get back to you as soon as possible",
+    "status-description": "Your information has been submitted to Walbing to review. We will notify you once it has been authorized and your payment is on the way."
+  },
+  "edit": "Edit",
+  "profile-page": {
+    "update-form-general-label": "General",
+    "update-form-contact-details-label": "Contact Details",
+    "update-form-employment-label": "Employment",
+    "update-form-address-label": "Address",
+    "subtitle": "Make changes and click update in order to save new updates to your profile"
+  },
+  "profile-page-details": {
+    "about-label": "About",
+    "company-label": "Company",
+    "position-label": "Position",
+    "address-label": "Address"
+  },
+  "profile-update-success": "Profile updated successfully",
+  "invoice-number": "Invoice Number",
+  "invoice-amount": "Invoice Amount",
+  "receivable-amount": "Receivable Amount",
+  "invoice-date": "Invoice Date",
+  "delivery-date": "Delivery Date",
+  "payment-term": "Payment Term",
+  "payment-status-text": "Payment Status",
+  "receivables": "Receivables",
+  "confirm-mail-text": "Confirm your email",
+  "registration-mail-sent-text": "We've sent you an email to <strong>{{email}}</strong><br />Click on the link there to continue your registration.",
+  "mail-not-received-text": "Didn’t receive an email?",
+  "resend-email-verification": "Verification Email Resent",
+  "create-account-cta": "Create Account",
+  "register": "Register",
+  "register-motivator-text": "Here's your first step with us.",
+  "register-error-msg1": "Another user with this email already exists",
+  "reset-password-cta": "Reset password",
+  "roq-reset-password": "ROQ - New Password",
+  "settings-section-title": "Language & Timezone",
+  "timezone-label-text": "Select your timezone",
+  "language-label-text": "Select your language",
+  "password-section-title": "Password",
+  "sso-connected-text": "You are connected with an {{name}} account",
+  "sso-connected-multiple-text": "You are connected with multiple accounts",
+  "change-password-success": "Password Changed Successfully",
+  "sso-disconnect": "Disconnect",
+  "add-another-user": "Add another user",
+  "delete": "Delete",
+  "user": {
+    "change-status-message_currentOperation": "user.change-status-message_currentOperation",
+    "status-change-modal": {
+      "confirm": "Confirm",
+      "cancel": "Cancel"
+    },
+    "change-status_deactivate": "Deactivate User",
+    "change-status_activate": "Activate User",
+    "change-status-message_deactivate": "Are you sure you want to deactivate user?",
+    "change-status-message_activate": "Are you sure you want to activate user?",
+    "deactivated-name-message": "Deactivated users can’t log in, in the project they will appear as",
+    "deactivated": "deactivated"
+  },
+  "user-active-status-updated-successfully": "User status successfully changed",
+  "title_edit-user": "Edit User",
+  "subtitle_edit-user": "Provide below requested information for the new user details",
+  "invitation-updated_canceled": "Invitation successfully cancelled",
+  "invitation-updated_pending": "Invitation successfully sent",
+  "invitation-cancel": "Cancel invitation",
+  "invitation-resend": "Resend invitation",
+  "invitation-status-description_pending": "Invitation expires in 24hrs, user can accept invitiation until",
+  "invitation-status-description_accepted": "Invitation was accepted",
+  "invitation-status-description_expired": "Invitation expired",
+  "invitation-status-description_canceled": "Invitation was cancelled",
+  "invitation-status-description_statusKey": "invitation-status-description_statusKey",
+  "invite-new-user": "Invite new user",
+  "invite-new-user-subtitle": "Provide below requested information and invite user.",
+  "invite-was-sent-successfully_plural": "{{count}} users successfully invited. <1>Check invitation status here</1>",
+  "invite-was-sent-successfully": "{{count}} user successfully invited. <1>Check invitation status here</1>",
+  "invite-user": "Invite user",
+  "invite": "Invite",
+  "inviteWasSentGlossary": "inviteWasSentGlossary",
+  "invite-failed": "{{count}} user could not be invited. Please check below",
+  "invite-failed_plural": "{{count}} users could not be invited. Please check below",
+  "title_edit-user-invite": "Edit User Invite {{firstName}} {{lastName}}",
+  "invitation-status": "Invitation status",
+  "last-login": "Last login",
+  "user-status": "Status",
+  "opted-in-at": "Opted In At",
+  "kyc-status": "KYC Status",
+  "user-updated-successfully": "User updated successfully"
+}

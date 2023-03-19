@@ -1,0 +1,5 @@
+email,firstName,lastName,avatar,optedIn,password,locale,timezone,roqIdentifier,optedInAt
+user1@roq.tech,Lisa,Smith,https://www.premadegraphics.com/img_1/23/Female-Avatar-2.png,TRUE,$2b$10$C.zmM.R9FgoKf6YB4/9pDu7W23UaxlJd8ckqTo0aO6Zy.ArapEsr2,de-DE,Berlin (GMT+2),b4c62830-63bd-4aa1-856d-89e92135fb27,2022-04-20 15:34:02.264
+user2@roq.tech,Martin,Miller,https://thumbs.dreamstime.com/b/happy-smiling-geek-hipster-beard-man-cool-avatar-geek-man-avatar-104871313.jpg,TRUE,$2b$10$C.zmM.R9FgoKf6YB4/9pDu7W23UaxlJd8ckqTo0aO6Zy.ArapEsr2,en-US,"New York, NY, USA (GMT-4)",9c9a6d45-67a2-4be7-a654-57ad6219fc79,2022-04-20 15:34:02.264
+user3@roq.tech,Jack,Cheng,https://c8.alamy.com/comp/JAEG9M/man-asian-character-male-avatar-people-icon-JAEG9M.jpg,TRUE,$2b$10$C.zmM.R9FgoKf6YB4/9pDu7W23UaxlJd8ckqTo0aO6Zy.ArapEsr2,en-US,"Beijing, China (GMT+8)",22579b56-835c-4fe3-b52c-9dc91e164165,2022-04-20 15:34:02.264
+test@roq.tech,super,admin,https://c8.alamy.com/comp/JAEG9M/man-asian-character-male-avatar-people-icon-JAEG9M.jpg,true,$2a$10$zMP/bozG4q.3tL7UlegbYefCmGzaApb/GY9GsBRpTx1L6x7Puw/qa,de-DE,Berlin (GMT+2),cee76458-3640-4746-b134-5e1d94dbf7aa,2022-04-20 15:34:02.264

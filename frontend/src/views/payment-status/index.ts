@@ -1,0 +1,1 @@
+export { PaymentStatusView } from 'views/payment-status/payment-status.view';

@@ -1,0 +1,1 @@
+export { NavigationMenu } from 'layouts/dashboard/partials/navigation/navigation.partial';

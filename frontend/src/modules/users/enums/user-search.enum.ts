@@ -1,0 +1,8 @@
+export enum UserSearchEnum {
+  PHONE = 'PHONE',
+  FIRST_NAME = 'FIRST_NAME',
+  LAST_NAME = 'LAST_NAME',
+  LOCALE = 'LOCALE',
+  TIMEZONE = 'TIMEZONE',
+  ROQ_IDENTIFIER = 'ROQ_IDENTIFIER',
+}

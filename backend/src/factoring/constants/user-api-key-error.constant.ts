@@ -1,0 +1,1 @@
+export const USER_API_KEY_ERROR = 'User api key should not be empty!';

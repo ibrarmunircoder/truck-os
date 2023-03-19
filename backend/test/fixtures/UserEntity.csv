@@ -1,0 +1,5 @@
+id,email,createdAt,updatedAt,password,roqIdentifier,active,optedInAt
+6af494db-5b2f-436c-bd37-fe233ed47a25,hello@gmail.xom,2021-08-17 17:20:04.900104,2021-08-17 17:20:04.900104,password1,roqIdentifier1,true,2021-08-17 17:20:04.900104
+81c35582-9bba-48d8-8292-5694c80ef2fe,huzaifaali16@gmail.com,2021-08-17 18:21:14.921,2021-08-17 18:21:15.039163,password2,roqIdentifier2,true,2021-08-17 17:20:04.900104
+06a1c7ac-41e6-4a4f-a16b-46c185c51c9d,testide1234@gmail.com,2021-08-19 16:46:37.394,2021-08-25 06:33:04.578255,password3,roqIdentifier3,true,2021-08-17 17:20:04.900104
+06a2c7ac-41e6-4a4f-a16b-46c195c51c9d,roger@gmail.com,2021-09-25 16:46:37.394,2021-08-25 06:33:04.578255,password5,0bdcdaad-44f2-48f5-863e-b2a3ac82b46e,false,2021-08-17 17:20:04.900104

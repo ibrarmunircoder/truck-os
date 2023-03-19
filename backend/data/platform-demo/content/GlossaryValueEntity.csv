@@ -1,0 +1,1229 @@
+glossary@key,locale,value,key
+no-new-notifications,en-US,There are no notifications at the moment.,no-new-notifications-en-US
+no-new-notifications,de-DE,Momentan liegen keine Benachrichtigungen vor..,no-new-notifications-de-DE
+notification_mark-all-as-read,en-US,Mark all as read,notification_mark-all-as-read-en-US
+notification_mark-all-as-read,de-DE,Alles als gelesen markieren,notification_mark-all-as-read-de-DE
+notification_mark-as-unread,en-US,Mark as unread,notification_mark-as-unread-en-US
+notification_mark-as-unread,de-DE,Als ungelesen markieren,notification_mark-as-unread-de-DE
+notification_mark-as-read,en-US,Mark as read,notification_mark-as-read-en-US
+notification_mark-as-read,de-DE,Als gelesen markieren,notification_mark-as-read-de-DE
+notification,en-US,Notifications,notification-en-US
+notification,de-DE,Benachrichtigungen,notification-de-DE
+notification-view-detail-cta,en-US,Click <1>here</1> to see details.,notification-view-detail-cta-en-US
+notification-view-detail-cta,de-DE,"Klicken Sie <1>hier</1>, um Details anzuzeigen.",notification-view-detail-cta-de-DE
+notification-headline_recent,en-US,Recent,notification-headline_recent-en-US
+notification-headline_recent,de-DE,Jüngste,notification-headline_recent-de-DE
+notification-headline_older,en-US,Older,notification-headline_older-en-US
+notification-headline_older,de-DE,Älter,notification-headline_older-de-DE
+notification-show-more,en-US,Show more,notification-show-more-en-US
+notification-show-more,de-DE,Zeig Mehr,notification-show-more-de-DE
+notification-toggle-unread,en-US,Unread,notification-toggle-unread-en-US
+notification-toggle-unread,de-DE,Ungelesen,notification-toggle-unread-de-DE
+notification-toggle-all,en-US,All,notification-toggle-all-en-US
+notification-toggle-all,de-DE,Alle,notification-toggle-all-de-DE
+powered-by,en-US,Powered By,powered-by-en-US
+powered-by,de-DE,Unterstützt von,powered-by-de-DE
+login,en-US,Sign in,login-en-US
+login,de-DE,Anmelden,login-de-DE
+login-subheading,en-US,Sign in to your account with your email and password or use other authentication methods.,login-subheading-en-US
+login-subheading,de-DE,Melden Sie sich mit Ihrer E-Mail-Adresse und Ihrem Passwort bei Ihrem Konto an oder verwenden Sie andere Authentifizierungsmethoden.,login-subheading-de-DE
+social-login.google,en-US,sign in with Google,social-login.google-en-US
+social-login.google,de-DE,Anmeldung mit Google,social-login.google-de-DE
+social-login.linkedin,en-US,sign in with LinkedIn,social-login.linkedin-en-US
+social-login.linkedin,de-DE,Melden Sie sich mit LinkedIn an,social-login.linkedin-de-DE
+social-login.apple,en-US,sign in with Apple,social-login.apple-en-US
+social-login.apple,de-DE,Melden Sie sich bei Apple an,social-login.apple-de-DE
+register,en-US,Register,register-en-US
+register,de-DE,Registrieren,register-de-DE
+loader-text,en-US,Loading,loader-text-en-US
+loader-text,de-DE,Laden,loader-text-de-DE
+title_home,en-US,ROQ One Dashboard,title_home-en-US
+title_home,de-DE,ROQ One Dashboard,title_home-de-DE
+title_message-center,en-US,Message center,title_message-center-en-US
+title_message-center,de-DE,Nachrichtenzentrum,title_message-center-de-DE
+title_profile,en-US,User profile,title_profile-en-US
+title_profile,de-DE,Benutzerprofil,title_profile-de-DE
+title_files,en-US,Files,title_files-en-US
+title_files,de-DE,Dateien,title_files-de-DE
+title_settings,en-US,Settings,title_settings-en-US
+title_settings,de-DE,Einstellung,title_settings-de-DE
+title_users,en-US,Users,title_users-en-US
+title_users,de-DE,Internetnutzer,title_users-de-DE
+title_edit-user,en-US,Edit User,title_edit-user-en-US
+title_edit-user,de-DE,Benutzer bearbeiten,title_edit-user-de-DE
+subtitle_edit-user,en-US,Provide below requested information for the new user details,subtitle_edit-user-en-US
+subtitle_edit-user,de-DE,Geben Sie die unten angeforderten Informationen für die neuen Benutzerdetails an,subtitle_edit-user-de-DE
+title_invites,en-US,Invites,title_invites-en-US
+title_invites,de-DE,Einladungen,title_invites-de-DE
+link-text.imprint,en-US,Imprint,link-text.imprint-en-US
+link-text.imprint,de-DE,Impressum,link-text.imprint-de-DE
+link-text.terms,en-US,Terms & Conditions,link-text.terms-en-US
+link-text.terms,de-DE,Allgemeine Geschäftsbedingungen,link-text.terms-de-DE
+link-text.privacy,en-US,Privacy Notice,link-text.privacy-en-US
+link-text.privacy,de-DE,Datenschutzerklärung,link-text.privacy-de-DE
+link-text.data-preference,en-US,Data Preferences,link-text.data-preference-en-US
+link-text.data-preference,de-DE,Dateneinstellungen,link-text.data-preference-de-DE
+password_unmask,en-US,Show Password,password_unmask-en-US
+password_unmask,de-DE,Passwort anzeigen,password_unmask-de-DE
+password_mask,en-US,Hide Password,password_mask-en-US
+password_mask,de-DE,Passwort verbergen,password_mask-de-DE
+languages.full_en-US,en-US,English (USA),languages.full_en-US-en-US
+languages.full_en-US,de-DE,English (USA),languages.full_en-US-de-DE
+languages.full_de-DE,en-US,German,languages.full_de-DE-en-US
+languages.full_de-DE,de-DE,Deutsch,languages.full_de-DE-de-DE
+languages.short_en-US,en-US,EN (US),languages.short_en-US-en-US
+languages.short_en-US,de-DE,EN (US),languages.short_en-US-de-DE
+languages.short_de-DE,en-US,DE,languages.short_de-DE-en-US
+languages.short_de-DE,de-DE,DE,languages.short_de-DE-de-DE
+create-new,en-US,New message,create-new-en-US
+create-new,de-DE,Neue Nachricht,create-new-de-DE
+new,en-US,New,new-en-US
+new,de-DE,Neue,new-de-DE
+add,en-US,Add,add-en-US
+add,de-DE,Hinzufügen,add-de-DE
+remove,en-US,Remove,remove-en-US
+remove,de-DE,Entfernen,remove-de-DE
+activate-roq-account,en-US,ROQ - Account activate,activate-roq-account-en-US
+activate-roq-account,de-DE,ROQ - Konto aktivieren,activate-roq-account-de-DE
+confirm-account,en-US,Confirm Account,confirm-account-en-US
+confirm-account,de-DE,Konto bestätigen,confirm-account-de-DE
+invalid-link-text,en-US,Invitation is no longer valid,invalid-link-text-en-US
+invalid-link-text,de-DE,Einladung ist nicht mehr gültig,invalid-link-text-de-DE
+sign-in,en-US,Login,sign-in-en-US
+sign-in,de-DE,Eintragen,sign-in-de-DE
+sign-up,en-US,Sign Up,sign-up-en-US
+sign-up,de-DE,Anmeldung,sign-up-de-DE
+roq-account-activate-provider-link,en-US,ROQ - Account Activate Provider Link,roq-account-activate-provider-link-en-US
+roq-account-activate-provider-link,de-DE,ROQ - Konto aktivieren Provider-Link,roq-account-activate-provider-link-de-DE
+confirm-account-provider-link,en-US,Confirm provider link to account,confirm-account-provider-link-en-US
+confirm-account-provider-link,de-DE,Anbieterlink zum Konto bestätigen,confirm-account-provider-link-de-DE
+provider-linked-account-verified,en-US,Provider link to account verified,provider-linked-account-verified-en-US
+provider-linked-account-verified,de-DE,Anbieterlink zum Konto verifiziert,provider-linked-account-verified-de-DE
+account-verified,en-US,Account verified,account-verified-en-US
+account-verified,de-DE,Konto verifiziert,account-verified-de-DE
+reset-password,en-US,Reset Password,reset-password-en-US
+reset-password,de-DE,Passwort zurücksetzen,reset-password-de-DE
+reset-password-subheading,en-US,"In order to reset your password, please provide registered email address and follow instructions.",reset-password-subheading-en-US
+reset-password-subheading,de-DE,"Um Ihr Passwort zurückzusetzen, geben Sie bitte Ihre registrierte E-Mail-Adresse ein und folgen Sie den Anweisungen.",reset-password-subheading-de-DE
+reset-password-mail-sent-text,en-US,"If <strong>{{email}}</strong> is registered, we've sent you an email to reset your password. Please follow the instructions in your email inbox.",reset-password-mail-sent-text-en-US
+reset-password-mail-sent-text,de-DE,"Wenn <strong>{{email}}</strong>registriert ist, haben wir Ihnen eine E-Mail zum Zurücksetzen Ihres Passworts gesendet. Bitte folgen Sie den Anweisungen in Ihrem E-Mail-Postfach.",reset-password-mail-sent-text-de-DE
+mail-not-received-text,en-US,Didn’t receive an email?,mail-not-received-text-en-US
+mail-not-received-text,de-DE,Keine E-Mail erhalten?,mail-not-received-text-de-DE
+resend-email-cta,en-US,Resend Email,resend-email-cta-en-US
+resend-email-cta,de-DE,E-Mail zurücksenden,resend-email-cta-de-DE
+resend-email-verification,en-US,Verification Email Resent,resend-email-verification-en-US
+resend-email-verification,de-DE,Bestätigungs-E-Mail erneut gesendet,resend-email-verification-de-DE
+input.email.name,en-US,Email,input.email.name-en-US
+input.email.name,de-DE,E-Mail,input.email.name-de-DE
+input.phone.name,en-US,Phone,input.phone.name-en-US
+input.phone.name,de-DE,Telefon,input.phone.name-de-DE
+input.company.name,en-US,Company,input.company.name-en-US
+input.company.name,de-DE,Unternehmen,input.company.name-de-DE
+input.position.name,en-US,Position,input.position.name-en-US
+input.position.name,de-DE,Position,input.position.name-de-DE
+input.street_address.name,en-US,Street Address,input.street_address.name-en-US
+input.street_address.name,de-DE,Adresse,input.street_address.name-de-DE
+input.zip_code.name,en-US,Zip Code,input.zip_code.name-en-US
+input.zip_code.name,de-DE,Postleitzahl,input.zip_code.name-de-DE
+input.house_number.name,en-US,House Number,input.house_number.name-en-US
+input.house_number.name,de-DE,Hausnummer,input.house_number.name-de-DE
+input.city.name,en-US,City,input.city.name-en-US
+input.city.name,de-DE,Stadt,input.city.name-de-DE
+input.country.name,en-US,Country,input.country.name-en-US
+input.country.name,de-DE,Land,input.country.name-de-DE
+input.email.placeholder,en-US,Email,input.email.placeholder-en-US
+input.email.placeholder,de-DE,E-Mail,input.email.placeholder-de-DE
+input.email.validation.required,en-US,E-Mail is a required field,input.email.validation.required-en-US
+input.email.validation.required,de-DE,E-Mail ist ein Pflichtfeld,input.email.validation.required-de-DE
+input.email.validation.type,en-US,Must be a valid E-mail ,input.email.validation.type-en-US
+input.email.validation.type,de-DE,Muss eine gültige E-Mail sein,input.email.validation.type-de-DE
+send-instructions,en-US,Send Instructions,send-instructions-en-US
+send-instructions,de-DE,Anweisungen senden,send-instructions-de-DE
+roq-home-page,en-US,ROQ-Home Page,roq-home-page-en-US
+roq-home-page,de-DE,ROQ-Startseite,roq-home-page-de-DE
+forgot-password-cta,en-US,Forgot password?,forgot-password-cta-en-US
+forgot-password-cta,de-DE,Passwort vergessen?,forgot-password-cta-de-DE
+not-registered-yet,en-US,Don't have an account yet?,not-registered-yet-en-US
+not-registered-yet,de-DE,Noch kein Konto?,not-registered-yet-de-DE
+already-registered,en-US,Already have an account?,already-registered-en-US
+already-registered,de-DE,Sie haben bereits ein Konto?,already-registered-de-DE
+input.password.placeholder,en-US,Password,input.password.placeholder-en-US
+input.password.placeholder,de-DE,Passwort,input.password.placeholder-de-DE
+input.password.validation.required,en-US,Password is a required field,input.password.validation.required-en-US
+input.password.validation.required,de-DE,Passwort ist ein Pflichtfeld,input.password.validation.required-de-DE
+input.password.validation.strength,en-US,"at least one letter, one number and one special character",input.password.validation.strength-en-US
+input.password.validation.strength,de-DE,"mindestens ein Buchstabe, eine Zahl und ein Sonderzeichen",input.password.validation.strength-de-DE
+input.password.validation.char-limit,en-US,Have between 8 and 64 characters,input.password.validation.char-limit-en-US
+input.password.validation.char-limit,de-DE,Zwischen 8 und 64 Zeichen haben,input.password.validation.char-limit-de-DE
+input.password.validation.upper-char-required,en-US,Contain at least 1 upper-case letter,input.password.validation.upper-char-required-en-US
+input.password.validation.upper-char-required,de-DE,Mindestens 1 Großbuchstaben enthalten,input.password.validation.upper-char-required-de-DE
+input.password.validation.number-required,en-US,Contain at least 1 number,input.password.validation.number-required-en-US
+input.password.validation.number-required,de-DE,Mindestens 1 Nummer enthalten,input.password.validation.number-required-de-DE
+input.password.validation.special-char-required,en-US,Contain at least 1 special character,input.password.validation.special-char-required-en-US
+input.password.validation.special-char-required,de-DE,Mindestens 1 Sonderzeichen enthalten,input.password.validation.special-char-required-de-DE
+input.keepMeLoggedIn,en-US,Keep me logged in,input.keepMeLoggedIn-en-US
+input.keepMeLoggedIn,de-DE,Eingeloggt bleiben,input.keepMeLoggedIn-de-DE
+upload.success.avatar,en-US,Avatar uploaded successfully,upload.success.avatar-en-US
+upload.success.avatar,de-DE,Avatar erfolgreich hochgeladen,upload.success.avatar-de-DE
+upload.failure.avatar,en-US,Avatar upload failed. Please select the file to upload first.,upload.failure.avatar-en-US
+upload.failure.avatar,de-DE,Avatar-Upload fehlgeschlagen. Bitte wählen Sie zuerst die hochzuladende Datei aus.,upload.failure.avatar-de-DE
+link-text.change-avatar,en-US,Change Avatar,link-text.change-avatar-en-US
+link-text.change-avatar,de-DE,Avatar ändern,link-text.change-avatar-de-DE
+link-text.save-avatar,en-US,Save Avatar,link-text.save-avatar-en-US
+link-text.save-avatar,de-DE,Avatar Speichern,link-text.save-avatar-de-DE
+save,en-US,Save,save-en-US
+save,de-DE,Speichern,save-de-DE
+edit,en-US,Edit,edit-en-US
+edit,de-DE,Bearbeiten,edit-de-DE
+input.first-name.name,en-US,First Name,input.first-name.name-en-US
+input.first-name.name,de-DE,Vorname,input.first-name.name-de-DE
+input.first-name.validation.required,en-US,first name is a required field,input.first-name.validation.required-en-US
+input.first-name.validation.required,de-DE,Vorname ist ein Pflichtfeld,input.first-name.validation.required-de-DE
+input.first-name.placeholder,en-US,Enter first name,input.first-name.placeholder-en-US
+input.first-name.placeholder,de-DE,Bitte vornamen eingeben,input.first-name.placeholder-de-DE
+input.last-name.validation.required,en-US,last name is a required field,input.last-name.validation.required-en-US
+input.last-name.validation.required,de-DE,Nachname ist ein Pflichtfeld,input.last-name.validation.required-de-DE
+input.last-name.name,en-US,Last Name,input.last-name.name-en-US
+input.last-name.name,de-DE,Nachname,input.last-name.name-de-DE
+input.last-name.placeholder,en-US,Enter last name,input.last-name.placeholder-en-US
+input.last-name.placeholder,de-DE,Nachnamen eingeben,input.last-name.placeholder-de-DE
+input.locale.validation.required,en-US,Locale is required,input.locale.validation.required-en-US
+input.locale.validation.required,de-DE,Gebietsschema ist erforderlich,input.locale.validation.required-de-DE
+register-motivator-text,en-US,Here's your first step with us. Let's ROQ,register-motivator-text-en-US
+register-motivator-text,de-DE,Hier ist ihr erster schritt bei uns. Lassen sie uns ROQ,register-motivator-text-de-DE
+confirm-mail-text,en-US,Confirm your email,confirm-mail-text-en-US
+confirm-mail-text,de-DE,Bestätige deine E-Mail,confirm-mail-text-de-DE
+registration-mail-sent-text,en-US,We've sent you an email to <strong>{{email}}</strong><br />Click on the link there to continue your registration.,registration-mail-sent-text-en-US
+registration-mail-sent-text,de-DE,"Wir haben ihnen eine E-Mail an <strong>{{email}}</strong><br />Klicken sie dort auf den link, um mit ihrer registrierung fortzufahren.",registration-mail-sent-text-de-DE
+create-account-cta,en-US,Create Account,create-account-cta-en-US
+create-account-cta,de-DE,Benutzerkonto erstellen,create-account-cta-de-DE
+roq-reset-password,en-US,ROQ - New Password,roq-reset-password-en-US
+roq-reset-password,de-DE,ROQ - Passwort wiederherstellen,roq-reset-password-de-DE
+reset-password-cta,en-US,Reset password,reset-password-cta-en-US
+reset-password-cta,de-DE,Passwort zurücksetzen,reset-password-cta-de-DE
+password-validation-base-text,en-US,Your password must:,password-validation-base-text-en-US
+password-validation-base-text,de-DE,Ihr passwort muss:,password-validation-base-text-de-DE
+input.new-password.placeholder,en-US,New password,input.new-password.placeholder-en-US
+input.new-password.placeholder,de-DE,Neues Kennwort,input.new-password.placeholder-de-DE
+input.confirm-new-password.placeholder,en-US,Repeat new password,input.confirm-new-password.placeholder-en-US
+input.confirm-new-password.placeholder,de-DE,Wiederhole das neue Passwort,input.confirm-new-password.placeholder-de-DE
+input.confirm-new-password.validation.mismatch,en-US,passwords do not match,input.confirm-new-password.validation.mismatch-en-US
+input.confirm-new-password.validation.mismatch,de-DE,Passwörter stimmen nicht überein,input.confirm-new-password.validation.mismatch-de-DE
+input.confirm-new-password.validation.required,en-US,Confirm password is a required field,input.confirm-new-password.validation.required-en-US
+input.confirm-new-password.validation.required,de-DE,Passwort bestätigen ist ein Pflichtfeld,input.confirm-new-password.validation.required-de-DE
+roq-future,en-US,The future is in our hands to shape.,roq-future-en-US
+roq-future,de-DE,"Die zukunft liegt in unserer hand, um sie zu gestalten.",roq-future-de-DE
+input.conversation-name.validation.required,en-US,title is a required field,input.conversation-name.validation.required-en-US
+input.conversation-name.validation.required,de-DE,Titel ist ein Pflichtfeld,input.conversation-name.validation.required-de-DE
+greeting,en-US,Hi,greeting-en-US
+greeting,de-DE,Hallo,greeting-de-DE
+confirm-email-text,en-US,please confirm your email address [here] (https://snapshot.roq-one.com/),confirm-email-text-en-US
+confirm-email-text,de-DE,bestätige die E-Mail-Addresse [hier] (https://snapshot.roq-one.com/),confirm-email-text-de-DE
+confirm-email-button,en-US,Confirm email,confirm-email-button-en-US
+confirm-email-button,de-DE,Bestätigungs-E-Mail,confirm-email-button-de-DE
+welcome-user-text,en-US,welcome ROQ One Demo,welcome-user-text-en-US
+welcome-user-text,de-DE,herzlich Willkommen bei ROQ One Demo,welcome-user-text-de-DE
+reset-password-text,en-US,please reset your password by clicking [here] (https://snapshot.roq-one.com/restore-password),reset-password-text-en-US
+reset-password-text,de-DE,erstelle [hier] (https://snapshot.roq-one.com/restore-password) ein neues Passwort,reset-password-text-de-DE
+reset-password-button,en-US,Reset password,reset-password-button-en-US
+reset-password-button,de-DE,Passwort zurücksetzen,reset-password-button-de-DE
+random-text,en-US,today no work because it is too hot,random-text-en-US
+random-text,de-DE,"heute wird nicht gearbeitet, weil es zu warm ist",random-text-de-DE
+invite-text,en-US,[Accept invitation] (https://snapshot.roq-one.com/set-password),invite-text-en-US
+invite-text,de-DE,[Einladung annehmen] (https://snapshot.roq-one.com/set-password),invite-text-de-DE
+invite-accept-button,en-US,Accept Invite,invite-accept-button-en-US
+invite-accept-button,de-DE,Einladung annehmen,invite-accept-button-de-DE
+welcome,en-US,Welcome,welcome-en-US
+welcome,de-DE,Willkommen,welcome-de-DE
+hello,en-US,Hello ,hello-en-US
+hello,de-DE,Hallo,hello-de-DE
+accept-invite-cta,en-US,Join,accept-invite-cta-en-US
+accept-invite-cta,de-DE,Beitreten,accept-invite-cta-de-DE
+accept-invite-heading,en-US,You’re invited to join a team!,accept-invite-heading-en-US
+accept-invite-heading,de-DE,"Du bist eingeladen, einem Team beizutreten!",accept-invite-heading-de-DE
+accept-invite-subheading,en-US,You are invited to join ROQ One Portal. Please set a password.,accept-invite-subheading-en-US
+accept-invite-subheading,de-DE,"Sie sind eingeladen, dem ROQ One Portal beizutreten. Bitte legen Sie ein Passwort fest.",accept-invite-subheading-de-DE
+info,en-US,Information,info-en-US
+info,de-DE,Information,info-de-DE
+just-joined-ROQ-One,en-US,just joined ROQ One,just-joined-ROQ-One-en-US
+just-joined-ROQ-One,de-DE,hat sich gerade auf ROQ One registiert,just-joined-ROQ-One-de-DE
+say-hi-to,en-US,say hi to,say-hi-to-en-US
+say-hi-to,de-DE,begrüße,say-hi-to-de-DE
+good-morning,en-US,Good Morning,good-morning-en-US
+good-morning,de-DE,Guten Morgen,good-morning-de-DE
+have-a-good-day,en-US,have a good day,have-a-good-day-en-US
+have-a-good-day,de-DE,wir wünschen einen schönen Tag,have-a-good-day-de-DE
+upload.in-progress,en-US,Uploading,upload.in-progress-en-US
+upload.in-progress,de-DE,Hochladen,upload.in-progress-de-DE
+upload.abort,en-US,Stop upload,upload.abort-en-US
+upload.abort,de-DE,Upload stoppen,upload.abort-de-DE
+upload.success.files,en-US,Uploaded,upload.success.files-en-US
+upload.success.files,de-DE,Hochgeladen,upload.success.files-de-DE
+drop-uploads-cta,en-US,Drop your files here,drop-uploads-cta-en-US
+drop-uploads-cta,de-DE,Legen Sie Ihre Dateien hier ab,drop-uploads-cta-de-DE
+drag-uploads-cta,en-US,"Drag your files here, or click to select files",drag-uploads-cta-en-US
+drag-uploads-cta,de-DE,"Ziehen Sie Ihre Dateien hierher oder klicken Sie, um Dateien auszuwählen",drag-uploads-cta-de-DE
+upload-file-cta,en-US,Upload File,upload-file-cta-en-US
+upload-file-cta,de-DE,Datei hochladen,upload-file-cta-de-DE
+file-name,en-US,File Name,file-name-en-US
+file-name,de-DE,Dateiname,file-name-de-DE
+name,en-US,Name,name-en-US
+name,de-DE,Name,name-de-DE
+owner,en-US,Owner,owner-en-US
+owner,de-DE,Eigentümer,owner-de-DE
+members,en-US,members,members-en-US
+members,de-DE,mitglieder,members-de-DE
+size,en-US,Size,size-en-US
+size,de-DE,Größe,size-de-DE
+pagination.displayed-rows-range,en-US,{from}-{to} of {count},pagination.displayed-rows-range-en-US
+pagination.displayed-rows-range,de-DE,{from}-{to} von {count},pagination.displayed-rows-range-de-DE
+pagination.rows-per-page,en-US,Rows per page:,pagination.rows-per-page-en-US
+pagination.rows-per-page,de-DE,Zeilen pro Seite:,pagination.rows-per-page-de-DE
+pagination.first,en-US,First Page,pagination.first-en-US
+pagination.first,de-DE,Erste Seite,pagination.first-de-DE
+pagination.previous,en-US,Previous Page,pagination.previous-en-US
+pagination.previous,de-DE,Vorherige Seite,pagination.previous-de-DE
+pagination.next,en-US,Next Page,pagination.next-en-US
+pagination.next,de-DE,Nächste Seite,pagination.next-de-DE
+pagination.last,en-US,Last Page,pagination.last-en-US
+pagination.last,de-DE,Letze Seite,pagination.last-de-DE
+action,en-US,Action,action-en-US
+action,de-DE,Handlung,action-de-DE
+rows,en-US,Rows,rows-en-US
+rows,de-DE,Reihen,rows-de-DE
+settings-section-title,en-US,Language & Timezone,Settings-section-title-en-US
+settings-section-title,de-DE,Sprache und Zeitzone,Settings-section-title-de-DE
+timezone-label-text,en-US,Select your timezone,Timezone-label-text-en-US
+timezone-label-text,de-DE,Wähle deine Zeitzone aus,Timezone-label-text-de-DE
+language-label-text,en-US,Select your language,language-label-text-en-US
+language-label-text,de-DE,Wähle deine Sprache aus,language-label-text-de-DE
+settings-update-success,en-US,Settings successfully updated,settings-update-success-en-US
+settings-update-success,de-DE,Einstellungen erfolgreich aktualisiert,settings-update-success-de-DE
+notification-preferences-title,en-US,Notifications,Notification-preferences-title-en-US
+notification-preferences-title,de-DE,Benachrichtigungen,Notification-preferences-title-de-DE
+general-information-text,en-US,General Information,General-information-text-en-US
+general-information-text,de-DE,Allgemeine Informationen,General-information-text-de-DE
+roq-notification-text,en-US,ROQ One,Roq-notification-text-en-US
+roq-notification-text,de-DE,ROQ One,Roq-notification-text-de-DE
+email-notification-text,en-US,E-mail,Email-notification-text-en-US
+email-notification-text,de-DE,E-mail,Email-notification-text-de-DE
+copyright-footer,en-US,ROQ TECHNOLOGY 2022,Copyright-footer-en-US
+copyright-footer,de-DE,ROQ TECHNOLOGY 2022,Copyright-footer-de-DE
+password-section-title,en-US,Password,Password-section-title-en-US
+password-section-title,de-DE,Passwort,Password-section-title-de-DE
+input.current-password.placeholder,en-US,Enter current password,input.current-password.placeholder-en-US
+input.current-password.placeholder,de-DE,Aktuelles Passwort eingeben,input.current-password.placeholder-de-DE
+invite-new-user,en-US,Invite new user,invite-new-user-en-US
+invite-new-user,de-DE,Neuen Benutzer einladen,invite-new-user-de-DE
+invite-new-user-subtitle,en-US,Provide below requested information and invite user.,invite-new-user-subtitle-en-US
+invite-new-user-subtitle,de-DE,Geben Sie die unten angeforderten Informationen ein und laden Sie den Benutzer ein.,invite-new-user-subtitle-de-DE
+invite,en-US,Invite,invite-en-US
+invite,de-DE,Einladen,invite-de-DE
+invite-was-sent-successfully,en-US,{{count}} user successfully invited. <1>Check invitation status here</1>,invite-was-sent-successfully-en-US
+invite-was-sent-successfully,de-DE,{{count}} Benutzer erfolgreich eingeladen. <1>Überprüfen Sie den Einladungsstatus</1>,invite-was-sent-successfully-de-DE
+invite-was-sent-successfully_plural,en-US,{{count}} users successfully invited. <1>Check invitation status here</1>,invite-was-sent-successfully_plural-en-US
+invite-was-sent-successfully_plural,de-DE,{{count}} Benutzer erfolgreich eingeladen. <1>Überprüfen Sie den Einladungsstatus</1>,invite-was-sent-successfully_plural-de-DE
+add-another-user,en-US,Add another user,add-another-user-en-US
+add-another-user,de-DE,Einen anderen Benutzer hinzufügen,add-another-user-de-DE
+input.email.validation.unique,en-US, Email should be unique, input.email.validation.unique-en-US
+input.email.validation.unique,de-DE, E-Mail sollte eindeutig sein, input.email.validation.unique-de-DE
+roq-accept-invite,en-US, ROQ Accept Invite,roq-accept-invite-en-US
+roq-accept-invite,de-DE, ROQ Einladung annehmen,roq-accept-invite-de-DE
+you-are-invited-to-join-roq-one-platform,en-US, You are invited to join ROQ One platform.,you-are-invited-to-join-roq-one-platform-en-US
+you-are-invited-to-join-roq-one-platform,de-DE,Sie sind eingeladen der ROQ One-Plattform beizutreten,you-are-invited-to-join-roq-one-platform-de-DE
+please-set-a-password,en-US, Please set a password,please-set-a-password-en-US
+please-set-a-password,de-DE, Bitte Passwort festlegen,please-set-a-password-de-DE
+expired-link-text,en-US, Link is expired,expired-link-text-en-US
+expired-link-text,de-DE, Link ist abgelaufen,expired-link-text-de-DE
+agree-to-receive-communications-by-email-from-roq, en-US, I agree to receive communications by email from ROQ, agree-to-receive-communications-by-email-from-roq-en-US
+agree-to-receive-communications-by-email-from-roq, de-DE, Ich stimme zu Mitteilungen per E-Mail von ROQ zu erhalten, agree-to-receive-communications-by-email-from-roq-de-DE
+expired-invitation-text,en-US,Your invitation has expired. Please contact your point of contact,expired-invitation-text-en-US
+expired-invitation-text,de-DE,Ihre Einladung ist abgelaufen. Bitte wenden Sie sich an Ihren Ansprechpartner,expired-invitation-text-de-DE
+invite-accepted-text,en-US,Invite accepted successfully,invite-accepted-text-text-en-US
+invite-accepted-text,de-DE,Einladung erfolgreich angenommen,invite-accepted-textn-text-de-DE
+users,en-US,Users,users-en-US
+users,de-DE,Benutzer,users-de-DE
+user-id,en-US,User ID,user-id-en-US
+user-id,de-DE,Benutzeridentifikation,user-id-de-DE
+first-name,en-US,First Name,first-name-en-US
+first-name,de-DE,Vorname,first-name-de-DE
+last-name,en-US,Last Name,last-name-en-US
+last-name,de-DE,Nachname,last-name-de-DE
+email,en-US,Email address,email-en-US
+email,de-DE,E-Mail-Addresse,email-de-DE
+locale,en-US,Locale,locale-en-US
+locale,de-DE,Gebietsschema,locale-de-DE
+timezone,en-US,Timezone,timezone-en-US
+timezone,de-DE,Zeitzone,timezone-de-DE
+status.default,en-US,Status,status.default-en-US
+status.default,de-DE,Status,status.default-de-DE
+status.active,en-US,Active,status.active-en-US
+status.active,de-DE,Aktiv,status.active-de-DE
+status.inactive,en-US,Inactive,status.inactive-en-US
+status.inactive,de-DE,Inaktiv,status.inactive-de-DE
+user-active,en-US,Active,status.invited-en-US
+user-active,de-DE,Aktiv,status.invited-de-DE
+opted-in-at,en-US,Opted In At,opted-in-at-en-US
+opted-in-at,de-DE,Aktiviert,opted-in-at-de-DE
+add-new-user,de-DE,Neuen Benutzer hinzufügen,add-new-user-de-DE
+add-new-user,en-US,Add new user,add-new-user-en-US
+last-login,de-DE,Letzte Anmeldung,last-login-de-DE
+last-login,en-US,Last login,last-login-en-US
+user-status,de-DE,Status,user-status-de-DE
+user-status,en-US,Status,user-status-en-US
+deactivate-user,en-US,Deactivate user,deactivate-user-en-US
+deactivate-user,de-DE,Benutzer deaktivieren,deactivate-user-de-DE
+messages,en-US,Messages,messages-en-US
+messages,de-DE,Nachrichten,messages-de-DE
+toggle-theme,en-US,Light/Dark mode,toggle-theme-en-US
+toggle-theme,de-DE,Hell/Dunkel-Modus,toggle-theme-de-DE
+change-language,en-US,Change language,language-en-US
+change-language,de-DE,Sprache wechseln,language-de-DE
+account,en-US,Account,account-en-US
+account,de-DE,Konto,account--de-DE
+profile,en-US,Profile,profile-en-US
+profile,de-DE,Profil,profile-de-DE
+settings,en-US,Settings,settings-en-US
+settings,de-DE,Einstellungen,settings-de-DE
+log-out,en-US,Log out,log-out-en-US
+log-out,de-DE,Ausloggen,log-out-de-DE
+sso-disconnect,en-US,Disconnect,sso-disconnect-en-US
+sso-disconnect,de-DE,Trennen,sso-disconnect-de-DE
+sso-connected-text,en-US,You are connected with an {{name}} account,sso-connected-text-en-US
+sso-connected-text,de-DE,Du bist mit einem {{name}}-Konto verbunden,sso-connected-text-de-DE
+sso-connected-multiple-text,en-US,You are connected with multiple accounts,sso-connected-multiple-text-en-US
+sso-connected-multiple-text,de-DE,Sie sind mit mehreren Konten verbunden,sso-connected-multiple-text-de-DE
+invite-failed,en-US,{{count}} user could not be invited. Please check below,invite-failed-en-US
+invite-failed,de-DE,{{count}} Benutzer konnte nicht eingeladen werden. Bitte überprüfen Sie unten,invite-failed-de-DE
+invite-failed_plural,en-US,{{count}} users could not be invited. Please check below,invite-failed_plural-en-US
+invite-failed_plural,de-DE,{{count}} Benutzer konnten nicht eingeladen werden. Bitte überprüfen Sie unten,invite-failed_plural-de-DE
+chat-title,en-US,Messages,chat-title-en-US
+no-conversation-selected-message,en-US,Break the ice and start a conversation,no-conversation-selected-message-en-US
+choose-recipient-title,en-US,With whom would you like to start a conversation?,choose-recipient-title-en-US
+conversation-beginning-message,en-US,Break the ice and start a conversation,conversation-beginning-message-en-US
+conversation-menu.add-user,en-US,Add user,conversation-menu.add-user-en-US
+conversation-menu.remove-user,en-US,Remove user,conversation-menu.remove-user-en-US
+conversation-menu.rename-group,en-US,Rename group,conversation-menu.rename-group-en-US
+conversation-menu.archive-group,en-US,Archive group,conversation-menu.archive-group-en-US
+conversation-menu.leave-group,en-US,Leave group,conversation-menu.leave-group-en-US
+input.message.placeholder,en-US,Insert your message here,input.message.placeholder-en-US
+message-menu.edit,en-US,Edit,message-menu.edit-en-US
+message-menu.edit,de-DE,Bearbeiten,message-menu.edit-de-DE
+message-menu.delete,en-US,Delete,message-menu.delete-en-US
+message-menu.delete,de-DE,Löschen,message-menu.delete-de-DE
+add-members-screen-title,en-US,Add users to the group,add-members-screen-title-en-US
+remove-members-screen-title,en-US,Remove users from the group,remove-members-screen-title-en-US
+input.group-title.placeholder,en-US,Group name,input.group-title.placeholder-en-US
+chat-title,de-DE,Nachrichtenzentrum,chat-title-de-DE
+no-conversation-selected-message,de-DE,Brich das Eis und starte eine Unterhaltung,no-conversation-selected-message-de-DE
+choose-recipient-title,de-DE,Mit wem möchtest Du eine Unterhaltung starten?,choose-recipient-title-de-DE
+conversation-beginning-message,de-DE,Brich das Eis und starte eine Unterhaltung,conversation-beginning-message-de-DE
+conversation-menu.add-user,de-DE,Nutzer hinzufügen,conversation-menu.add-user-de-DE
+conversation-menu.remove-user,de-DE,Benutzer entfernen,conversation-menu.remove-user-de-DE
+conversation-menu.rename-group,de-DE,Gruppe umbenennen,conversation-menu.rename-group-de-DE
+conversation-menu.archive-group,de-DE,Gruppe archivieren,conversation-menu.archive-group-de-DE
+conversation-menu.leave-group,de-DE,Gruppe verlassen,conversation-menu.leave-group-de-DE
+input.message.placeholder,de-DE,Gib hier Deine Nachricht ein,input.message.placeholder-de-DE
+add-members-screen-title,de-DE,Benutzer zur Gruppe hinzufügen,add-members-screen-title-de-DE
+remove-members-screen-title,de-DE,Benutzer aus der Gruppe entfernen,remove-members-screen-title-de-DE
+input.group-title.placeholder,de-DE,Name der Unterhaltung,input.group-title.placeholder-de-DE
+reset-requested,en-US,Reset requested,reset-requested-en-US
+reset-requested,de-DE,Zurücksetzen angefordert,reset-requested-de-DE
+title_invite-new-user,en-US ,Invite new user,title_invite-new-user-en-US
+title_invite-new-user,de-DE ,Neue Benutzer einladen,title_invite-new-user-de-DE
+input.confirm-password.placeholder,de-DE,Wiederhole das neue Passwort,input.confirm-password.placeholder-de-DE
+input.confirm-password.placeholder,en-US,Repeat new password,input.confirm-password.placeholder-en-US
+input.set-password.placeholder,de-DE,Neues Kennwort,input.set-password.placeholder-de-DE
+input.set-password.placeholder,en-US,New password,input.set-password.placeholder-en-US
+email-confirmation-error,en-US,Your email confirmation link is invalid or already expired,email-confirmation-error-en-US
+email-confirmation-error,de-DE,Ihr E-Mail-Bestätigungslink ist ungültig oder bereits abgelaufen,email-confirmation-error-de-DE
+go-to-registration,en-US,create account,go-to-registration-en-US
+go-to-registration,de-DE,Benutzerkonto erstellen,go-to-registration-de-DE
+go-to-registration-subheading,en-US,"Start using ROQ One from today, sign up in second by clicking button below",go-to-registration-subheading-en-US
+go-to-registration-subheading,de-DE,"Beginnen Sie ab heute mit der Verwendung von ROQ One, melden Sie sich als Zweiter an, indem Sie auf die Schaltfläche unten klicken",go-to-registration-subheading-de-DE
+go-to-login,en-US,back to sign in,go-to-login-en-US
+go-to-login,de-DE,zurück zum Anmelden,go-to-login-de-DE
+user-updated-successfully,en-US,User updated successfully,user-updated-successfully-en-US
+user-updated-successfully,de-DE,Benutzer erfolgreich aktualisiert,user-updated-successfully-de-DE
+conversation-owner,en-US,admin,conversation-owner-en-US
+conversation-owner,de-DE,admin,conversation-owner-de-DE
+array-contain,en-US,{{each}} {{property}} must contain {{constraints.0}} values,array-contain-en-US
+array-max-size,en-US,{{each}} {{property}} must contain not more than {{constraints.0}},array-max-size-en-US
+array-min-size,en-US,{{each}} {{property}} must contain at least {{constraints.0}},array-min-size-en-US
+array-not-contains,en-US,{{each}} {{property}} should not contain {{constraints.0}} values,array-not-contains-en-US
+array-not-empty,en-US,{{each}} {{property}} should not be empty,array-not-empty-en-US
+array-unique,en-US,{{each}} All {{property}}'s elements must be unique,array-unique-en-US
+should-allow,en-US,{{property}} allowed {{value}},should-allow-en-US
+equals,en-US,{{each}} {{property}} should not be equal to {{constraints.0}},equals-en-US
+is-defined,en-US,{{each}} {{property}} should not be null or undefined,is-defined-en-US
+is-empty,en-US,{{each}} {{property}} must be empty,is-empty-en-US
+is-in,en-US,{{each}} {{property}} must be one of the following values: {{constraints.0}},is-in-en-US
+is-not-empty,en-US,{{each}} {{property}} should not be empty,is-not-empty-en-US
+is-not-in,en-US,{{each}} {{property}} should not be one of the following values: {{constraints.0}},is-not-in-en-US
+is-optional,en-US,{{property}} is optional,is-optional-en-US
+not-equals,en-US,{{each}} {{property}} should not be equal to {{constraints.0}},not-equals-en-US
+validate,en-US,{{property}} Resolve promise before validation,validate-en-US
+validate-by,en-US,{{property}} is not validated  {{options}},validate-by-en-US
+validate-if,en-US,{{property}} is ignored,validate-if-en-US
+validate-nested,en-US,{{each}} {{property}} must be either object or array,validate-nested-en-US
+validate-promise,en-US,{{property}} Resolve promise before validation,validate-promise-en-US
+max-date,en-US,maximal allowed date for {{each}} {{property}} is {{constraints.0}},max-date-en-US
+min-date,en-US,minimal allowed date for {{each}} {{property}} is {{constraints.0}},min-date-en-US
+is-divisible-by,en-US,{{each}} {{property}} must be divisible by {{constraints.0}},is-divisible-by-en-US
+is-negative,en-US,{{each}} {{property}} must be a negative number,is-negative-en-US
+is-positive,en-US,{{each}} {{property}} must be a positive number,is-positive-en-US
+max,en-US,{{each}} {{property}} must not be greater than {{constraints.0}},max-en-US
+min,en-US,{{each}} {{property}} must not be less than {{constraints.0}},min-en-US
+is-instance,en-US,{{property}} is not instance of the specified object,is-instance-en-US
+is-not-empty-object,en-US,{{property}} should not be an empty object,is-not-empty-object
+contains,en-US,{{each}} {{property}} must contain a {{constraints.0}} string,contains-en-US
+is-alpha,en-US,{{each}} {{property}} must contain only letters (a-zA-Z),is-alpha-en-US
+is-alpha-numeric,en-US,{{each}} {{property}} must contain only letters and numbers,is-alpha-numeric-en-US
+is-ascii,en-US,{{each}} {{property}} must contain only ASCII characters,is-ascii-en-US
+is-base-32,en-US,{{each}} {{property}} must be base32 encoded,is-base-32-en-US
+is-base-64,en-US,{{each}} {{property}} must be base64 encoded,is-base-64-en-US
+is-bic,en-US,{{each}} {{property}} must be a BIC or SWIFT code,is-bic-en-US
+is-boolean-string,en-US,{{each}} {{property}} must be a boolean string,is-boolean-string-en-US
+is-btc-address,en-US,{{each}} {{property}} must be a BTC address,is-btc-address-en-US
+is-byte-length,en-US,{{each}} {{property}} byte length must fall into ({{constraints.0}} - {{constraints.1}}) range,is-byte-length-en-US
+is-credit-card,en-US,{{each}} {{property}} must be a credit card,is-credit-card-en-US
+is-data-uri,en-US,{{each}} {{property}} must be a data uri format,is-data-uri-en-US
+is-currency,en-US,{{each}} {{property}} must be a currency,is-currency-en-US
+is-date-string,en-US,{{each}} {{property}} must be a valid ISO 8601 date string,is-date-string-en-US
+is-decimal,en-US,{{each}} {{property}} is not a valid decimal number.,is-decimal-en-US
+is-ean,en-US,{{each}} {{property}} must be an EAN (European Article Number),is-ean-en-US
+is-email,en-US,{{each}} {{property}} must be an email,is-email-en-US
+is-firebase-push-id,en-US,{{each}} {{property}} must be a Firebase Push Id,is-firebase-push-id-en-US
+is-fqdn,en-US,{{each}} {{property}} must be a valid domain name,is-fqdn-en-US
+is-full-width,en-US,{{each}} {{property}} must contain a full-width characters,is-full-width-en-US
+is-half-width,en-US,{{each}} {{property}} must contain a half-width characters,is-half-width-en-US
+is-hash,en-US,{{each}} {{property}} must be a hash of type {{constraints.0}},is-hash-en-US
+is-hexa-decimal,en-US,{{each}} {{property}} must be a hexadecimal number,is-hexa-decimal-en-US
+is-hex-color,en-US,{{each}} {{property}} must be a hexadecimal color,is-hex-color-en-US
+is-hsl,en-US,{{each}} {{property}} must be a HSL color,is-hsl-en-US
+is-iban,en-US,{{each}} {{property}} must be an IBAN,is-iban-en-US
+is-ip,en-US,{{each}} {{property}} must be an ip address,is-ip-en-US
+is-isbn,en-US,{{each}} {{property}} must be an ISBN,is-isbn-en-US
+is-isin,en-US,{{each}} {{property}} must be an ISIN,is-isin-en-US
+is-json,en-US,{{each}} {{property}} must be a json string,is-json-en-US
+is-jwt,en-US,{{each}} {{property}} must be a JWT string,is-jwt-en-US
+is-locale,en-US,{{each}} {{property}} must be a locale,is-locale-en-US
+is-lower-case,en-US,{{each}} {{property}} must be a lower case string,is-lower-case-en-US
+is-magnet-uri,en-US,{{each}} {{property}} must be magnet uri format,is-magnet-uri-en-US
+is-military-time,en-US,{{each}} {{property}} must be a valid representation of military time in the format HH:MM,is-military-time-en-US
+is-mime-type,en-US,{{each}} {{property}} must be  MIME type format,is-mime-type-en-US
+is-mongo-id,en-US,{{each}} {{property}} must be a mongodb id,is-mongo-id-en-US
+is-mobile-phone,en-US,{{each}} {{property}} must be a phone number,is-mobile-phone-en-US
+is-multi-byte,en-US,{{each}} {{property}} must contain one or more multibyte chars,is-multi-byte-en-US
+is-number-string,en-US,{{each}} {{property}} must be a number string,is-number-string-en-US
+is-octal,en-US,{{each}} {{property}} must be valid octal number,is-octal-en-US
+is-passport-number,en-US,{{each}} {{property}} must be valid passport number,is-passport-number-en-US
+is-phone-number,en-US,{{each}} {{property}} must be a valid phone number,is-phone-number-en-US
+is-port,en-US,{{each}} {{property}} must be a port,is-port-en-US
+is-postal-code,en-US,{{each}} {{property}} must be a postal code,is-postal-code-en-US
+is-rfc-3339,en-US,{{each}} {{property}} must be RFC 3339 date,is-rfc-3339-en-US
+is-rgb-color,en-US,{{each}} {{property}} must be a rgb color,is-rgb-color-en-US
+is-sem-ver,en-US,{{each}} {{property}} must be a Semantic Versioning Specification,is-sem-ver-en-US
+is-surrogate-pair,en-US,{{each}} {{property}} must contain any surrogate pairs chars,is-surrogate-pair-en-US
+is-upper-case,en-US,{{each}} {{property}} must contain an uppercase string,is-uppser-case-en-US
+is-url,en-US,{{each}} {{property}} must be an URL,is-url-en-US
+is-uuid,en-US,{{each}} {{property}} must be a UUID,is-uuid-en-US
+is-variable-width,en-US,{{each}} {{property}} must contain a full-width and half-width characters,is-variable-width-en-US
+length,en-US,{{each}} {{property}} doesn't length falls in a range ({{min}} - {{max}}),length-en-US
+matches,en-US,{{each}} {{property}} must match {{constraints.0}} regular expression,matches-en-US
+max-length,en-US,{{each}} {{property}} must be shorter than or equal to {{constraints.0}} characters,max-length-en-US
+min-length,en-US,{{each}} {{property}} must be higher than or equal to {{constraints.0}} characters,min-length-en-US
+not-contains,en-US,{{each}} {{property}} must contain a {{constraints.0}} string,not-contains-en-US
+is-ethereum-address,en-US,{{each}} {{property}} must be an Ethereum address,is-ethereum-address-en-US
+is-array,en-US,{{each}} {{property}} must be an array,is-array-en-US
+is-boolean,en-US,{{each}} {{property}} must be a boolean value,is-boolean-en-US
+is-date,en-US,{{each}} {{property}} must be a Date instance,is-date-en-US
+is-enum,en-US,{{each}} {{property}} must be a valid enum value,is-enum-en-US
+is-int,en-US,{{each}} {{property}} must be an integer number,is-int-en-US
+is-number,en-US,{{each}} {{property}} must be a number conforming to the specified constraints,is-number-en-US
+is-object,en-US,{{each}} {{property}} must be an object,is-object-en-US
+is-string,en-US,{{each}} {{property}} must be a string,is-string-en-US
+event-type-not-found,en-US,EventType with id {{id}} not found,event-type-not-found-en-US
+event-subscriber-not-found,en-US,EventSubscriber with id {{id}} not found,event-subscriber-not-found-en-US
+deployment-info-not-found,en-US,There is no deployment info,deployment-info-not-found-en-US
+conversation-user-not-found,en-US,ConversationUser with id {{id}} not found,conversation-user-not-found-en-US
+ws-auth-failure,en-US,Auth Failed,ws-auth-failure-en-US
+conversation-not-found,en-US,Conversation with id {{id}} not found,conversation-not-found-en-US
+message-status-not-found,en-US,MessageStatus with id {{id}} not found,message-status-not-found-en-US
+message-not-found,en-US,Message with id {{id}} not found,message-not-found-en-US
+ws-validation-failed,en-US,Validation Failed,ws-validation-failed-en-US
+glossary-not-found,en-US,Glossary with id {{id}} not found,glossary-not-found-en-US
+glossary-value-not-found,en-US,GlossaryValue with id {{id}} not found,glossary-value-not-found-en-US
+glossary-key-already-exists,en-US,The requested operation violates unique constraint on key column. {{details}},glossary-key-already-exists-en-US
+glossary-value-already-exists,en-US,A translation for this locale and this key already exists,glossary-value-already-exists-en-US
+event-example-data-not-found,en-US,EventExampleData with id {{id}} not found,event-example-data-not-found-en-US
+event-record-not-found,en-US,EventRecord with id {{id}} not found,event-record-not-found-en-US
+invalid-credentials,en-US,Credentials are wrong,invalid-credentials-en-US
+invalid-token,en-US,Token provided is wrong,invalid-token-en-US
+missing-auth,en-US,Authorization header is not passed,missing-auth-en-US
+invalid-auth-header,en-US,Authorization header type is not supported,invalid-auth-header-en-US
+disallowed-domain,en-US,{{domain}} is not allowed,disallowed-domain-en-US
+invalid-mail-type,en-US,Invalid mailType provided,invalid-mail-type-en-US
+invalid-recipient,en-US,Recipient does not exist,invalid-recipient-en-US
+mail-type-not-found,en-US,MailType with id {{id}} not found,mail-type-not-found-en-US
+notification-type-channel-user-not-found,en-US,NotificationTypeChannelUser with id {{id}} not found,notification-type-channel-user-not-found
+notification-type-channel-not-found,en-US,NotificationTypeChannel with id {{id}} not found,notification-type-channel-not-found-en-US
+notification-type-not-found,en-US,NotificationType with id {{id}} not found,notification-type-not-found-en-US
+notification-user-not-found,en-US,NotificationUser with id {{id}} not found,notificaiton-user-not-found-en-US
+notification-not-found,en-US,Notification with id {{id}} not found,notification-not-found-en-US
+user-not-authenticated,en-US,Action could not be complete without authenticated userId,user-not-authenticated-en-US
+notification-and-user-not-found,en-US,Notification with id {{id}} and notificationUserId {{notificationUserId}} not found,notification-and-user-not-found-en-US
+user-invitation-not-found,en-US,UserInvite with id {{id}} not found,user-invitation-not-found-en-US
+user-provider-not-found,en-US,UserProvider with id {{id}} not found,user-provider-not-found-en-US
+user-token-not-found,en-US,UserToken with id {{id}} not found,user-token-not-found-en-US
+user-token-not-found-in-db,en-US,There is no such token in db,user-token-not-found-in-db-en-US
+user-not-found,en-US,User with id {{id}} not found,user-not-found-en-US
+invalid-user-token,en-US,User with id {{id}} not found,invalid-user-token-en-US
+expired-user-token,en-US,Token has been expired,expired-user-token-en-US
+user-invite-acceptance-failed,en-US,Unable to accept because invite is already {{userInviteStatus}},user-invite-acceptance-failed-en-US
+bulk-user-invite-limit-exceeded,en-US,Only {{maxAllowed}} can be invited at once,bulk-user-invite-limit-exceeded-en-US
+user-invite-resending-failed,en-US,Unable to resend because invite is already {{userInviteStatus}},user-invite-resending-failed-en-US
+user-invite-cancellation-failed,en-US,Unable to cancel user invite because invite is already {{userInviteStatus}},user-invite-cancellation-failed-en-US
+user-already-exists,en-US,The user with the email address {{email}} already exists,user-already-exists-en-US
+user-already-invited,en-US,{{email}} has already been invited,user-already-invited-en-US
+user-invite-already-accepted,en-US,Invitation has already been accepted,user-invite-already-accepted-en-US
+user-invite-already-sent,en-US,Invite has already been sent,user-invite-already-sent-en-US
+file-status-update-failed,en-US,Can't set the status '{{status}}' for already uploaded file,file-status-update-failed-en-US
+file-not-found,en-US,File with id {{id}} not found,file-not-found-en-US
+file-not-completely-uploaded-status-update-failed,en-US,Can't set the status {{status}} for file that is not completely uploaded,file-not-completely-uploaded-status-update-failed-en-US
+token,en-US,token,token-en-US
+password,en-US,password,password-en-US
+new-password,en-US,newPassword,new-password-en-US
+provider-id,en-US,providerId,provider-id-en-US
+provider-user-id,en-US,providerUserId,provider-user-id-en-US
+avatar,en-US,avatar,avatar-en-US
+event-type,en-US,eventType,event-type-en-US
+consumer,en-US,consumer,consumer-en-US
+parameters,en-US,parameters,parameters-en-US
+order,en-US,order,order-en-US
+sort,en-US,sort,sort-en-US
+key,en-US,key,key-en-US
+value,en-US,value,value-en-US
+search,en-US,search,search-en-US
+api,en-US,api,api-en-US
+id,en-US,id,id-en-US
+file-size,en-US,fileSize,file-size-en-US
+file-type,en-US,fileType,file-type-en-US
+custom-meta-data,en-US,customMetaData,custom-meta-data-en-US
+path,en-US,path,path-en-US
+user-login-history-id,en-US,userLoginHistoryId,user-login-history-id-en-US
+avatar-image-identifier,en-US,avatarImageIdentifier,avatar-image-identifier-en-US
+phone,en-US,phone,phone-en-US
+phone,de-DE,Telefon,phone-de-DE
+roq-identifier,en-US,roqIdentifier,roq-identifier-en-US
+opted-in,en-US,optedIn,opted-in-en-US
+sync,en-US,sync,sync-en-US
+ip,en-US,ip,ip-en-US
+host,en-US,host,host-en-US
+timestamp,en-US,timestamp,timestamp-en-US
+subscribe-to-mail,en-US,subscribeToMail,subscribe-to-mail-en-US
+data,en-US,data,data-en-US
+ids,en-US,ids,ids-en-US
+message-id,en-US,messageId,message-id-en-US
+conversation-user-id,en-US,conversationUserId,conversation-user-id-en-US
+title,en-US,title,title-en-US
+is-group,en-US,isGroup,is-group-en-US
+archived,en-US,archived,archived-en-US
+owner-id,en-US,ownerId,owner-id-en-US
+owner-ids,en-US,ownerIds,owner-ids-en-US
+member-ids,en-US,memberIds,member-ids-en-US
+conversation-id,en-US,conversationId,conversation-id-en-US
+message-status-id,en-US,messageStatusId,message-status-id-en-US
+body,en-US,body,body-en-US
+author-id,en-US,authorId,author-id-en-US
+read,en-US,read,read-en-US
+notified,en-US,notified,notified-en-US
+user-ids,en-US,userIds,user-ids-en-US
+time-range,en-US,timeRange,time-range-en-US
+first-message,en-US,firstMessage,first-message-en-US
+find-or-create,en-US,findOrCreate,find-or-create-en-US
+conversation,en-US,conversation,conversation-en-US
+filter,en-US,filter,filter-en-US
+include-archived,en-US,includeArchived,include-archived-en-US
+limit,en-US,limit,limit-en-US
+offset,en-US,offset,offset-en-US
+full-name,en-US,fullName,full-name-en-US
+initials,en-US,initials,initials-en-US
+total-count,en-US,totalCount,total-count-en-US
+updated-at,en-US,updatedAt,updated-at-en-US
+unread-count,en-US,unreadCount,unread-count-en-US
+last-message,en-US,lastMessage,last-message-en-US
+last-message-timestamp,en-US,lastMessageTimestamp,last-message-timestamp-en-US
+mentioned-ids,en-US,mentionedIds,mentioned-ids-en-US
+read-by,en-US,readBy,read-by-en-US
+last-timestamp,en-US,lastTimestamp,last-timestamp-en-US
+message-ids,en-US,messageIds,message-ids-en-US
+member-id,en-US,memberId,member-id-en-US
+is-online,en-US,isOnline,is-online-en-US
+glossary-id,en-US,glossaryId,glossary-id-en-US
+locales,en-US,locales,locales-en-US
+glossary-value-id,en-US,glossaryValueId,glossary-value-id-en-US
+content,en-US,content,content-en-US
+entity-uuid,en-US,entityUUID,entity-uuid-en-US
+entity-type,en-US,entityType,entity-type-en-US
+meta-obj,en-US,metaObj,meta-obj-en-US
+object,en-US,object,object-en-US
+start-date,en-US,startDate,start-date-en-US
+end-date,en-US,endDate,end-date-en-US
+count,en-US,count,count-en-US
+api-key,en-US,apiKey,api-key-en-US
+api-secret,en-US,apiSecret,api-secret-en-US
+access-token,en-US,accessToken,access-token-en-US
+to,en-US,to,to-en-US
+subject,en-US,subject,subject-en-US
+mail-type,en-US,mailType,mail-type-en-US
+entity-id,en-US,entityId,entity-id-en-US
+directly-injected-variables,en-US,directlyInjectedVariables,directly-injected-variables-en-US
+description,en-US,description,description-en-US
+template-id,en-US,templateId,template-id-en-US
+payload,en-US,payload,payload-en-US
+notification-type-id,en-US,notificationTypeId,notification-type-id-en-US
+notification-user-id,en-US,notificationUserId,notification-user-id-en-US
+notifying-users,en-US,notifyingUsers,notifying-users-en-US
+meta,en-US,meta,meta-en-US
+link,en-US,link,link-en-US
+notification-type-channel-id,en-US,notificationTypeChannelId,notification-type-channel-id-en-US
+type,en-US,Type,type-en-US
+type,de-DE,Typ,type-de-DE
+sub-type,en-US,subType,sub-type-en-US
+default-enabled,en-US,defaultEnabled,default-enabled-en-US
+enabled,en-US,enabled,enabled-en-US
+icon,en-US,icon,icon-en-US
+default-active,en-US,defaultActive,default-active-en-US
+active,en-US,active,active-en-US
+active,de-DE,aktiv,active-de-DE
+invited,en-US,invited,invited-en-US
+invited,de-DE,eingeladen,invited-de-DE
+document-owner-id,en-US,documentOwnerId,document-owner-id-en-US
+status,en-US,status,status-en-US
+content-type,en-US,contentType,content-type-en-US
+expires-at,en-US,expiresAt,expires-at-en-US
+file-max-size,en-US,fileMaxSize,file-max-size-en-US
+session-id,en-US,sessionId,session-id-en-US
+config,en-US,config,config-en-US
+user-provider-id,en-US,userProviderId,user-provider-id-en-US
+user-invite-id,en-US,userInviteId,user-invite-id-en-US
+user-token-id,en-US,userTokenId,user-token-id-en-US
+provider-identifier,en-US,providerIdentifier,provider-identifier-en-US
+provider-user-identifier,en-US,providerUserIdentifier,provider-user-identifier-en-US
+keep-logged-in,en-US,keepLoggedIn,keep-logged-in-en-US
+valid-till,en-US,validTill,valid-till-en-US
+user-email-already-exists,en-US,The user with current email exists,user-email-already-exists-en-US
+user-email-already-exists,de-DE,Der Benutzer mit der aktuellen E-Mail existiert,user-email-already-exists-de-DE
+user-incorrect-email-password,en-US,The email/password you entered are not correct,user-incorrect-email-password-en-US
+user-incorrect-email-password,de-DE,Die Zugangsdaten sind nicht korrekt.,user-incorrect-email-password-de-DE
+user-invalid-token,en-US,Token is not valid,user-invalid-token-en-US
+invalid-user-password,en-US,Invalid password,invalid-user-password-en-US
+user-not-confirmed,en-US,User is not confirmed,user-not-confirmed-en-US
+user-email-not-provided,en-US,No email provided,user-email-not-provided-en-US
+user-invalid-current-password,en-US,Invalid current password,user-invalid-current-password-en-US
+user-invalid-current-password,de-DE,Ungültiges aktuelles Passwort,user-invalid-current-password-de-DE
+invalid-api-key,en-US,Invalid api key,invalid-api-key-en-US
+default-locale-undefined,en-US,Default locale {{defaultLocale}} undefined,default-locale-undefined-en-US
+user-login-history-not-found,en-US,UserLoginHistory with id {{id}} not found,user-login-history-not-found-en-US
+user-max-allowed,en-US,Only {{maxAllowed}} can be invited at once,user-max-allowed-en-US
+unauthorized-exception,en-US,{{message}},unauthorized-exception-en-US
+internal-server-error,en-US,Internal server error,internal-server-error-en-US
+generic-user-creation-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: Create User,generic-user-creation-failed-en-US
+generic-user-invite-acceptance-failed,en-US,ROQ Platform  is currently unavailable. Action: Accept User Invite,generic-user-invite-acceptance-failed-en-US
+generic-user-invite-creation-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: Create User Invite,generic-user-invite-creation-failed-en-US
+generic-user-providers-deletion-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: Delete User Providers,generic-user-providers-deletion-failed-en-US
+generic-user-providers-fetching-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: Get User Providers,generic-user-providers-fetching-failed-en-US
+generic-user-refresh-token-creation-failed,en-US,Response from ROQ Platform Gateway is currently unavailable. Action: Create User Refresh Token,generic-user-refresh-token-creation-failed-en-US
+generic-user-refresh-token-rotation-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: Rotate Refresh Token,generic-user-refresh-token-rotation-failed-en-US
+generic-user-refresh-token-verification-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: Verify User Refresh Token,generic-user-refresh-token-verification-failed-en-US
+generic-user-reset-password-token-fetching-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: Reset Password Token,generic-user-reset-password-token-fetching-failed-en-US
+generic-user-token-deletion-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: Delete User Token,generic-user-token-deletion-failed-en-US
+generic-user-validate-email-token-creation-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: Create User Validate Email Token,generic-user-validate-email-token-creation-failed-en-US
+generic-user-invite-cancellation-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: Cancel User Invite,generic-user-invite-cancellation-failed-en-US
+generic-valid-user-token-fetching-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: Get Valid User Token,generic-valid-user-token-fetching-failed-en-US
+generic-user-invite-fetching-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: Get User Invite,generic-user-invite-fetching-failed-en-US
+generic-user-invite-refresh-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: Refresh User Invite,generic-user-invite-refresh-failed-en-US
+graphql-validation-failed,en-US,Invalid Input,graphql-validation-failed-en-US
+invalid-uuid,en-US,Provided argument should have been a valid uuid,invalid-uuid-en-US
+mail-type-localized-not-found,en-US,MailTypeLocalized with id {{id}} not found,mail-type-localized-not-found-en-US
+localized-mail-type-not-found,en-US,No localized mail type found,localized-mail-type-not-found
+user-service-unreachable,en-US,ROQ Platform User is currently unavailable. Action: Get User,user-service-unreachable-en-US
+data-service-unreachable,en-US,ROQ Platform Data is currently unavailable. Action: {{action}},data-service-unreachable-en-US
+generic-file-creation-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: Create File,generic-file-creation-failed-en-US
+generic-file-fetching-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: Get File,generic-file-fetching-failed-en-US
+generic-file-updation-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: Update File Status,generic-file-updation-failed-en-US
+generic-health-check-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: {{service}} Health Check,generic-health-check-failed-en-US
+generic-platform-creation-failed,en-US,ROQ Platform Gateway is currently unavailable. Action: Create Platform Token,generic-platform-creation-failed-en-US
+notification-type-category_onboarding,en-US,Onboarding,notification-type-category_onboarding-en-US
+notification-type-category_onboarding,de-DE,Onboarding,notification-type-category_onboarding-de-DE
+notification-type-category_files,en-US,Files,notification-type-category_files-en-US
+notification-type-category_chat,en-US,Chat,notification-type-category_chat-en-US
+notification-type-category_files,de-DE,Dateien,notification-type-category_files-de-DE
+notification-type-category_chat,de-DE,Nachrichten,notification-type-category_chat-de-DE
+notification-type_user-info,de-DE,Neu registierte Nutzer,notification-type_user-info-de-DE
+notification-type_files-new,de-DE,Neu hochgeladene Dateien,notification-type_files-new-de-DE
+notification-type_chat-new,de-DE,Neue Nachrichten,notification-type-chat_new-de-DE
+notification-type_user-info,en-US,Newly joined users,notification-type_user-info-en-US
+notification-type_files-new,en-US,Newly uploaded files,notification-type_files-new-en-US
+notification-type_chat-new,en-US,New chat message,notification-type_chat-new-en-US
+unauthorized,en-US,Unauthorized,unauthorized-en-US
+unique-constraint-violated,en-US,This request is invalid as it violates an unique constraint,unique-constraint-violated-en-US
+notification-mail-history-not-found,en-US,NotificationMailHistory with id {{id}} not found,notification-mail-history-not-found-en-US
+notification-sms-history-not-found,en-US,NotificationSmsHistory with id {{id}} not found,notification-sms-history-not-found-en-US
+notification-type-category-not-found,en-US,NotificationTypeCategory with id {{id}} not found,notification-type-category-not-found-en-US
+notification-type-channel-mail-not-found,en-US,NotificationTypeChannelMail with id {{id}} not found,notification-type-channel-mail-not-found-en-US
+notification-type-channel-sms-localized-not-found,en-US,NotificationTypeChannelSmsLocalized with id {{id}} not found,notification-type-channel-sms-localized-not-found-en-US
+notification-type-channel-sms-not-found,en-US,NotificationTypeChannelSms with id {{id}} not found,notification-type-channel-sms-not-found-en-US
+notification-type-channel-web-localized-not-found,en-US,NotificationTypeChannelWebLocalized with id {{id}} not found,notification-type-channel-web-localized-not-found-en-US
+notification-type-channel-web-not-found,en-US,NotificationTypeChannelWeb with id {{id}} not found,notification-type-channel-web-not-found-en-US
+notification-type-user-preference-not-found,en-US,NotificationTypeUserPreference with id {{id}} not found,notification-type-user-preference-not-found-en-US
+notification-type-with-given-key-not-found,en-US,Notification Type with key {{key}} not found.,notification-type-with-given-key-not-found-en-US
+notification-web-not-found,en-US,NotificationWeb with id {{id}} not found,notification-web-not-found-en-US
+profile-update-success,en-US,Profile updated successfully,profile-update-success-en-US
+profile-update-success,de-DE,Profil wurde aktualisiert,profile-update-success-de-DE
+user-invites,en-US,User invites,user-invites-en-US
+all-user-invites,en-US,See all user invites,all-user-invites-en-US
+invite-user,en-US,Invite user,invite-user-en-US
+created-at,en-US,Created At,created-at-en-US
+invitation-status,en-US,Invitation status,invitation-status-en-US
+invitation-status_pending,en-US,Pending,invitation-status_pending-en-US
+invitation-status_accepted,en-US,Accepted,invitation-status_accepted-en-US
+invitation-status_expired,en-US,Expired,invitation-status_expired-en-US
+invitation-status_canceled,en-US,Cancelled,invitation-status_canceled-en-US
+user-invites,de-DE,Benutzereinladungen,user-invites-de-DE
+all-user-invites,de-DE,Alle Benutzereinladungen anzeigen,all-user-invites-de-DE
+invite-user,de-DE,Benutzer einladen,invite-user-de-DE
+created-at,de-DE,Erstellt bei,created-at-de-DE
+invitation-status,de-DE,Einladungsstatus,invitation-status-de-DE
+invitation-status_pending,de-DE,Ausstehend,invitation-status_pending-de-DE
+invitation-status_accepted,de-DE,Akzeptiert,invitation-status_accepted-de-DE
+invitation-status_expired,de-DE,Abgelaufen,invitation-status_expired-de-DE
+invitation-status_canceled,de-DE,Abgesagt,invitation-status_canceled-de-DE
+upload-failure,en-US,Upload Failed,upload-failure-en-US
+upload-failure,de-DE,Upload fehlgeschlagen,upload-failure-de-DE
+upload-failure_upload-url-missing,en-US,Missing required upload URL for cloud upload,upload-failure_upload-url-missing-en-US
+upload-failure_upload-url-missing,de-DE,Erforderliche Upload-URL für Cloud-Upload fehlt,upload-failure_upload-url-missing-de-DE
+upload-failure_upload-url-expired,en-US,Signed URL expired already,upload-failure_upload-url-expired-en-US
+upload-failure_upload-url-expired,de-DE,Signierte URL ist bereits abgelaufen,upload-failure_upload-url-expired-de-DE
+upload-failure_missing-max-file-size,en-US,Missing required maxFileSize for cloud upload,upload-failure_missing-max-file-size-en-US
+upload-failure_missing-max-file-size,de-DE,Erforderliche maxFileSize für Cloud-Upload fehlt,upload-failure_missing-max-file-size-de-DE
+upload-failure_file-size-exceeds-max-file-size,en-US,File upload failed. Maximum files size is {{maxFileSize}}MB. Please try a smaller file.,upload-failure_file-size-exceeds-max-file-size-en-US
+upload-failure_file-size-exceeds-max-file-size,de-DE,Datei-Upload fehlgeschlagen. Die maximale Dateigröße beträgt {{maxFileSize}}MB. Bitte versuchen Sie es mit einer kleineren Datei.,upload-failure_file-size-exceeds-max-file-size-de-DE
+upload-failure_content-type-mismatch,en-US,The content type does not match,upload-failure_content-type-mismatch-en-US
+upload-failure_content-type-mismatch,de-DE,Der Inhaltstyp stimmt nicht überein,upload-failure_content-type-mismatch-de-DE
+file-association-not-found,en-US,FileAssociation with id {{id}} not found,file-association-not-found-en-US
+file-association-not-found,de-DE,FileAssociation mit ID {{id}} nicht gefunden,file-association-not-found-de-DE
+file-category-with-given-key-not-found,en-US,FileCategory with key {{fileCategory}} not found,file-category-with-given-key-not-found-en-US
+file-category-with-given-key-not-found,de-DE,FileCategory mit Key {{filecategory}} nicht gefunden,file-category-with-given-key-not-found-de-DE
+file-category-not-found,en-US,FileCategory with id {{id}} not found,file-category-not-found-en-US
+file-category-not-found,de-DE,Dateikategorie mit ID {{id}} nicht gefunden,file-category-not-found-de-DE
+file-category-content-type-not-found,en-US,FileCategoryContentType with id {{id}} not found,file-category-content-type-not-found-en-US
+file-category-content-type-not-found,de-DE,FileCategoryContentType mit ID {{id}} nicht gefunden,file-category-content-type-not-found-de-DE
+invalid-content-type-for-file-category,en-US,File type {{extension}} is not a valid file type for {{fileCategoryName}},invalid-content-type-for-file-category-en-US
+invalid-content-type-for-file-category,de-DE,Dateityp {{extension}} ist kein gültiger Dateityp für {{fileCategoryName}},invalid-content-type-for-file-category-de-DE
+files.delete,en-US,Delete,files.delete-en-US
+files.delete,de-DE,Löschen,files.delete-de-DE
+files.delete-file,en-US,Delete,files.delete-file-en-US
+files.delete-file,de-DE,Löschen,files.delete-file-de-DE
+files.delete-file-title,en-US,"Delete a file?",files.delete-file-title-en-US
+files.delete-file-title,de-DE,"Eine Datei löschen?",files.delete-file-title-de-DE
+file.make-file-public-title,en-US,Make file public,file.make-file-public-title-en-US
+file.make-file-public-title,de-DE,Datei öffentlich machen,file.make-file-public-title-de-DE
+file.make-file-public-message,en-US,"Are you sure you want to make public the following file: {{fileName}}",file.make-file-public-message-en-US
+file.make-file-public-message,de-DE,"Möchten Sie die folgende Datei wirklich veröffentlichen: {{fileName}}",file.make-file-public-message-de-DE
+file.make-file-private,en-US,Make private,file.make-file-private-en-US
+file.make-file-private,de-DE,Privatisieren,file.make-file-private-de-DE
+file.make-file-private-title,en-US,Make file private,file.make-file-private-title-en-US
+file.make-file-private-title,de-DE,Datei privat machen,file.make-file-private-title-de-DE
+file.make-file-private-message,en-US,Are you sure you want to make private the following file: {{fileName}},file.make-file-private-message-en-US
+file.make-file-private-message,de-DE,Möchten Sie die folgende Datei wirklich privat machen: {{fileName}},file.make-file-private-message-de-DE
+files.download-file,en-US,Download,files.download-file-en-US
+files.download-file,de-DE,Download,files.download-file-de-DE
+files.cancel,en-US,Cancel,files.cancel-en-US
+files.cancel,de-DE,Abbrechen,files.cancel-de-DE
+files.deleted_successfully,en-US,{{fileName}} is deleted successfully,files.deleted_successfully-en-US
+files.deleted_successfully,de-DE,{{fileName}} wurde erfolgreich gelöscht,files.deleted-successfully-de-DE
+files.deleted_successfully_bulk,en-US,Files deleted successfully,files.deleted_successfully_bulk-en-US
+files.deleted_successfully_bulk,de-DE,Dateien erfolgreich gelöscht,files.deleted-successfully_bulk-de-DE
+files.uploaded-successfully,en-US,{{count}} file uploaded successfully,files.uploaded-successfully-en-US
+files.uploaded-successfully,de-DE,{{count}} Datei erfolgreich hochgeladen,files.uploaded-successfully-de-DE
+files.uploaded-successfully_plural,en-US,{{count}} files uploaded successfully,files.uploaded-successfully_plural-en-US
+files.uploaded-successfully_plural,de-DE,{{count}} Dateien erfolgreich hochgeladen,files.uploaded-successfully_plural-de-DE
+files.confirm_deletion,en-US,Are you sure you want to delete the following file: {{fileName}},files.confirm_deletion-en-US
+files.confirm_deletion,de-DE,Möchten Sie die folgende Datei wirklich löschen: {{fileName}},files.confirm_deletion-de-DE
+files.confirm_bulk_deletion,en-US,Are you sure you want to delete {{length}} files?,files.confirm_bulk_deletion-en-US
+files.confirm_bulk_deletion,de-DE,Möchten Sie wirklich {{length}} Dateien löschen?,files.confirm_bulk_deletion-de-DE
+title_edit-user-invite,en-US,Edit User Invite {{firstName}} {{lastName}},title_edit-user-invite-en-US
+title_edit-user-invite,de-DE,Benutzereinladung bearbeiten {{firstName}} {{lastName}},title_edit-user-invite-de-DE
+invitation-resend,en-US,Resend invitation,invitation-resend-en-US
+invitation-resend,de-DE,Einladung erneut versenden,invitation-resend-de-DE
+invitation-cancel,en-US,Cancel invitation,invitation-cancel-en-US
+invitation-cancel,de-DE,Einladung stornieren,invitation-cancel-de-DE
+invitation-updated,en-US,Invitation updated successfully,invitation-updated-en-US
+invitation-updated,de-DE,Einladung erfolgreich aktualisiert,invitation-updated-de-DE
+invitation-updated_canceled,de-DE,Einladung erfolgreich abgebrochen,invitation-updated_canceled-de-DE
+invitation-updated_canceled,en-US,Invitation successfully cancelled,invitation-updated_canceled-en-US
+invitation-updated_pending,de-DE,Einladung erfolgreich versendet,invitation-updated_pending-de-DE
+invitation-updated_pending,en-US,Invitation successfully sent,invitation-updated_pending-en-US
+invitation-status-description,en-US,Invitation Date,invitation-status-description-en-US
+invitation-status-description,de-DE,Einladungsdatum,invitation-status-description-de-DE
+invitation-status-description_accepted,en-US,Invitation was accepted,invitation-status-description_accepted-en-US
+invitation-status-description_accepted,de-DE,Einladung wurde angenommen,invitation-status-description_accepted-de-DE
+invitation-status-description_canceled,en-US,Invitation was cancelled,invitation-status-description_canceled-en-US
+invitation-status-description_canceled,de-DE,Einladung wurde storniert,invitation-status-description_canceled-de-DE
+invitation-status-description_expired,en-US,Invitation expired,invitation-status-description_expired-en-US
+invitation-status-description_expired,de-DE,Einladung abgelaufen,invitation-status-description_expired-de-DE
+invitation-status-description_pending,en-US,"Invitation expires in 24hrs, user can accept invitiation until",invitation-status-description_pending-en-US
+invitation-status-description_pending,de-DE,"Die Einladung läuft in 24 Stunden ab, Benutzer kann Einladung annehmen bis",invitation-status-description_pending-de-DE
+user-invite-updated-successfully,en-US,User invite updated successfully,user-invite-updated-successfully-en-US
+user-invite-updated-successfully,de-DE,Benutzereinladung erfolgreich aktualisiert,user-invite-updated-successfully-de-DE
+user-group-not-found,en-US,UserGroup with id {{id}} not found,user-group-not-found-en-US
+file.edit.validations.name.required,en-US,File name is required,file.edit.validations.name.required-en-US
+file.edit.validations.name.required,de-DE,Bestandsnaam is vereist,file.edit.validations.name.required-de-DE
+file.edit.validations.name.max-length-exceeded,en-US,File name cannot be more than {{characters}} characters long,file.edit.validations.name.max-length-exceeded-en-US
+file.edit.validations.name.max-length-exceeded,de-DE,Der Dateiname darf nicht länger als {{characters}} zeichen lang sein,file.edit.validations.name.max-length-exceeded-de-DE
+file.edit.validations.name.invalid-name,en-US,File name is not valid,file.edit.validations.name.invalid-name-en-US
+file.edit.validations.name.invalid-name,de-DE,Dateiname ist ungültig,file.edit.validations.name.invalid-name-de-DE
+title_edit-user-file,en-US,Edit File {{id}},title_edit-user-file-en-US
+title_edit-user-file,de-DE,Bewerk bestand {{id}},title_edit-user-file-de-DE
+file.edit.success,en-US,File updated successfully,file.edit.success-en-US
+file.edit.success,de-DE,Bestand succesvol bijgewerkt,file.edit.success-de-DE
+file.edit.failure,en-US,File name update failed,file.edit.failure-en-US
+file.edit.failure,de-DE,Bijwerken bestandsnaam mislukt,file.edit.failure-de-DE
+file.edit.title,en-US,Editing file,file.edit.title-en-US
+file.edit.title,de-DE,Datei bearbeiten,file.edit.title-de-DE
+file.edit.saveButton,en-US,SAVE FILE NAME,file.edit.saveButton-en-US
+file.edit.saveButton,de-DE,BESTANDSNAAM OPSLAAN,file.edit.saveButton-de-DE
+file.edit.name-field-label,en-US,File name,file.edit.name-field-label-en-US
+file.edit.name-field-label,de-DE,Bestandsnaam,file.edit.name-field-label-de-DE
+file.file-type,en-US,File Type,file.file-type-en-US
+file.file-type,de-DE,Dateityp,file.file-type-de-DE
+file.extension,en-US,Extension,file.extension-en-US
+file.extension,de-DE,Verlängerung,file.extension-de-DE
+file.edit-subtitle,en-US,Provide below requested information,file.edit-subtitle-en-US
+file.edit-subtitle,de-DE,Geben Sie die unten angeforderten Informationen an,file.edit-subtitle-de-DE
+file.private,en-US,Private,file.private-en-US
+file.private,de-DE,Private,file.private-de-DE
+file.copy-link,en-US,Copy link,file.copy-link-en-US
+file.copy-link,de-DE,Link kopieren,file.copy-link-de-DE
+file.file-is-public,en-US,This file is public,file.file-is-public-en-US
+file.file-is-public,de-DE,Diese Datei ist öffentlich,file.file-is-public-de-DE
+file.publicly-share-file-title,en-US,Share your file URL publicly,file.publicly-share-file-title-en-US
+file.publicly-share-file-title,de-DE,Teilen Sie Ihre Datei-URL öffentlich,file.publicly-share-file-title-de-DE
+file.publicly-share-file-done,en-US,Done,file.publicly-share-file-done-en-US
+file.publicly-share-file-done,de-DE,Fertig,file.publicly-share-file-done-de-DE
+file.made-public-successfully,en-US,{{fileName}} is public now. URL is copied to your clipboard,file.made-public-successfully-en-US
+file.made-public-successfully,de-DE,{{fileName}} ist jetzt öffentlich. Die URL wird in Ihre Zwischenablage kopiert,file.made-public-successfully-de-DE
+file.copy-url-link,en-US,File url has been copied to clipboard,file.copy-url-link-en-US
+file.copy-url-link,de-DE,Die Datei-URL wurde in die Zwischenablage kopiert,file.copy-url-link-de-DE
+file.made-private-successfully,en-US,{{fileName}} is made private,file.made-private-successfully-en-US
+file.made-private-successfully,de-DE,{{fileName}} wird privat gemacht,file.made-private-successfully-de-DE
+file.make-file-public,en-US,Make public,file.make-file-public-en-US
+file.make-file-public,de-DE,Veröffentlichen,file.make-file-public-de-DE
+file.copy-file-public-link,en-US,Copy URL,file.copy-file-public-link-en-US
+file.copy-file-public-link,de-DE,URL kopieren,file.copy-file-public-link-de-DE
+user.change-status_activate,en-US,Activate User,user.change-status_activate-en-US
+user.change-status_activate,de-DE,Benutzer aktivieren,user.change-status_activate-de-DE
+user.change-status_deactivate,en-US,Deactivate User,user.change-status_deactivate-en-US
+user.change-status_deactivate,de-DE,Benutzer deaktivieren,user.change-status_deactivate-de-DE
+user.change-status-message_activate,en-US,"Are you sure you want to activate user?",user.change-status-message_activate-en-US
+user.change-status-message_activate,de-DE,"Sind Sie sicher, dass Sie den Benutzer aktivieren möchten?",user.change-status-message_activate-de-DE
+user.change-status-message_deactivate,en-US,"Are you sure you want to deactivate user?",user.change-status-message_deactivate-en-US
+user.change-status-message_deactivate,de-DE,"Sind Sie sicher, dass Sie den Benutzer deaktivieren möchten?",user.change-status-message_deactivate-de-DE
+user.status-change-modal.confirm,en-US,Confirm,user.status-change-modal.confirm-en-US
+user.status-change-modal.confirm,de-DE,Bestätigen Sie,user.status-change-modal.confirm-de-DE
+user.status-change-modal.cancel,en-US,Cancel,user.status-change-modal.cancel-en-US
+user.status-change-modal.cancel,de-DE,Abbrechen,user.status-change-modal.cancel-de-DE
+user.deactivated-time-message,en-US,User was deactivated,user.deactivated-time-message-en-US
+user.deactivated-time-message,de-DE,Benutzer wurde deaktiviert,user.deactivated-time-message-de-DE
+user.deactivated-name-message,en-US,"Deactivated users can’t log in, in the project they will appear as",user.deactivated-name-message-en-US
+user.deactivated-name-message,de-DE,"Deaktivierte Benutzer können sich nicht anmelden, im Projekt werden sie als angezeigt",user.deactivated-name-message-de-DE
+user.deactivated,en-US,deactivated,user.deactivated-en-US
+user.deactivated,de-DE,deaktiviert,user.deactivated-de-DE
+user-active-status-updated-successfully,en-US,User status successfully changed,user-active-status-updated-successfully-en-US
+user-active-status-updated-successfully,de-DE,Benutzerstatus erfolgreich geändert,user-active-status-updated-successfully-de-DE
+file.public,en-US,Public,file.public-en-US
+file.public,de-DE,Öffentliche,file.public-de-DE
+message-center.new-conversation.cancelBtnTitle,en-US,Cancel,message-center.new-conversation.cancelBtnTitle-en-US
+message-center.new-conversation.cancelBtnTitle,de-DE,Abbrechen,message-center.new-conversation.cancelBtnTitle-de-DE
+change-password-success,en-US,Password Changed Successfully,change-password-success-en-US
+change-password-success,de-DE,Das Passwort wurde erfolgreich geändert,change-password-success-de-DE
+cancel,en-US,Cancel,cancel-en-US
+cancel,de-DE,Abbrechen,cancel-de-DE
+message.deleted,en-US,This message was removed by sender,message.deleted-en-US
+message.deleted,de-DE,Diese Nachricht wurde vom Absender entfernt,message.deleted-de-DE
+message.edited,en-US,This message was edited,message.edited-en-US
+message.edited,de-DE,Diese Nachricht wurde bearbeitet,message.edited-de-DE
+message-center.new-conversation.groupChat,en-US,Group chat,message-center.new-conversation.groupChat-en-US
+message-center.new-conversation.groupChat,de-DE,Gruppenchat,message-center.new-conversation.groupChat-de-DE
+message-center.new-conversation.chat,en-US,Chat,message-center.new-conversation.chat-en-US
+message-center.new-conversation.chat,de-DE,Plaudern,message-center.new-conversation.chat-de-DE
+select-one-warning,en-US,You can’t remove all users from the conversation. Please select at least 1 user.,select-one-warning-en-US
+select-one-warning,de-DE,Sie können nicht alle Benutzer aus der Konversation entfernen. Bitte wählen Sie mindestens 1 Benutzer aus.,select-one-warning-de-DE
+generic-network-offline,en-US,Please check your internet connection first,generic-network-offline-en-US
+generic-network-offline,de-DE,Bitte überprüfen Sie zuerst Ihre Internetverbindung,generic-network-offline-de-DE
+user-authorization.title,en-US,User Authorization,user-authorization.title-en-US
+user-authorization.title,de-DE,Benutzerberechtigung,user-authorization.title-de-DE
+user-authorization.summary,en-US,Fast and secure user authorization and authentication for your application.,user-authorization.summary-en-US
+user-authorization.summary,de-DE,Schnelle und sichere Benutzerautorisierung und -authentifizierung für Ihre Anwendung.,user-authorization.summary-de-DE
+user-authorization.sub-feature_one.description,en-US,"Registration, including double-opt-in and password reset.",user-authorization.sub-feature_one.description-en-US
+user-authorization.sub-feature_one.description,de-DE,"Registrierung, einschließlich Double-Opt-In und Passwort-Reset.",user-authorization.sub-feature_one.description-de-DE
+user-authorization.sub-feature_two.description,en-US,"Registration with Single-sign-on (SSO) via Google, LinkedIn or Apple.",user-authorization.sub-feature_two.description-en-US
+user-authorization.sub-feature_two.description,de-DE,"Registrierung mit Single-Sign-On (SSO) über Google, LinkedIn oder Apple.",user-authorization.sub-feature_two.description-de-DE
+user-authorization.sub-feature_three.description,en-US,User login and logout with or without Single-sign-on (SSO).,user-authorization.sub-feature_three.description-en-US
+user-authorization.sub-feature_three.description,de-DE,Benutzeranmeldung und -abmeldung mit oder ohne Single-Sign-On (SSO).,user-authorization.sub-feature_three.description-de-DE
+user-management.title,en-US,User Management,user-management.title-en-US
+user-management.title,de-DE,Benutzerverwaltung,user-management.title-de-DE
+user-management.summary,en-US,Manage your users and let them manage their profiles and settings complying with GDPR rules.,user-management.summary-en-US
+user-management.summary,de-DE,Verwalten Sie Ihre Benutzer und lassen Sie sie ihre Profile und Einstellungen gemäß den DSGVO-Regeln verwalten.,user-management.summary-de-DE
+user-management.sub-feature_one.description,en-US,Invite and deactivate users.,user-management.sub-feature_one.description-en-US
+user-management.sub-feature_one.description,de-DE,Benutzer einladen und deaktivieren.,user-management.sub-feature_one.description-de-DE
+user-management.sub-feature_two.description,en-US,"Explore user profile management, including Avatar upload and & Set New Password feature.",user-management.sub-feature_two.description-en-US
+user-management.sub-feature_two.description,de-DE,"Erkunden Sie die Benutzerprofilverwaltung, einschließlich Avatar-Upload und der Funktion & Neues Passwort festlegen.",user-management.sub-feature_two.description-de-DE
+user-management.sub-feature_three.description,en-US,Upload Avatar,user-management.sub-feature_three.description-en-US
+user-management.sub-feature_three.description,de-DE,Avatar hochladen,user-management.sub-feature_three.description-de-DE
+user-management.sub-feature_four.description,en-US,Set new password,user-management.sub-feature_four.description-en-US
+user-management.sub-feature_four.description,de-DE,Neues Passwort festlegen,user-management.sub-feature_four.description-de-DE
+localization.title,en-US,Localization,localization.title-en-US
+localization.title,de-DE,Lokalisierung,localization.title-de-DE
+localization.summary,en-US,Offer your users 1 or more languages in your application.,localization.summary-en-US
+localization.summary,de-DE,Bieten Sie Ihren Benutzern eine oder mehrere Sprachen in Ihrer Anwendung an.,localization.summary-de-DE
+localization.sub-feature_one.description,en-US,"We support full translation of whole page content including errors with single click of the button. Click on the language switch between 🇺🇸 and 🇩🇪 in User Settings page.",localization.sub-feature_one.description-en-US
+localization.sub-feature_one.description,de-DE,"Wir unterstützen die vollständige Übersetzung ganzer Seiteninhalte einschließlich Fehlern mit einem einzigen Klick auf die Schaltfläche. Klicken Sie auf der Seite Benutzereinstellungen auf den Sprachumschalter zwischen 🇺🇸 und 🇩🇪.",localization.sub-feature_one.description-de-DE
+localization.sub-feature_two.description,en-US,Date and time formats are also changing according to the selected locale.,localization.sub-feature_two.description-en-US
+localization.sub-feature_two.description,de-DE,Datums- und Uhrzeitformate ändern sich ebenfalls entsprechend dem ausgewählten Gebietsschema.,localization.sub-feature_two.description-de-DE
+notifications.title,en-US,Notifications,notifications.title-en-US
+notifications.title,de-DE,Benachrichtigungen,notifications.title-de-DE
+notifications.summary,en-US,Your users receive important notifications in-app or via email.,notifications.summary-en-US
+notifications.summary,de-DE,Ihre Benutzer erhalten wichtige Benachrichtigungen in der App oder per E-Mail.,notifications.summary-de-DE
+notifications.sub-feature_one.description,en-US,"Explore in-app notifications about new files or registered users by clicking on bell 🔔 in the header.",notifications.sub-feature_one.description-en-US
+notifications.sub-feature_one.description,de-DE,"Erkunden Sie In-App-Benachrichtigungen über neue Dateien oder registrierte Benutzer, indem Sie auf die Glocke 🔔 in der Kopfzeile klicken.",notifications.sub-feature_one.description-de-DE
+notifications.sub-feature_two.description,en-US,"Explore email notifications about files or user activity by getting an email sent from the ROQ application.",notifications.sub-feature_two.description-en-US
+notifications.sub-feature_two.description,de-DE,"Untersuchen Sie E-Mail-Benachrichtigungen zu Dateien oder Benutzeraktivitäten, indem Sie eine E-Mail von der ROQ-Anwendung erhalten.",notifications.sub-feature_two.description-de-DE
+notifications.sub-feature_three.description,en-US,"Fine-tune your notification preferences. Users can control which notifications they want to receive and via which channel (in-app or email) in the User Settings.",notifications.sub-feature_three.description-en-US
+notifications.sub-feature_three.description,de-DE,"Passen Sie Ihre Benachrichtigungseinstellungen an. Benutzer können in den Benutzereinstellungen steuern, welche Benachrichtigungen sie erhalten möchten und über welchen Kanal (In-App oder E-Mail).",notifications.sub-feature_three.description-de-DE
+file-management.title,en-US,File Management,file-management.title-en-US
+file-management.title,de-DE,Dokumentenverwaltung,file-management.title-de-DE
+file-management.summary,en-US,"Upload, download, delete any kind of file in your application including pdf, jpeg, txt.",file-management.summary-en-US
+file-management.summary,de-DE,"Laden Sie jede Art von Datei in Ihre Anwendung hoch, laden Sie sie herunter und löschen Sie sie, einschließlich PDF, JPEG, TXT.",file-management.summary-de-DE
+file-management.sub-feature_one.description,en-US,"Upload, download or delete single or multiple files via ROQ One. You might want to define allowed file types and upload size limits.",file-management.sub-feature_one.description-en-US
+file-management.sub-feature_one.description,de-DE,"Hochladen, Herunterladen oder Löschen einzelner oder mehrerer Dateien über ROQ One. Möglicherweise möchten Sie zulässige Dateitypen und Größenbeschränkungen für den Upload definieren.",file-management.sub-feature_one.description-de-DE
+file-management.sub-feature_two.description,en-US,"Edit your file names, keep your files private or make them public.",file-management.sub-feature_two.description-en-US
+file-management.sub-feature_two.description,de-DE,"Bearbeiten Sie Ihre Dateinamen, halten Sie Ihre Dateien privat oder machen Sie sie öffentlich.",file-management.sub-feature_two.description-de-DE
+file-management.sub-feature_three.description,en-US,"You files are safe and secure. We are using Google Cloud Storage to make it work!",file-management.sub-feature_three.description-en-US
+file-management.sub-feature_three.description,de-DE,"Ihre Dateien sind sicher und geschützt. Wir verwenden Google Cloud Storage, damit es funktioniert!",file-management.sub-feature_three.description-de-DE
+chat.title,en-US,Chat,chat.title-en-US
+chat.title,de-DE,Plaudern,chat.title-de-DE
+chat.summary,en-US,Start a conversation with a ROQ One user or a group.,chat.summary-en-US
+chat.summary,de-DE,Beginnen Sie ein Gespräch mit einem ROQ One-Benutzer oder einer Gruppe.,chat.summary-de-DE
+chat.sub-feature_one.description,en-US,Start a 1:1 conversation with any user of your ROQ One application.,chat.sub-feature_one.description-en-US
+chat.sub-feature_one.description,de-DE,Beginnen Sie ein 1:1-Gespräch mit einem beliebigen Benutzer Ihrer ROQ One-Anwendung.,chat.sub-feature_one.description-de-DE
+chat.sub-feature_two.description,en-US,Start group conversation.,chat.sub-feature_two.description-en-US
+chat.sub-feature_two.description,de-DE,Gruppengespräch beginnen.,chat.sub-feature_two.description-de-DE
+chat.sub-feature_three.description,en-US,"Manage group conversations by renaming, archiving, adding, or removing users",chat.sub-feature_three.description-en-US
+chat.sub-feature_three.description,de-DE,"Verwalten Sie Gruppenkonversationen, indem Sie Benutzer umbenennen, archivieren, hinzufügen oder entfernen",chat.sub-feature_three.description-de-DE
+chat.sub-feature_four.description,en-US,Message Center,chat.sub-feature_four.description-en-US
+chat.sub-feature_four.description,de-DE,Nachrichtenzentrum,chat.sub-feature_four.description-de-DE
+mail.title,en-US,Mail,mail.title-en-US
+mail.title,de-DE,Post,mail.title-de-DE
+mail.summary,en-US,Customers need to use their own SendGrid account.,mail.summary-en-US
+mail.summary,de-DE,Kunden müssen ihr eigenes SendGrid-Konto verwenden.,mail.summary-de-DE
+mail.sub-feature_one.description,en-US,"User-related emails (registration, password reset, notification, uploaded files) are sent via 3rd party provider SendGrid.",mail.sub-feature_one.description-en-US
+mail.sub-feature_one.description,de-DE,"Benutzerbezogene E-Mails (Registrierung, Passwortrücksetzung, Benachrichtigung, hochgeladene Dateien) werden über den Drittanbieter SendGrid versendet.",mail.sub-feature_one.description-de-DE
+mail.sub-feature_two.description,en-US,Customers need to use their own SendGrid account.,mail.sub-feature_two.description-en-US
+mail.sub-feature_two.description,de-DE,Kunden müssen ihr eigenes SendGrid-Konto verwenden.,mail.sub-feature_two.description-de-DE
+user-interface.title,en-US,User Interface,user-interface.title-en-US
+user-interface.title,de-DE,Benutzeroberfläche,user-interface.title-de-DE
+user-interface.summary,en-US,Modern and fast UI based on world’s most used UI Library - Material UI.,user-interface.summary-en-US
+user-interface.summary,de-DE,Moderne und schnelle Benutzeroberfläche basierend auf der weltweit am häufigsten verwendeten UI-Bibliothek - Material UI.,user-interface.summary-de-DE
+user-interface.sub-feature_one.description,en-US,"Fully customize look and feel of your application according to your brand identity. You can start with fonts, colors and different MUI components.",user-interface.sub-feature_one.description-en-US
+user-interface.sub-feature_one.description,de-DE,"Passen Sie das Erscheinungsbild Ihrer Anwendung vollständig an Ihre Markenidentität an. Sie können mit Schriftarten, Farben und verschiedenen MUI-Komponenten beginnen.",user-interface.sub-feature_one.description-de-DE
+user-interface.sub-feature_two.description,en-US,Explore MUI Documentation,user-interface.sub-feature_two.description-en-US
+user-interface.sub-feature_two.description,de-DE,Erkunden Sie die MUI-Dokumentation,user-interface.sub-feature_two.description-de-DE
+dashboard.welcome-user-text,en-US,"Hi {{fullName}}, welcome to ROQ one!",dashboard.welcome-user-text-en-US
+dashboard.welcome-user-text,de-DE,"Hallo {{fullName}}, willkommen bei ROQ one!",dashboard.welcome-user-text-de-DE
+title_example,en-US,Example,title_example-en-US
+title_example,de-DE,Beispiel,title_example-de-DE
+author.title-plural,en-US,Authors,author.title-plural-en-US
+author.id,en-US,Author ID,author.id-en-US
+author.name,en-US,Name,author.name-en-US
+author.surname,en-US,Surname,author.surname-en-US
+author.age,en-US,Age,author.age-en-US
+author.birthDate,en-US,Birth Date,author.birthDate-en-US
+author.email,en-US,Email,author.email-en-US
+author.address,en-US,Address,author.address-en-US
+author.gender,en-US,Gender,author.gender-en-US
+author.actions,en-US,Actions,author.actions-en-US
+author.add,en-US,Add Author,author.add-en-US
+author.title-plural,de-DE,Autoren,author.title-plural-de-DE
+author.id,de-DE,Autor-ID,author.id-de-DE
+author.name,de-DE,Name,author.name-de-DE
+author.surname,de-DE,Familien-oder Nachname,author.surname-de-DE
+author.age,de-DE,Alter,author.age-de-DE
+author.birthDate,de-DE,Geburtsdatum,author.birthDate-de-DE
+author.email,de-DE,Email,author.email-de-DE
+author.address,de-DE,Die Anschrift,author.address-de-DE
+author.gender,de-DE,Geschlecht,author.gender-de-DE
+author.actions,de-DE,Aktionen,author.actions-de-DE
+author.add,de-DE,Autor hinzufügen,author.add-de-DE
+book.title-plural,en-US,Books,book.title-plural-en-US
+book.id,en-US,Book Id,book.id-en-US
+book.title,en-US,Title,book.title-en-US
+book.description,en-US,Description,book.description-en-US
+book.price,en-US,Price ($),book.price-en-US
+book.author,en-US,Author,book.author-en-US
+book.publishingDate,en-US,Publishing Date,book.publishingDate-en-US
+book.published,en-US,Published?,book.published-en-US
+book.outOfStock,en-US,Out of Stock?,book.outOfStock-en-US
+book.actions,en-US,Actions,book.actions-en-US
+book.add,en-US,Add Book,book.add-en-US
+book.title-plural,de-DE,Bücher,book.title-plural-de-DE
+book.id,de-DE,Buch-ID,book.id-de-DE
+book.title,de-DE,Titel,book.title-de-DE
+book.description,de-DE,Beschreibung,book.description-de-DE
+book.price,de-DE,Preis ($),book.price-de-DE
+book.author,de-DE,Autor,book.author-de-DE
+book.publishingDate,de-DE,Veröffentlichungsdatum,book.publishingDate-de-DE
+book.published,de-DE,Veröffentlicht?,book.published-de-DE
+book.outOfStock,de-DE,Ausverkauft?,book.outOfStock-de-DE
+book.actions,de-DE,Aktionen,book.actions-de-DE
+book.add,de-DE,Buch hinzufügen,book.add-de-DE
+author-create.errors.name,en-US,Name is required,author-create.errors.name-en-US
+author-create.errors.age,en-US,Age can not be less than 0,author-create.errors.age-en-US
+author-create.errors.email,en-US,Invalid Email Address,author-create.errors.email-en-US
+author-create.errors.zipCode,en-US,ZipCode must be of 5 digits,author-create.errors.zipCode-en-US
+author-create.errors.birthDate,en-US,Invalid Date,author-create.errors.birthDate-en-US
+author-create.errors.maxChar,en-US,Maximum 50 characters allowed,author-create.errors.maxChar-en-US
+author-create.gender.male,en-US,Male,author-create.gender.male-en-US
+author-create.gender.female,en-US,Female,author-create.gender.female-en-US
+author-create.gender.other,en-US,Others,author-create.gender.other-en-US
+author-create.gender.label,en-US,Gender,author-create.gender.label-en-US
+author-create.title,en-US,Create Author,author-create.title-en-US
+author-create.update-title,en-US,Update Author,author-create.update-title-en-US
+author-create.created-successfully-alert,en-US,Author has been created successfully,author-create.created-successfully-alert-en-US
+author-create.updated-successfully-alert,en-US,Author has been updated successfully,author-create.updated-successfully-alert-en-US
+author-create.name,en-US,Name,author-create.name-en-US
+author-create.surname,en-US,Surname,author-create.surname-en-US
+author-create.age,en-US,Age,author-create.age-en-US
+author-create.birthDate,en-US,Birth Date,author-create.birthDate-en-US
+author-create.email,en-US,Email,author-create.email-en-US
+author-create.address.label,en-US,Address,author-create.address.label-en-US
+author-create.address.street,en-US,Street Address,author-create.address.street-en-US
+author-create.address.houseNumber,en-US,House Number,author-create.address.houseNumber-en-US
+author-create.address.zipCode,en-US,Zip Code,author-create.address.zipCode-en-US
+author-create.address.city,en-US,City,author-create.address.city-en-US
+author-create.address.country,en-US,Country,author-create.address.country-en-US
+author-create.saveButton,en-US,Save,author-create.saveButton-en-US
+author-create.cancelButton,en-US,Cancel,author-create.cancelButton-en-US
+author-create.errors.name,de-DE,Name ist erforderlich,author-create.errors.name-de-DE
+author-create.errors.age,de-DE,Das Alter darf nicht kleiner als 0 sein,author-create.errors.age-de-DE
+author-create.errors.email,de-DE,Ungültige E-Mail-Adresse,author-create.errors.email-de-DE
+author-create.errors.zipCode,de-DE,Postleitzahl muss 5-stellig sein,author-create.errors.zipCode-de-DE
+author-create.errors.birthDate,de-DE,Ungültiges Datum,author-create.errors.birthDate-de-DE
+author-create.errors.maxChar,de-DE,Maximal 50 Zeichen erlaubt,author-create.errors.maxChar-de-DE
+author-create.gender.male,de-DE,Männlich,author-create.gender.male-de-DE
+author-create.gender.female,de-DE,Weiblich,author-create.gender.female-de-DE
+author-create.gender.other,de-DE,Andere,author-create.gender.other-de-DE
+author-create.gender.label,de-DE,Geschlecht,author-create.gender.label-de-DE
+author-create.title,de-DE,Autor erstellen,author-create.title-de-DE
+author-create.update-title,de-DE,Autor aktualisieren,author-create.update-title-de-DE
+author-create.created-successfully-alert,de-DE,Autor wurde erfolgreich erstellt,author-create.created-successfully-alert-de-DE
+author-create.updated-successfully-alert,de-DE,Autor wurde erfolgreich aktualisiert,author-create.updated-successfully-alert-de-DE
+author-create.name,de-DE,Name,author-create.name-de-DE
+author-create.surname,de-DE,Familien-oder Nachname,author-create.surname-de-DE
+author-create.age,de-DE,Alter,author-create.age-de-DE
+author-create.birthDate,de-DE,Geburtsdatum,author-create.birthDate-de-DE
+author-create.email,de-DE,Email,author-create.email-de-DE
+author-create.address.label,de-DE,Die Anschrift,author-create.address.label-de-DE
+author-create.address.street,de-DE,Adresse,author-create.address.street-de-DE
+author-create.address.houseNumber,de-DE,Hausnummer,author-create.address.houseNumber-de-DE
+author-create.address.zipCode,de-DE,Postleitzahl,author-create.address.zipCode-de-DE
+author-create.address.city,de-DE,Stadt,author-create.address.city-de-DE
+author-create.address.country,de-DE,Land,author-create.address.country-de-DE
+author-create.saveButton,de-DE,Speichern,author-create.saveButton-de-DE
+author-create.cancelButton,de-DE,Absagen,author-create.cancelButton-de-DE
+book-create.errors.title,en-US,Title is required,book-create.errors.title-en-US
+book-create.errors.price,en-US,Price must be greater than 0,book-create.errors.price-en-US
+book-create.errors.publishingDate,en-US,Invalid Date,book-create.errors.publishingDate-en-US
+book-create.errors.files.min,en-US,Atleast one file is required,book-create.errors.files.min-en-US
+book-create.errors.files.max,en-US,No more than 3 files are allowed,book-create.errors.files.max-en-US
+book-create.errors.authorId,en-US,Author is required,book-create.errors.authorId-en-US
+book-create.errors.maxChar,en-US,Maximum 50 characters allowed,book-create.errors.maxChar-en-US
+book-create.published.label,en-US,Published,book-create.published.label-en-US
+book-create.published.yes,en-US,Yes,book-create.published.yes-en-US
+book-create.outOfStock.label,en-US,Out of Stock,book-create.outOfStock.label-en-US
+book-create.outOfStock.yes,en-US,Yes,book-create.outOfStock.yes-en-US
+book-create.header,en-US,Create Book,book-create.header-en-US
+book-create.update-header,en-US,Update Book,book-create.update-header-en-US
+book-create.created-successfully-alert,en-US,Book has been created successfully,book-create.created-successfully-alert-en-US
+book-create.updated-successfully-alert,en-US,Book has been updated successfully,book-create.updated-successfully-alert-en-US
+book-create.title,en-US,Title,book-create.title-en-US
+book-create.description,en-US,Description,book-create.description-en-US
+book-create.authorId,en-US,Author Id,book-create.authorId-en-US
+book-create.publishingDate,en-US,Publishing Date,book-create.publishingDate-en-US
+book-create.price,en-US,Price,book-create.price-en-US
+book-create.saveButton,en-US,Save,book-create.saveButton-en-US
+book-create.cancelButton,en-US,Cancel,book-create.cancelButton-en-US
+book-create.fileUpload,en-US,"File Upload (pdf, png, and jpeg, Max 3)",book-create.fileUpload-en-US
+book-create.errors.title,de-DE,Titel ist erforderlich,book-create.errors.title-de-DE
+book-create.errors.price,de-DE,Preis muss größer als 0 sein,book-create.errors.price-de-DE
+book-create.errors.publishingDate,de-DE,Ungültiges Datum,book-create.errors.publishingDate-de-DE
+book-create.errors.files.min,de-DE,Mindestens eine Datei ist erforderlich,book-create.errors.files.min-de-DE
+book-create.errors.files.max,de-DE,Es sind nicht mehr als 3 Dateien erlaubt,book-create.errors.files.max-de-DE
+book-create.errors.authorId,de-DE,Autor ist erforderlich,book-create.errors.authorId-de-DE
+book-create.errors.maxChar,de-DE,Maximal 50 Zeichen erlaubt,book-create.errors.maxChar-de-DE
+book-create.published.label,de-DE,Veröffentlicht,book-create.published.label-de-DE
+book-create.published.yes,de-DE,Ja,book-create.published.yes-de-DE
+book-create.outOfStock.label,de-DE,Ausverkauft,book-create.outOfStock.label-de-DE
+book-create.outOfStock.yes,de-DE,Ja,book-create.outOfStock.yes-de-DE
+book-create.header,de-DE,Buch erstellen,book-create.header-de-DE
+book-create.update-header,de-DE,Buch aktualisieren,book-create.update-header-de-DE
+book-create.created-successfully-alert,de-DE,Buch wurde erfolgreich erstellt,book-create.created-successfully-alert-de-DE
+book-create.updated-successfully-alert,de-DE,Buch wurde erfolgreich aktualisiert,book-create.updated-successfully-alert-de-DE
+book-create.title,de-DE,Titel,book-create.title-de-DE
+book-create.description,de-DE,Beschreibung,book-create.description-de-DE
+book-create.authorId,de-DE,Autor,book-create.authorId-de-DE
+book-create.publishingDate,de-DE,Veröffentlichungsdatum,book-create.publishingDate-de-DE
+book-create.price,de-DE,Preis,book-create.price-de-DE
+book-create.saveButton,de-DE,Speichern,book-create.saveButton-de-DE
+book-create.cancelButton,de-DE,Absagen,book-create.cancelButton-de-DE
+book-create.fileUpload,de-DE,"Datei-Upload (pdf, png und jpeg, max. 3)",book-create.fileUpload-de-DE
+file-uploader.errors.file-invalid-type,en-US,File type not supported!,file-uploader.errors.file-invalid-type-en-US
+file-uploader.errors.too-many-files,en-US,Files limit exceeded!,file-uploader.errors.too-many-files-en-US
+file-uploader.errors.file-too-large,en-US,File size is too large!,file-uploader.errors.file-too-large-en-US
+file-uploader.errors.file-invalid-type,de-DE,Der Dateityp wird nicht unterstützt!,file-uploader.errors.file-invalid-type-de-DE
+file-uploader.errors.too-many-files,de-DE,Dateilimit überschritten!,file-uploader.errors.too-many-files-de-DE
+file-uploader.errors.file-too-large,de-DE,Dateigröße ist zu groß!,file-uploader.errors.file-too-large-de-DE
+profile-page.update-form-general-label,en-US,General,profile-page.update-form-general-label-en-US
+profile-page.update-form-general-label,de-DE,Allgemeines,profile-page.update-form-general-label-de-DE
+profile-page.update-form-contact-details-label,en-US,Contact Details,profile-page.update-form-contact-details-label-en-US
+profile-page.update-form-contact-details-label,de-DE,Kontaktdetails,profile-page.update-form-contact-details-label-de-DE
+profile-page.update-form-employment-label,en-US,Employment,profile-page.update-form-employment-label-en-US
+profile-page.update-form-employment-label,de-DE,Anstellung,profile-page.update-form-employment-label-de-DE
+profile-page.update-form-address-label,en-US,Address,profile-page.update-form-address-label-en-US
+profile-page.update-form-address-label,de-DE,Die Anschrift,profile-page.update-form-address-label-de-DE
+profile-page-details.company-label,en-US,Company,profile-page-details.company-label-en-US
+profile-page-details.company-label,de-DE,Unternehmen,profile-page-details.company-label-de-DE
+profile-page-details.position-label,en-US,Position,profile-page-details.position-label-en-US
+profile-page-details.position-label,de-DE,Position,profile-page-details.position-label-de-DE
+profile-page-details.address-label,en-US,Address,profile-page-details.address-label-en-US
+profile-page-details.address-label,de-DE,Adresse,profile-page-details.address-label-de-DE
+profile-page-details.about-label,en-US,About,profile-page-details.about-label-en-US
+profile-page-details.about-label,de-DE,Über,profile-page-details.about-label-de-DE
+profile-page.subtitle,en-US,Make changes and click update in order to save new updates to your profile,profile-page.subtitle-en-US
+profile-page.subtitle,de-DE,"Nehmen Sie Änderungen vor und klicken Sie auf Aktualisieren, um neue Aktualisierungen in Ihrem Profil zu speichern",profile-page.subtitle-de-DE
+update,en-US,update,update-en-US
+update,de-DE,aktualisieren,update-de-DE
+reset-password-mail-sent-success,en-US,Email was resent,reset-password-mail-resent-success-en-US
+reset-password-mail-sent-success,de-DE,Email wurde erneut gesendet,reset-password-mail-resent-success-de-DE
+reset-password-mail-sent-failed,en-US,Email wasn’t resent,reset-password-mail-resent-failed-en-US
+reset-password-mail-sent-failed,de-DE,E-Mail wurde nicht erneut gesendet,reset-password-mail-resent-failed-de-DE
+forbidden,en-US,You don't have permissions to do this. Please make sure that you have these permission(s): {{resourceId}},forbidden-en-US
+forbidden,de-DE,Sie sind nicht berechtigt, dies zu tun. Bitte stellen Sie sicher, dass Sie diese Berechtigung(en) haben: {{resourceId}},forbidden-de-DE
+no-records-to-display,en-US,No records to display,no-records-to-display-en-US
+no-records-to-display,de-DE,Keine Datensätze zum Anzeigen,no-records-to-display-de-DE
+no-files-to-display,en-US,Drag files here or use the 'Upload File' button,no-files-to-display-en-US
+no-files-to-display,de-DE,Ziehen Sie Dateien hierher oder verwenden Sie die Schaltfläche 'Datei hochladen',no-files-to-display-de-DE
+files.retry-upload,en-US,Retry Upload,files.retry-upload-en-US
+files.retry-upload,de-DE,Hochladen erneut versuchen,files.retry-upload-de-DE

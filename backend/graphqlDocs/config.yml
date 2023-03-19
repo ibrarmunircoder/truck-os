@@ -1,0 +1,23 @@
+introspection:
+  schemaFile: src/schema.gql
+
+info:
+  title: GraphQL API Reference
+  description: Welcome to the party!
+  termsOfService: https://www.example.com/terms
+  contact:
+    name: API Support
+    url: http://www.example.com/support
+    email: support@example.com
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+  x-hidePoweredBy: true
+  x-introItems:
+    - title: ROQ Snapshot Playground
+      url: https://roq-snapshot-backend-ytqhysh7ka-ew.a.run.app/graphql
+
+servers:
+  - url: https://roq-snapshot-backend-ytqhysh7ka-ew.a.run.app/graphql
+    description: Snapshot
+    production: true

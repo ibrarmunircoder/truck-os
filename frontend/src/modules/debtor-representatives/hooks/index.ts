@@ -1,0 +1,2 @@
+export { useFetchDebtorRepresentatives } from 'modules/debtor-representatives/hooks/use-fetch-debtor-representatives.hook';
+export { useUpdateDebtorRepresentative } from 'modules/debtor-representatives/hooks/use-update-debtor-representative.hook';

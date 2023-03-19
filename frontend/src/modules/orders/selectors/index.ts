@@ -1,0 +1,1 @@
+export { orderSelector } from 'modules/orders/selectors/orders.selector';

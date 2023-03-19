@@ -1,0 +1,1 @@
+export const EXAMPLE_FORM_FIELD_MAX_LENGTH = 50;

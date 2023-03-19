@@ -1,0 +1,1 @@
+export { ThemeProvider } from 'modules/theme/components/theme-provider/theme-provider.component'

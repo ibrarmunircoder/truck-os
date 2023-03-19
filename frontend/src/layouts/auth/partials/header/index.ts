@@ -1,0 +1,1 @@
+export { Header } from 'layouts/auth/partials/header/header.partial';

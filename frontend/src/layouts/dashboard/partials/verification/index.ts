@@ -1,0 +1,1 @@
+export { VerificationTopbar } from 'layouts/dashboard/partials/verification/verification.partial';

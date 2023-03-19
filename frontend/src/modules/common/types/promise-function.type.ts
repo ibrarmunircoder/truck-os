@@ -1,0 +1,1 @@
+export type PromiseFunctionType = (...args: unknown[]) => Promise<unknown>;

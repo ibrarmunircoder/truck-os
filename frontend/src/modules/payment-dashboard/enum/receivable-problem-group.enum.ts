@@ -1,0 +1,8 @@
+export enum ReceivableProblemGroup {
+  DECLINED,
+  SELLING_CANCELED,
+  SELLING_ENDED_WITHOUT_BUYER,
+  EXPIRED,
+  REVOKED,
+  NOT_ALLOWED,
+}

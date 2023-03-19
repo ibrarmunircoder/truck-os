@@ -1,0 +1,83 @@
+export const typography = {
+  h1: {
+    fontWeight: 400,
+    fontSize: '3rem',
+    lineHeight: 1.167,
+    letterSpacing: '0.15px',
+  },
+  h2: {
+    fontWeight: 400,
+    fontSize: '2rem',
+    lineHeight: 1.5,
+    letterSpacing: '0.15px',
+  },
+  h3: {
+    fontWeight: 400,
+    fontSize: '1.5rem',
+    lineHeight: 1.3333,
+    letterSpacing: '0.15px',
+  },
+  h4: {
+    fontWeight: 400,
+    fontSize: '1.25rem',
+    lineHeight: 1.4,
+    letterSpacing: '0.15px',
+  },
+  h5: {
+    fontWeight: 400,
+    fontSize: '1.125rem',
+    lineHeight: 1.3333,
+    letterSpacing: '0.15px',
+  },
+  h6: {
+    fontWeight: 400,
+    fontSize: '1rem',
+    lineHeight: 1.375,
+    letterSpacing: '0.15px',
+  },
+  subtitle1: {
+    fontWeight: 400,
+    fontSize: '1rem',
+    lineHeight: 1.75,
+    letterSpacing: '0.15px',
+  },
+  subtitle2: {
+    fontWeight: 600,
+    fontSize: '0.875rem',
+    lineHeight: 1.5714,
+    letterSpacing: '0.15px',
+  },
+  body1: {
+    fontWeight: 400,
+    fontSize: '1rem',
+    lineHeight: 1.5,
+    letterSpacing: '0.15px',
+  },
+  body2: {
+    fontWeight: 400,
+    fontSize: '0.875rem',
+    lineHeight: 1.4285,
+    letterSpacing: '0.15px',
+  },
+  button: {
+    fontWeight: 600,
+    fontSize: '0.875rem',
+    lineHeight: 1.7143,
+    letterSpacing: '0.15px',
+    textTransform: 'uppercase' as const,
+  },
+  caption: {
+    fontWeight: 600,
+    fontSize: '0.75rem',
+    lineHeight: 1.6667,
+    letterSpacing: '0.15px',
+  },
+  overline: {
+    fontWeight: 600,
+    fontSize: '0.75rem',
+    lineHeight: 2.3333,
+    letterSpacing: '0.15px',
+    textTransform: 'uppercase' as const,
+  },
+  fontFamily: `'Circular Std', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'`,
+};
